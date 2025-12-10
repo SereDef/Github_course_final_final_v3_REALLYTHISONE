@@ -62,7 +62,7 @@ You already have:
     -   `R` and `RStudio` (or `Positron`) up-to-date
 -   Stickers (help, done, question)
 
-## Agenda
+## Roadtrip agenda
 
 ::: fragment
 1.  Big-picture motivation, people
@@ -86,13 +86,13 @@ You already have:
 Yes. <br><br>
 
 ::: fragment
-<ins>Before you can get started</ins>, you have to: install `Git`, get local `Git` talking to `GitHub`, and make sure `RStudio` can talk to local `Git` (and, therefore, `GitHub`).
+ <ins>Before you can get started</ins>, you have to: install `Git`, get local `Git` talking to `GitHub`, and make sure `RStudio` can talk to local `Git` (and, therefore, `GitHub`).
 
 [This is **one-time** or *"once-per-computer"* pain]{.bg-highlight} & [we will do it **together**.]{.bg-highlight} <br><br>
 :::
 
 ::: fragment
-<ins>Beginner-intermediate use</ins> require (small) **changes to your normal, daily workflow**: dedicate a directory to each project, make it a `git` repository, (optionally) make it a RStudio project, periodically make `commit`s and push them to `Github`.
+ <ins>Beginner-intermediate use</ins> require (small) **changes to your normal, daily workflow**: dedicate a directory to each project, make it a `git` repository, (optionally) make it a RStudio project, periodically make `commit`s and push them to `Github`.
 
 [It feels weird at first but quickly becomes second nature]{.bg-highlight} & [we will do it **together**.]{.bg-highlight}. <br><br>
 :::

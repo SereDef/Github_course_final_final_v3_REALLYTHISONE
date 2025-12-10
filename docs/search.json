@@ -32,7 +32,7 @@
     "href": "slides.html#is-it-going-to-hurt",
     "title": "Git & Github  for researchers",
     "section": "Is it going to hurt?",
-    "text": "Is it going to hurt?\nYes. \n\n\nBefore you can get started\n\n, you have to: install Git, get local Git talking to GitHub, and make sure RStudio can talk to local Git (and, therefore, GitHub).\nThis is one-time or “once-per-computer” pain & we will do it together. \n\n\n\nBeginner-intermediate use\n\nrequire (small) changes to your normal, daily workflow: dedicate a directory to each project, make it a git repository, (optionally) make it a RStudio project, periodically make commits and push them to Github.\nIt feels weird at first but quickly becomes second nature & we will do it together.. \n\n\n\nAdvanced use\n\nDo you use GitHub to work with other people or to coordinate your own work from multiple computers? Knock-knock - Who’s there? merge conflicts.\n\n\n\n\n\n\n\nHandling merge conflicts\n\n\nThis is not one-time pain. The best remedy is prevention, which we will talk about today.  See Resources for more advanced tips on how to back out of tricky situations and tackle them on your own terms."
+    "text": "Is it going to hurt?\nYes. \n\nBefore you can get started, you have to: install Git, get local Git talking to GitHub, and make sure RStudio can talk to local Git (and, therefore, GitHub).\nThis is one-time or “once-per-computer” pain & we will do it together. \n\n\nBeginner-intermediate use require (small) changes to your normal, daily workflow: dedicate a directory to each project, make it a git repository, (optionally) make it a RStudio project, periodically make commits and push them to Github.\nIt feels weird at first but quickly becomes second nature & we will do it together.. \n\n\n\nAdvanced use\n\nDo you use GitHub to work with other people or to coordinate your own work from multiple computers? Knock-knock - Who’s there? merge conflicts.\n\n\n\n\n\n\n\nHandling merge conflicts\n\n\nThis is not one-time pain. The best remedy is prevention, which we will talk about today.  See Resources for more advanced tips on how to back out of tricky situations and tackle them on your own terms."
   },
   {
     "objectID": "slides.html#the-problem",
@@ -264,5 +264,12 @@
     "title": "Git & Github  for researchers",
     "section": "Resources",
     "text": "Resources\nBryan, J. (2018). Excuse Me, Do You Have a Moment to Talk About Version Control? The American Statistician, 72(1), 20–27."
+  },
+  {
+    "objectID": "slides.html#roadtrip-agenda",
+    "href": "slides.html#roadtrip-agenda",
+    "title": "Git & Github  for researchers",
+    "section": "Roadtrip agenda",
+    "text": "Roadtrip agenda\n\n\nBig-picture motivation, people\n\nWhy would a researcher use a version control system (e.g., Git)?\nWhat’s the point of hosting your work online (e.g., on GitHub)?\n\n\n\n\nUseful Git/GitHub concepts I keep in my purse\nGetting started (the right way): configuration climbing\nEarly Git wins: some basic workflows for everyday life\n\n\n\nThe rest of the game: some lesser-known fun things you can do with Github\n\ne.g. Github Pages, Search, and Actions"
   }
 ]
