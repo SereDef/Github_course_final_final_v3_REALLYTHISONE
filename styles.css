@@ -1,0 +1,88 @@
+:root {
+    /* Quarto Default Colors */
+  --darkblue: #00008B;    /* Dark blue (footer/links) */
+  --purple: #4859ab;   /* Light blue (code) */
+  
+  /* Extended Color Palette */
+  --lightpurple: #ecefffff;
+  --verdigris: #0b9181ff;
+  --jasmine: #e9c46a;
+  --sandybrown: #f4a261;
+  --burntpeach: #ff8533ff;
+  --orange: #e66400ff;
+
+}
+
+/* --- TEXT ---------------------------------------------------------------- */
+
+/* Text wrapping with custom width */
+.text-wrap {
+  max-width: var(--w, 600px) !important; /* default 600px */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.orange-bold {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.darkblue {
+  color: var(--darkblue);
+}
+
+.darkblue-bold {
+  color: var(--darkblue);
+  font-weight: 700;
+}
+
+.bg-highlight {
+  background-color: var(--lightpurple);
+  padding: 0.25em 0.5em;
+  border-radius: 10px;
+  /* color: var(--darkblue); */
+}
+
+.bg-highlight-text {
+  background-color: var(--jasmine);
+  padding: 0.1em 0.4em;
+  border-radius: 20px;
+}
+
+/* --- IMAGES -------------------------------------------------------------- */
+
+/* Override RevealJS image constraints */
+.reveal img.fixed-bottom-right {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Your custom positioning + wrapping */
+.fixed-bottom-right {
+  position: absolute;
+  right: -20px;
+  bottom: 0px;
+  z-index: 10;
+
+  /* Use a CSS variable for width */
+  width: var(--w, 180px) !important;  /* default 180px if not supplied */
+  height: auto !important;  /* maintain aspect ratio */
+}
+
+/* --- CODE CHUNKS --------------------------------------------------------- */
+
+code.sourceCode {
+  font-size: 1.5em !important; /* Adjust multiplier as needed */
+}
+
+/* --- CALLOUTS ---------------------------------------------------------- */
+
+/* Change all callout text size */
+.callout {
+  font-size: 0.9em !important;
+}

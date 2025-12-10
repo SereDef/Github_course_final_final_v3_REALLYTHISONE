@@ -1,0 +1,268 @@
+[
+  {
+    "objectID": "slides.html#welcome",
+    "href": "slides.html#welcome",
+    "title": "Git & Github  for researchers",
+    "section": "Welcome",
+    "text": "Welcome\nWelcome to our first Git & Github course!\n\nHi\nMy name is Serena, I work at Erasmus MC now for a few years mostly on epidemiology / molcular biology / neuroscience things.\nDisaclaimer time: I am not an expert, I just use these tools somewhat often and find them, honestly, very cool\n\n\nToday, I’ll walk with you as you:\n\nFind out some (very cool) ways to integrate Git and GitHub into your daily work\nInstall and congifure Git and get it working smoothly with GitHub —&gt; in the shell & in RStudio\nLearn about a few key workflows for your most common tasks"
+  },
+  {
+    "objectID": "slides.html#some-more-disclaimers",
+    "href": "slides.html#some-more-disclaimers",
+    "title": "Git & Github  for researchers",
+    "section": "Some (more) disclaimers",
+    "text": "Some (more) disclaimers\n\nAbout you\n\nNo previous experience\n\nis required, beside a general familiarity with data analysis.\nYou will get the most out of this workshop if you are an R user. \n\n\nAbout this worshop\nIt is not a complete guide. It is more of a Git-starter pack for research / teaching activities. \n\n\n\n\n\n\nTip\n\n\nThere are a lot of excellent Git/Github tutorial materials online (see Resources for some suggestions)."
+  },
+  {
+    "objectID": "slides.html#roadtrip-checklist",
+    "href": "slides.html#roadtrip-checklist",
+    "title": "Git & Github  for researchers",
+    "section": "Roadtrip checklist",
+    "text": "Roadtrip checklist\nYou already have:\n\nA (free) GitHub account\n\nStudents and educational/research staff: GitHub Education\nCourses or research/lab groups: GitHub Organizations\n\nA laptop with:\n\nGit installed\nR and RStudio (or Positron) up-to-date\n\nStickers (help, done, question)"
+  },
+  {
+    "objectID": "slides.html#agenda",
+    "href": "slides.html#agenda",
+    "title": "Git & Github  for researchers",
+    "section": "Agenda",
+    "text": "Agenda\n\n\nBig-picture motivation, people\n\nWhy would a researcher use a version control system (e.g., Git)?\nWhat’s the point of hosting your work online (e.g., on GitHub)?\n\n\n\n\nUseful Git/GitHub concepts I keep in my purse\nGetting started (the right way): configuration climbing\nEarly Git wins: some basic workflows for everyday life\n\n\n\nThe rest of the game: some lesser-known fun things you can do with Github\n\ne.g. Github Pages, Search, and Actions"
+  },
+  {
+    "objectID": "slides.html#is-it-going-to-hurt",
+    "href": "slides.html#is-it-going-to-hurt",
+    "title": "Git & Github  for researchers",
+    "section": "Is it going to hurt?",
+    "text": "Is it going to hurt?\nYes. \n\n\nBefore you can get started\n\n, you have to: install Git, get local Git talking to GitHub, and make sure RStudio can talk to local Git (and, therefore, GitHub).\nThis is one-time or “once-per-computer” pain & we will do it together. \n\n\n\nBeginner-intermediate use\n\nrequire (small) changes to your normal, daily workflow: dedicate a directory to each project, make it a git repository, (optionally) make it a RStudio project, periodically make commits and push them to Github.\nIt feels weird at first but quickly becomes second nature & we will do it together.. \n\n\n\nAdvanced use\n\nDo you use GitHub to work with other people or to coordinate your own work from multiple computers? Knock-knock - Who’s there? merge conflicts.\n\n\n\n\n\n\n\nHandling merge conflicts\n\n\nThis is not one-time pain. The best remedy is prevention, which we will talk about today.  See Resources for more advanced tips on how to back out of tricky situations and tackle them on your own terms."
+  },
+  {
+    "objectID": "slides.html#the-problem",
+    "href": "slides.html#the-problem",
+    "title": "Git & Github  for researchers",
+    "section": "The problem",
+    "text": "The problem\nScientific research and teaching produce many files!\nThere are data files, figures, tables, reports, slides, and (yes) source code…\n\nMost of these files evolve over the course of a project and often need to be shared with others.\n\nWithout explicit and structured management, project organization can easily descend into chaos, taking time away from the primary work and reducing the quality of the final product (and of your life)."
+  },
+  {
+    "objectID": "slides.html#the-poor-mans-version-of-version-control",
+    "href": "slides.html#the-poor-mans-version-of-version-control",
+    "title": "Git & Github  for researchers",
+    "section": "The “poor man’s version” of version control",
+    "text": "The “poor man’s version” of version control"
+  },
+  {
+    "objectID": "slides.html#what-is-git",
+    "href": "slides.html#what-is-git",
+    "title": "Git & Github  for researchers",
+    "section": "What is Git?",
+    "text": "What is Git?\n\nGit is a version control system.\nIt manages the evolution of a set of files (a repository or repo) in a sane, highly structured way.\n\n Git’s original purpose was to help groups of developers work collaboratively on big software projects.  It is like a “TrackChanges” feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files. \n\n\nIt enables the distribution of files across different people, computers, and time."
+  },
+  {
+    "objectID": "slides.html#now-the-bad-news",
+    "href": "slides.html#now-the-bad-news",
+    "title": "Git & Github  for researchers",
+    "section": "Now the bad news",
+    "text": "Now the bad news\n\n\n\nGit was not built for you.\nYou will undoubtedly notice this, so it’s best to know in advance.\nGit’s model of file management can feel uncomfortably rigid, especially for beginners.\n\n\n\nHappily, there are many helpful tools that mediate your interactions with Git.\n   \n\n\n\n“I like offending people because I think people who get offended, should be offended.” \nLinus Torvalds"
+  },
+  {
+    "objectID": "slides.html#what-is-github",
+    "href": "slides.html#what-is-github",
+    "title": "Git & Github  for researchers",
+    "section": "What is GitHub?",
+    "text": "What is GitHub?\nGitHub complements Git by providing a polished user interface and distribution mechanism for Git repositories. ::: {.fragment} * Git = software you use locally to record changes to a set of files. * GitHub = hosting service that provides a Git-aware home for such projects on the internet. :::\n\n\nGitHub is like DropBox or Google Drive, but much, much better.\nIt allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.\n\n\n\nMany operations can be done entirely in the browser, including editing or adding files.\nLet’s take a look!"
+  },
+  {
+    "objectID": "slides.html#repositories-and-roles",
+    "href": "slides.html#repositories-and-roles",
+    "title": "Git & Github  for researchers",
+    "section": "Repositories and roles",
+    "text": "Repositories and roles\nA repository can be public or private.\nThe owner of a repository can grant permission to others: e.g. read (only relevant for private), write (or push) or admin access to others."
+  },
+  {
+    "objectID": "slides.html#commit",
+    "href": "slides.html#commit",
+    "title": "Git & Github  for researchers",
+    "section": "Commit",
+    "text": "Commit"
+  },
+  {
+    "objectID": "slides.html#issues",
+    "href": "slides.html#issues",
+    "title": "Git & Github  for researchers",
+    "section": "Issues",
+    "text": "Issues\nljnpkljn"
+  },
+  {
+    "objectID": "slides.html#branches",
+    "href": "slides.html#branches",
+    "title": "Git & Github  for researchers",
+    "section": "Branches",
+    "text": "Branches\nIt’s a list of things, bugs, feature requests, to dos, whatever"
+  },
+  {
+    "objectID": "slides.html#branches-1",
+    "href": "slides.html#branches-1",
+    "title": "Git & Github  for researchers",
+    "section": "Branches",
+    "text": "Branches\nIssues are tightly integrated with email and therefore allow you to copy/embed important conversations in the associated repo.\nIssues can be assigned to people (e.g., to dos) and tagged (“bug” or “progress-report”).\nIssues are tightly integrated with commits and therefore allow you to record that the changes in this commit solve that problem which was discussed in that issue.\nAs a new user of GitHub, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use."
+  },
+  {
+    "objectID": "slides.html#branches-2",
+    "href": "slides.html#branches-2",
+    "title": "Git & Github  for researchers",
+    "section": "Branches",
+    "text": "Branches\nBranches"
+  },
+  {
+    "objectID": "slides.html#pull-requests",
+    "href": "slides.html#pull-requests",
+    "title": "Git & Github  for researchers",
+    "section": "Pull requests",
+    "text": "Pull requests\nGit allows a project to have multiple, independent branches of development, with the notion that some should eventually be merged back into the main development branch.\nA pull request is a formal proposal that says: “Here are some changes I would like to make.” It might be linked to a specific issue: “Related to #14.” or “Fixes #56”. GitHub facilitates and preserves the discussion of the proposal, holistically and line-by-line."
+  },
+  {
+    "objectID": "slides.html#questions",
+    "href": "slides.html#questions",
+    "title": "Git & Github  for researchers",
+    "section": "Questions?",
+    "text": "Questions?\nNo? Let’s play a game"
+  },
+  {
+    "objectID": "slides.html#benefits-of-using-hosted-version-control",
+    "href": "slides.html#benefits-of-using-hosted-version-control",
+    "title": "Git & Github  for researchers",
+    "section": "Benefits of using hosted version control",
+    "text": "Benefits of using hosted version control\nEven for private solo projects, there are advantages to keeping a synced copy on GitHub:\n\n\nWhen you are new with coding (or, frankly, even when you are not), it is common to mess things up.  Sometimes the easiest fix is to clone a fresh copy from GitHub, patch things up, and move on with your life.\n\n\n\n\nThe highly functional web interface makes it a pleasure to browse through your own work.  You can navigate and search through multiple projects and files and across time."
+  },
+  {
+    "objectID": "slides.html#benefits-of-using-hosted-version-control-1",
+    "href": "slides.html#benefits-of-using-hosted-version-control-1",
+    "title": "Git & Github  for researchers",
+    "section": "Benefits of using hosted version control",
+    "text": "Benefits of using hosted version control\n\nDoing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect\nCollaboration is much more structured, with powerful tools for asynchronous workand managing versions\nThe marginal effort required to create a web presence for a project is negligible\nGitHub makes a fantastic course management system for teachers. You can exchange actual working code with your students and explore the associated results\nWIDELY used outside these walls (required in most job positions)\nBy using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle"
+  },
+  {
+    "objectID": "slides.html#break",
+    "href": "slides.html#break",
+    "title": "Git & Github  for researchers",
+    "section": "[Break]",
+    "text": "[Break]\n\nLet’s walk through some basic operations to confirm you have installed the necessary software and that the necessary connections are being made, between tools on your computer and between your computer and GitHub."
+  },
+  {
+    "objectID": "slides.html#half-the-battle",
+    "href": "slides.html#half-the-battle",
+    "title": "Git & Github  for researchers",
+    "section": "Half the battle",
+    "text": "Half the battle\nGetting all the necessary software installed, configured, and playing nicely together is honestly half the battle when first adopting Git.\nYou will find far more resources for how to use Git than for installation and configuration. Why? The experts …\n\nHave been doing this for years. It’s simply not hard for them anymore.\nProbably use some flavor of Unix. They may secretly (or not so secretly) take pride in neither using nor knowing Windows.\nGet more satisfaction and reward for thinking and writing about Git concepts and workflows than Git installation.\nIn their defense, it’s hard to write installation instructions. Failures can be specific to an individual OS or even individual computer.\n\n\nBrace yourself for some pain. The upside is that you can give yourself a pat on the back once you get through this. And you WILL get through this."
+  },
+  {
+    "objectID": "slides.html#is-r-and-rstudio-up-to-date",
+    "href": "slides.html#is-r-and-rstudio-up-to-date",
+    "title": "Git & Github  for researchers",
+    "section": "Is R and RStudio up to date?",
+    "text": "Is R and RStudio up to date?\nThis is a great time to make sure your R installation is current.\n# Check your current R version \nR.version.string\n\n# ... and update your R packages while at it\n# (optional)\nupdate.packages(ask = FALSE, checkBuilt = TRUE)\n\n\n\n\n\n\n\n\nTip of the day\n\n\nYou don’t want to adopt new things on day one. But at some point, running old versions of software adds unnecessary difficulty. Get current, people.\n\n\n\n\n\n\n\n\n\n\n\n\nIs my R version “old”?\n\n\nR had a major version change in April 2020, with the release of 4.0.0. It is a good idea to be on the current major version, meaning 4.something\nEach major version is followed by several years of smaller releases (minor and patch releases). You can be more relaxed about upgrading minor versions, but you still want to stay reasonably current. I advise that you never fall more than 1 minor version behind.\n\n\n\n\n\nConcrete example: let’s say the released version of R is 4.7.1, which is totally fictional and well beyond the current version of R at the time of writing. It’s probably OK if you are still on 4.6.whatever, which is one minor version behind and is called “r-oldrel”. Being one minor version behind usually doesn’t cause trouble. Once you are 2 minor versions behind (4.5.whatever or earlier in this example), you will start to suffer. In particular, you can no longer install pre-built binary add-on packages from CRAN.\nIs your RStudio “old”? You can expect to update RStudio much more often than R itself. For example, I update RStudio every month or so, whereas I update R 1 or 2 times per year."
+  },
+  {
+    "objectID": "slides.html#the-shell",
+    "href": "slides.html#the-shell",
+    "title": "Git & Github  for researchers",
+    "section": "The shell",
+    "text": "The shell\nThe shell is a program on your computer whose job is to run other programs. Pseudo-synonyms are “terminal”, “command line”, “console” or bash\nEven if you do most of your Git operations via a client (e.g., RStudio or GitHub), you must sometimes work in the shell.\nIn research, you usually see the command line when working on a server (that does not have a GUI client).\nAs you get more comfortable with Git, you might prefer to do more and more via the command line.\n\nMany programmers spend lots of time in a shell, as opposed to in GUIs, because it is very fast, concise, and ubiquitous in their relevant computing environments. This is how all work was done before we got the mouse and GUIs.\nThe most common shell is bash and it gets thrown around as a proxy for “shell” sometimes, just like “Coke” and “Kleenex” are proxies for cola and tissues.\nSometimes we demo the use of a shell for certain tasks, like navigating the file system and doing Git operations, when we don’t want to or can’t use RStudio. Providing shell commands is also less ambiguous and less perishable than describing human interactions with a GUI. For all these reasons, it is a good idea to learn your way around the shell."
+  },
+  {
+    "objectID": "slides.html#opening-the-shell",
+    "href": "slides.html#opening-the-shell",
+    "title": "Git & Github  for researchers",
+    "section": "Opening the shell",
+    "text": "Opening the shell\n\nFrom RStudiomacOSWindows is special… not in a good way\n\n\nIt is often handy to launch a shell from RStudio, because it makes an effort to put you in a sane working directory (in the current project).\nTo launch a shell within RStudio: Tools &gt; Terminal\n\n\nThe shell is often called the “terminal”.\n\nOne way to launch it is via Spotlight Search: hit Command``Space and start typing “terminal”.\n\n\n\nThere are many possible shells you can end up in.\nUnless you know better, use the Git Bash shell. This is a bash shell that ships with Git for Windows (so, you will not have it on your system until you install Git).\n\nRStudio should automatically detect the presence of Git Bash.  You can inspect and influence this via Tools &gt; Global Options &gt; Terminal.\nTo access Git Bash outside of RStudio: open the the Windows menu, click on the “Git” folder and select “Git Bash”.\n\n\n\n\n\n\nWindows is not the ideal platform for scientific computing and software development. A lot of the functionality is going to feel janky and strapped on. Because it is."
+  },
+  {
+    "objectID": "slides.html#is-git-installed",
+    "href": "slides.html#is-git-installed",
+    "title": "Git & Github  for researchers",
+    "section": "Is Git installed?",
+    "text": "Is Git installed?\nGo to the shell and type:\nwhich git\nThis should give you the path to your Git executable.\nLet’s also check which version you are using:\ngit --version\nIf you see something more like git: command not found you (likely) don’t have Git intalled, let’s fix that."
+  },
+  {
+    "objectID": "slides.html#install-git",
+    "href": "slides.html#install-git",
+    "title": "Git & Github  for researchers",
+    "section": "Install Git",
+    "text": "Install Git\nYou need Git, so let’s install it. \n\nWindowsmacOSLinux\n\n\nInstall Git for Windows, also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, accept the defaults.\n\nYou should now have a Git executable C:/Program Files/Git/bin/git.exe.\n\n\nInstall the Xcode command line tools (not all of Xcode), which includes Git.\n In the terminal type:\nxcode-select --install\n\n\nInstall Git via your distro’s package manager.\n\nUbuntu or Debian:\nsudo apt-get install git\nFedora or RedHat:\nsudo yum install git"
+  },
+  {
+    "objectID": "slides.html#introduce-yourself-to-git",
+    "href": "slides.html#introduce-yourself-to-git",
+    "title": "Git & Github  for researchers",
+    "section": "Introduce yourself to Git",
+    "text": "Introduce yourself to Git\n\nIn the shellIn R\n\n\n\ngit config --global user.name \"Serena Defina\"\ngit config --global user.email \"sere.def@gmail.com\"\n\nWhat user name should I give to Git? This doesn’t matter. Your commits will be labelled with this user name though, so make it informative to potential collaborators and future you.\n\n\nWhat email should you give to Git? This must be the email associated with your GitHub account.\n\n\nCheck what happened:\ngit config --global --list\nMore things you can do with git config: Software Carpentry\n\n\nYou can also set your Git user name and email from within R thanks to the usethis package.\n# Install usethis (if needed)\n# install.packages(\"usethis\") # or pak::pak(\"usethis\")\n\nlibrary(usethis) \nuse_git_config(user.name = \"Serena Defina\", user.email = \"sere.def@gmail.com\")\n\nI do quite a bit of R package dev, so I have library(usethis) in my .Rprofile file."
+  },
+  {
+    "objectID": "slides.html#can-you-hear-me-now",
+    "href": "slides.html#can-you-hear-me-now",
+    "title": "Git & Github  for researchers",
+    "section": "Can you hear me now?",
+    "text": "Can you hear me now?\nSo you have Git working on your local machine (yey). Now it’s time to talk to GitHub. \n\nGitHub is a remote Git server. To interact with it, we have to use credentials in the request. This proves we are a specific GitHub user, who’s allowed to do whatever we’re asking to do.\n\n\nThere are two ways (or “protocols”) to communicate with a remote server: HTTPS and SSH, each uses different credentials.\n\nfor HTTPS we will use a personal access token (PAT)\nfor SSH we will use SSH keys\n\n\n\n\n\n\n\n\nHTTPS or SSH?\n\n\nGitHub recommends HTTPS, presumably becasue it is easier to get working. Especially for Windows users, I would stick to HTTPS. Tech-y people will die on the SSH hill.\nAnyway, don’t worry too much. This is not an all-or-nothing decision and it’s a relatively easy to revisit later.\n\n\n\n\n\n\nWe want to establish a two-way communication street (i.e. pull and push) between two computers..\nUnfortunately, we have to front-load a rather fiddly task: decide whether to communicate with GitHub via HTTPS or SSH and setup some credentials accordingly.\nThese are kind of like passwords, but better.\nAnother advantage of HTTPS: there are many R packages that call GitHub’s API on your behalf (devtools+usethis, remotes, pak, gh, etc.). Configuring your PAT kills two birds with one stone: this single credential can be used to authenticate to GitHub as a regular Git server and for its REST API. If you authenticate via SSH for “regular” Git work, you will still have to set up a PAT for work that uses the REST API."
+  },
+  {
+    "objectID": "slides.html#set-up-personal-access-tokens-pat-for-https",
+    "href": "slides.html#set-up-personal-access-tokens-pat-for-https",
+    "title": "Git & Github  for researchers",
+    "section": "Set up personal access tokens (PAT) for HTTPS",
+    "text": "Set up personal access tokens (PAT) for HTTPS\n\nIn ROn GitHub\n\n\n\nusethis::create_github_token()\nCopy the generated PAT to your clipboard.\nYou can provide this PAT next time a Git operation asks for your password (I know, this is very confusing)\n…But best to store the PAT explicitly right now.\nIn R, call:\ngitcreds::gitcreds_set() \nPaste the PAT in response to the dialogue in the console.\nAll done! Check your set-up with:\nusethis::git_sitrep()\n\n\n*Assuming you are signed in\nGo here: https://github.com/settings/tokens\n\nClick on your profile icon (top right corner) &gt; Settings &gt; Developer Settings (at end of the sidebar menu) &gt; Personal access tokens &gt; Tokens (classic)\n\nClick on Generate new token &gt; Generate new token (classic)\nSelect scopes: “repo”, “user”, and “workflow” (default from usethis)\nClick Generate token.\nCopy the generated PAT to your clipboard.\nProvide this PAT next time a Git operation asks for your password.\n…or store it in your favourite password manager."
+  },
+  {
+    "objectID": "slides.html#set-up-keys-for-ssh",
+    "href": "slides.html#set-up-keys-for-ssh",
+    "title": "Git & Github  for researchers",
+    "section": "Set up keys for SSH",
+    "text": "Set up keys for SSH\nHere is what is going to happen:\n\nWe’ll generate a key pair (i.e. two long strings of characters) a public and a private key.\nWe’ll place the public key on a server (aka GitHub!),\nWe’ll add the private key to our ssh-agent on the client (aka your computer!).\nWhen the two match up, the system unlocks without the need for a password. Magic.\n\n\n\n\n\n\n\n\nSome advice\n\n\nIt’s normal to associate multiple public keys with your GitHub account. You should probably have one key pair per computer (at least, I do this). You can increase security even more by protecting the private key with a passphrase.  However, that requires some additional configuration (nothing mad, have a google at it)\n\n\n\n\n\nCreate a public-private SSH key pair. Literally, 2 special files, in a special place. Optionally, encrypt the private key with a passphrase (best practice)."
+  },
+  {
+    "objectID": "slides.html#step-1-generate-ssh-keys",
+    "href": "slides.html#step-1-generate-ssh-keys",
+    "title": "Git & Github  for researchers",
+    "section": "Step 1: generate SSH keys",
+    "text": "Step 1: generate SSH keys\n\nFrom RStudioFrom the shell\n\n\nGo to Tools &gt; Global Options… &gt; Git/SVN &gt; Create SSH Key… \nRStudio prompts you for a (optional) passphrase.\nIf you’re completely new at all this, I’d reccomend skipping the passphrase for now and implement it next time, when you are more comfortable with system configuration.\nClick “Create” and RStudio will generate an SSH key pair, stored in the files ~/.ssh/id_ed25519 and ~/.ssh/id_ed25519.pub.\n\n\n\n\n\n\nNote\n\n\nThe typical pattern is id_&lt;something&gt;.pub (the public key) and id_&lt;something&gt; (the private key), where &lt;something&gt; reflects the key type.\nrsa historically has been the most common. However, these days GitHub encourages users to generate SSH keys with the ed25519 algorithm instead (default option).\n\n\n\n\n\nCreate the key pair like so (a meaningful comment could be the name of your computer, for example)\nssh-keygen -t ed25519 -C \"DESCRIPTIVE-COMMENT\"\nIf your system is too old to support the Ed25519 algorithm, substitute “ed25519” with “rsa -b 4096”.\nAccept the proposal to save the key in the default location (Just press Enter)\nYou have the option to protect the key with a passphrase. If you’re completely new at all this, skip the passphrase and implement it next time, when you are more comfortable with system configuration."
+  },
+  {
+    "objectID": "slides.html#step-2-client",
+    "href": "slides.html#step-2-client",
+    "title": "Git & Github  for researchers",
+    "section": "Step 2: client",
+    "text": "Step 2: client\nTell your ssh-agent about the key (and set it up to manage the passphrase, if you chose to set one).\nThings get a little OS-specific around here. When in doubt, consult GitHub’s instructions for SSH, which is kept current and accounts for more unusual situations than I can.\n\nOn Linux or macOSOn Windows\n\n\nMake sure ssh-agent is enabled\neval \"$(ssh-agent -s)\"\nYou should see something like “Agent pid ”.\nIf this fails try again, as the superuser (sudo su &gt; eval \"$(ssh-agent -s)\" &gt; exit).\nAdd your key to the ssh agent. If you set a passphrase, you’ll be challenged for it here.\nssh-add ~/.ssh/id_ed25519\n\n\nIn the Git Bash shell, make sure ssh-agent is enabled:\neval $(ssh-agent -s)\nYou should see something like “Agent pid ”.\nAdd your key to the ssh agent.\nssh-add ~/.ssh/id_ed25519"
+  },
+  {
+    "objectID": "slides.html#step-3-server",
+    "href": "slides.html#step-3-server",
+    "title": "Git & Github  for researchers",
+    "section": "Step 3: server",
+    "text": "Step 3: server\nNow the last thing we need to do is store a copy of your public key on GitHub.\n\nCopy the public key onto your clipboard.\n\n\nIn RStudioIn the shell\n\n\nGo to Tools &gt; Global Options… &gt; Git/SVN.\nYou should see something like ~/.ssh/id_ed25519 in the SSH Key box.\nClick on “View public key” and copy that to your clipboard.\n\n\nList existing keys:\nls -al ~/.ssh/\nOpen the ~/.ssh/id_ed25519.pub file in whatever editor and copy the contents to your clipboard.\nSome examples: pbcopy &lt; ~/.ssh/id_ed25519.pup (on macOS), xclip -sel clip &lt; ~/.ssh/id_ed25519.pub (on Linux), clip &lt; ~/.ssh/id_ed25519.pub (on Windows)\n\n\n\n 2. Got to GitHub and register the public key\n\nClick on your profile pic (upper right corner) &gt; Settings &gt; SSH and GPG keys &gt; New SSH key. Paste your public key in the “Key” box. Give it an informative title (e.g. the descriptive comment you used during key creation). Click “Add SSH key”.\n\nDone! But let’s test this to be sure:\nssh -T git@github.com"
+  },
+  {
+    "objectID": "slides.html#questions-1",
+    "href": "slides.html#questions-1",
+    "title": "Git & Github  for researchers",
+    "section": "Questions?",
+    "text": "Questions?\nNo? thank god let’s have a break"
+  },
+  {
+    "objectID": "slides.html#lets-get-down-to-it",
+    "href": "slides.html#lets-get-down-to-it",
+    "title": "Git & Github  for researchers",
+    "section": "Let’s get down to it",
+    "text": "Let’s get down to it\nOur first repository"
+  },
+  {
+    "objectID": "slides.html#conclusions-and-goodbyes",
+    "href": "slides.html#conclusions-and-goodbyes",
+    "title": "Git & Github  for researchers",
+    "section": "Conclusions and goodbyes",
+    "text": "Conclusions and goodbyes\nThe workflows described here are widely regarded as current best practice, yet we generally neither practice nor preach it in academic settings."
+  },
+  {
+    "objectID": "slides.html#resources",
+    "href": "slides.html#resources",
+    "title": "Git & Github  for researchers",
+    "section": "Resources",
+    "text": "Resources\nBryan, J. (2018). Excuse Me, Do You Have a Moment to Talk About Version Control? The American Statistician, 72(1), 20–27."
+  }
+]

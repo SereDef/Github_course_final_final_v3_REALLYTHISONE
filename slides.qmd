@@ -1,0 +1,29 @@
+---
+title: "Combined Presentation"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    theme: simple
+    css: styles.css
+    center: false
+    slide-number: c/t
+    controls: true
+    preview-links: true
+    chalkboard: true
+    code-line-numbers: false
+    code-copy: hover
+    # incremental: true
+    # transition: fade
+    # transition-speed: fast
+    # smaller: true
+    # scrollable: true
+    # footer: "[Git & Github course](https://github.com/SereDef)"
+    # logo: "logo.png"
+    # echo: true
+---
+
+{{< include 1.Intro-concepts.qmd >}}
+{{< include 2.Configuration.qmd >}}
+{{< include 3.Workflows.qmd >}}
+{{< include 4.OtherThings.qmd >}}

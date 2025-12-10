@@ -1,0 +1,11 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Git & Github course - 17th Dec 2025"
+  site-url: "https://SereDef.github.io/Github_course_final_final_v3_REALLYTHISONE"
+  
+format:
+  html:
+    theme: default

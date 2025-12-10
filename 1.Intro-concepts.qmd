@@ -1,0 +1,281 @@
+---
+title: "**`Git` & `Github` <br> for researchers**<br><br>"
+author: "Serena Defina"
+date: 17 December 2025
+
+# revealjs-plugins:
+#   - editable
+# filters:
+#   - editable
+---
+
+## Welcome
+
+Welcome to our first **`Git` & `Github`** course!<br><br>
+
+::: {.fragment}
+
+#### [Hi]{.darkblue-bold}
+
+My name is Serena, I work at Erasmus MC now for a few years mostly on epidemiology / molcular biology / neuroscience things.
+
+**Disaclaimer time**: I am <ins>not an expert</ins>, I just use these tools somewhat often and find them, honestly, very cool<br><br>
+:::
+
+::: {.fragment}
+Today, I'll walk with you as you:
+
+-   Find out some (very cool) ways to integrate `Git` and `GitHub` into your daily work
+-   Install and congifure `Git` and get it working smoothly with `GitHub` <br>[---\> in the ***shell*** & in ***RStudio***]{style="color:grey"}
+-   Learn about a few key **workflows** for your most common tasks
+:::
+
+## Some (more) disclaimers
+
+::: fragment
+### [About you]{.darkblue-bold}
+
+<ins>No previous experience</ins> is required, beside a general familiarity with *data analysis*.
+
+You will get the *most* out of this workshop if you are an **`R`** user. <br><br>
+:::
+
+:::: fragment
+### [About this worshop]{.darkblue-bold}
+
+It is <ins>not a complete guide</ins>. It is more of a *Git-starter pack* for **research / teaching** activities. <br><br>
+
+::: callout-tip
+There are a lot of excellent Git/Github tutorial materials online (see [Resources]() for some suggestions).
+:::
+::::
+
+## Roadtrip checklist
+
+You already have:
+
+-   A (free) `GitHub` account
+    -   Students and educational/research staff: [GitHub Education](https://github.com/education)
+    -   Courses or research/lab groups: [GitHub Organizations](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations)
+-   A laptop with:
+    -   `Git` installed
+    -   `R` and `RStudio` (or `Positron`) up-to-date
+-   Stickers (help, done, question)
+
+## Agenda
+
+::: fragment
+1.  Big-picture motivation, people
+    -   Why would a researcher use a *version control system* (e.g., `Git`)?
+    -   What's the point of hosting your work online (e.g., on `GitHub`)?
+:::
+
+::: incremental
+2.  Useful `Git`/`GitHub` **concepts** I keep in my purse
+3.  Getting started (the right way): **configuration** climbing
+4.  Early `Git` wins: some basic **workflows** for everyday life
+:::
+
+::: fragment
+5.  The rest of the game: some lesser-known fun things you can do with `Github`
+    -   e.g. `Github Pages`, `Search`, and `Actions`
+:::
+
+## Is it going to hurt?
+
+Yes. <br><br>
+
+::: fragment
+<ins>Before you can get started</ins>, you have to: install `Git`, get local `Git` talking to `GitHub`, and make sure `RStudio` can talk to local `Git` (and, therefore, `GitHub`).
+
+[This is **one-time** or *"once-per-computer"* pain]{.bg-highlight} & [we will do it **together**.]{.bg-highlight} <br><br>
+:::
+
+::: fragment
+<ins>Beginner-intermediate use</ins> require (small) **changes to your normal, daily workflow**: dedicate a directory to each project, make it a `git` repository, (optionally) make it a RStudio project, periodically make `commit`s and push them to `Github`.
+
+[It feels weird at first but quickly becomes second nature]{.bg-highlight} & [we will do it **together**.]{.bg-highlight}. <br><br>
+:::
+
+:::: fragment
+<ins>Advanced use</ins>
+
+Do you use GitHub to **work with other people** or to **coordinate your own work from multiple computers**? *Knock-knock* - Who's there? **`merge conflicts`**.
+
+:::{.callout-caution title="Handling **`merge conflicts`**"}
+This is not one-time pain. The best remedy is **prevention**, which we will talk about today. <br> See [Resources]() for more advanced tips on how to back out of tricky situations and tackle them on your own terms.
+:::
+:::
+
+# [Part 1]{style="color: lightblue"}
+
+::: r-fit-text
+***Excuse me,***<br> do you have a moment to <br> talk about [version control]{.darkblue}?
+:::
+
+## The problem
+
+Scientific research and teaching produce [*many* files]{.orange-bold}!
+
+There are data files, figures, tables, reports, slides, and (yes) source code...
+
+<br>
+
+Most of these files [**evolve** over the course of a project]{.bg-highlight-text} and often [need to be **shared** with others]{.bg-highlight-text}.
+
+<br>
+
+Without explicit and structured management, project organization can easily descend into [chaos]{.orange}, taking time away from the primary work and reducing the quality of the final product (and of your life).
+
+## The [*"poor man's version"*]{.darkblue} of version control
+
+![](imgs/poor-man-git-1.png){.absolute top="150" left="20"}
+
+-------------------------------------------------------------
+
+This *unhappy* result can be avoided by repurposing tools and workflows from the software development world.
+
+![](imgs/poor-man-git-2.png){.absolute top="150" left="20"}
+
+## What is `Git`?
+
+![](imgs/linus-torvalds-1.png){.fixed-bottom-right style="--w: 35%;"}
+
+`Git` is a **version control system**.
+
+It manages the evolution of a *set of files* (a **repository** or **repo**) in a sane, highly structured way.
+
+::: {.text-wrap style="--w: 70%;"}
+<br><br>
+[`Git`'s original purpose was to help groups of developers work collaboratively on big software projects.]{.fragment}
+<br><br>
+[It is like a *"TrackChanges"* feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files.]{.fragment}
+<br><br>
+
+:::
+
+::: {.text-wrap style="--w: 65%;"}
+[It enables the distribution of files across different **people**, **computers**, and **time**.]{.fragment}
+:::
+
+## *Now the bad news*
+
+![](imgs/linus-torvalds-2.png){.fixed-bottom-right style="--w: 35%;"}
+
+::: fragment
+<br>
+
+Git was <ins>not built for you</ins>.
+
+You will undoubtedly notice this, so it's best to know in advance.
+
+Git's model of file management can feel uncomfortably *rigid*, especially for beginners.
+:::
+
+::: {.fragment .text-wrap style="--w: 60%;"}
+<br>
+
+Happily, there are many helpful **tools** that mediate your interactions with `Git`.
+
+![](imgs/github-logo-black.png){.absolute bottom="210" left="130" width="150"} ![](imgs/gitkraken-logo.png){.absolute bottom="140" left="300" width="120"} ![](imgs/RStudio-logo.png){.absolute bottom="210" left="500" width="425"} ![](imgs/positron-logo.png){.absolute bottom="100" left="700" width="130"}
+:::
+
+::: aside
+*"I like offending people because I think people who get offended, should be offended."* <br>
+
+[Linus Torvalds]{.absolute right="0" top="40"}
+:::
+
+## What is `GitHub`?
+`GitHub` complements `Git` by providing a polished [user interface]{.orange-bold} and [distribution]{.orange-bold} mechanism for `Git` repositories.
+::: {.fragment}
+ * `Git` = software you use locally to record changes to a set of files.
+ * `GitHub` = hosting service that provides a `Git`-aware home for such projects on the internet.
+:::
+
+<br>
+
+::: {.fragment .column .bg-highlight width="50%"}
+`GitHub` is like DropBox or Google Drive, but much, *much* better.<br><br>
+
+It allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.fragment .column .bg-highlight width="40%"}
+Many operations can be done entirely in the browser, including editing or adding files.
+:::
+
+[Let's take a look!]{.fragment}
+
+# [Part 2]{style="color: lightblue"}
+::: r-fit-text
+[*Fundamental `Git` / `GitHub` concepts I keep in my purse*]{.darkblue-bold}
+:::
+
+## Repositories and roles
+A `repository` can be **public** or **private**.<br><br>
+
+The [owner]{.orange-bold} of a repository can grant permission to others: e.g. read (only relevant for private), write (or `push`) or admin access to others.
+
+## Commit
+
+
+## Issues
+ljnpkljn
+
+## Branches
+It's a list of things, bugs, feature requests, to dos, whatever
+
+## Branches
+Issues are tightly integrated with email and therefore allow you to copy/embed important conversations in the associated repo.
+
+Issues can be assigned to people (e.g., to dos) and tagged (“bug” or “progress-report”).
+
+Issues are tightly integrated with commits and therefore allow you to record that the changes in this commit solve that problem which was discussed in that issue.
+
+As a new user of GitHub, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use.
+
+## Branches
+Branches 
+
+## Pull requests
+Git allows a project to have multiple, independent branches of development, with the notion that some should eventually be merged back into the main development branch.
+
+A pull request is a formal proposal that says: “Here are some changes I would like to make.” It might be linked to a specific issue: “Related to #14.” or “Fixes #56”. GitHub facilitates and preserves the discussion of the proposal, holistically and line-by-line.
+
+## Questions?
+
+No? Let's play a game 
+
+## Benefits of using hosted version control
+
+Even for [*private solo projects*]{.darkblue}, there are advantages to keeping a synced copy on `GitHub`:
+
+::: fragment
+1.  When you are new with coding (or, frankly, even when you are not), it is common to [mess things up]{.orange}. <br> Sometimes the easiest fix is to clone a fresh copy from `GitHub`, patch things up, and move on with your life.
+:::
+
+::: fragment
+2.  The highly functional web interface makes it a pleasure to browse through your own work. <br> You can [navigate]{.orange} and [search]{.orange} through multiple projects and files and across time.
+:::
+
+## Benefits of using hosted version control
+
+-   Doing your work becomes tightly integrated with organizing, recording, and disseminating it. It's not a separate, burdensome task you are tempted to neglect
+
+-   Collaboration is much more structured, with powerful tools for asynchronous workand managing versions
+
+-   The marginal effort required to create a web presence for a project is negligible
+
+-   GitHub makes a fantastic course management system for teachers. You can exchange actual working code with your students and explore the associated results
+
+-   WIDELY used outside these walls (required in most job positions)
+
+-   By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle
+
+## [Break]
+
+
