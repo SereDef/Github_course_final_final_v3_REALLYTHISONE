@@ -1,5 +1,5 @@
 ---
-title: "Combined Presentation"
+title: "Git & Github workshop"
 format: 
   revealjs:
     width: 1600

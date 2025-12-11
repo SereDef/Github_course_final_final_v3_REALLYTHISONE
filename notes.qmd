@@ -94,3 +94,30 @@ Collaboration: If you need to collaborate on data analysis or code development, 
 For new or existing projects, you will:
 
 Dedicate a directory (a.k.a “folder”) to it. Make it an RStudio Project. Make it a Git repository. Go about your usual business. But instead of only saving individual files, periodically you make a commit, which takes a multi-file snapshot of the entire project. Have you ever versioned a file by adding your initials or the date? That is effectively a commit, albeit only for a single file: it is a version that is significant to you and that you might want to inspect or revert to later. Push commits to GitHub periodically. This is like sharing a document with colleagues on DropBox or sending it out as an email attachment. It signals you’re ready to make your work visible to others and invite comment or edits.
+
+
+
+
+
+# Part3: Workflows 
+
+## Clone your repo to your local computer
+You can also personalize this default by setting the `usethis.destdir` option in your `.Rprofile`.
+
+We’re accepting the default behaviour of two other arguments: `rstudio` and `open` (because that’s what most people will want). Take a look at the `RStudio` tab to know what that does.
+
+## Make a local change, commit, and push
+
+Even though GitHub no longer allows username/password authentication, many general Git tools still frame the authentication task with this vocabulary. You shoul provide your PAT as the password, not your web password. Enter your PAT. 
+
+If you already stored your PAT with `gitcreds::gitcreds_set()`, it should be discovered automatically and you will not see a credential challenge.
+
+Working with other people? Before pushing, this will seem counterintuitive, but first let’s stop and `pull` from `GitHub`.
+Why? Establish this habit for the future! If you make changes to the repo in the browser or from another machine or (one day) a collaborator has pushed, you will be happier if you pull those changes in before you attempt to push.
+When collaborating with other developers) you will usually need to pull changes from the remote (GitHub) before pushing the local changes you have made. For this reason, it’s a good idea to try and get into the habit of pulling before you attempt to push.
+
+## 
+Consider if that is appropriate for each file. You can absolutely keep a file locally, without committing it to the Git repo and sending to GitHub. Just let it sit there in your Git pane, without being staged. No harm will be done. If this is a long-term situation, list the file in .gitignore.
+If you’re not already in the Git pop-up, click “Commit”
+Type a message in “Commit message”, such as “Init project XYZ”.
+Click “Commit”

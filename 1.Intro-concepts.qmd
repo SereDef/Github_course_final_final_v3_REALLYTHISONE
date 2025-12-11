@@ -215,21 +215,37 @@ Many operations can be done entirely in the browser, including editing or adding
 [*Fundamental `Git` / `GitHub` concepts I keep in my purse*]{.darkblue-bold}
 :::
 
-## Repositories and roles
+## Git basics
+Let's talk a bit more about `Git`, introduce the most important basic ideas and define some `Git` **vocabulary** and link each concept to data science tasks and projects.
+
+Keep in mind that *actual usage* is the most effective way to build up a useful mental model for `Git`. 
+
+As before, there many excellent external resources for `Git`, which you can find in the Resources.
+
+## Repositories (repos) and roles
+Recall: `Git` manages the evolution of a set of files – called a **repository** or **repo**.
+
 A `repository` can be **public** or **private**.<br><br>
 
 The [owner]{.orange-bold} of a repository can grant permission to others: e.g. read (only relevant for private), write (or `push`) or admin access to others.
 
-## Commit
+## Staging, commits and tags
+Commmits 
 
+## Remotes, cloning and forking
+
+## Branches
+Branches 
+
+Switch to a branch
+
+git checkout [branch-name]
+
+## Merging and conflicts
 
 ## Issues
-ljnpkljn
-
-## Branches
 It's a list of things, bugs, feature requests, to dos, whatever
 
-## Branches
 Issues are tightly integrated with email and therefore allow you to copy/embed important conversations in the associated repo.
 
 Issues can be assigned to people (e.g., to dos) and tagged (“bug” or “progress-report”).
@@ -238,9 +254,6 @@ Issues are tightly integrated with commits and therefore allow you to record tha
 
 As a new user of GitHub, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use.
 
-## Branches
-Branches 
-
 ## Pull requests
 Git allows a project to have multiple, independent branches of development, with the notion that some should eventually be merged back into the main development branch.
 
@@ -248,7 +261,7 @@ A pull request is a formal proposal that says: “Here are some changes I would 
 
 ## Questions?
 
-No? Let's play a game 
+No? Let's play a **game**
 
 ## Benefits of using hosted version control
 

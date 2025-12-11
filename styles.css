@@ -10,7 +10,16 @@
   --sandybrown: #f4a261;
   --burntpeach: #ff8533ff;
   --orange: #e66400ff;
+  --github-green: #17a90cff;
+  --github-blue: #1b8bedff; 
 
+}
+
+/* for development */
+.reveal .slides {
+  border: 2px solid rgb(25, 0, 255);
+  width: 1600px;
+  height: 900px;
 }
 
 /* --- TEXT ---------------------------------------------------------------- */
@@ -21,6 +30,34 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+}
+
+/* Adjust space after a paragraph */
+.reveal .l-space { 
+  display: block;
+  margin-bottom: 1.5em !important; 
+}
+.reveal .m-space { 
+  display: block;
+  margin-bottom: 0.9em !important; 
+}
+.reveal .s-space { 
+  display: block;
+  margin-bottom: 0.6em !important; 
+}
+
+/* Adjust space before a paragraph */
+.reveal .l-up-space { 
+  display: block;
+  margin-top: 1.5em !important; 
+}
+.reveal .m-up-space { 
+  display: block;
+  margin-top: 0.9em !important; 
+}
+.reveal .s-up-space { 
+  display: block;
+  margin-top: 0.6em !important; 
 }
 
 .orange {
@@ -52,6 +89,27 @@
   background-color: var(--jasmine);
   padding: 0.1em 0.4em;
   border-radius: 20px;
+}
+
+.green-button {
+  background-color: var(--github-green);
+  color: white;
+  padding: 0.2em 0.4em;
+  border-radius: 18px;
+}
+
+.blue-button {
+  background-color: var(--github-blue);
+  color: white;
+  padding: 0.2em 0.4em;
+  border-radius: 18px;
+}
+
+.grey-button {
+  background-color: var(--lightpurple);
+  color: rgba(57, 57, 57, 1);
+  padding: 0.2em 0.4em;
+  border-radius: 18px;
 }
 
 /* --- IMAGES -------------------------------------------------------------- */

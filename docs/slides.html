@@ -405,32 +405,41 @@ Advanced use
 <p><span class="darkblue-bold"><em>Fundamental <code>Git</code> / <code>GitHub</code> concepts I keep in my purse</em></span></p>
 </div>
 </section>
-<section id="repositories-and-roles" class="slide level2">
-<h2>Repositories and roles</h2>
+<section id="git-basics" class="slide level2">
+<h2>Git basics</h2>
+<p>Let’s talk a bit more about <code>Git</code>, introduce the most important basic ideas and define some <code>Git</code> <strong>vocabulary</strong> and link each concept to data science tasks and projects.</p>
+<p>Keep in mind that <em>actual usage</em> is the most effective way to build up a useful mental model for <code>Git</code>.</p>
+<p>As before, there many excellent external resources for <code>Git</code>, which you can find in the Resources.</p>
+</section>
+<section id="repositories-repos-and-roles" class="slide level2">
+<h2>Repositories (repos) and roles</h2>
+<p>Recall: <code>Git</code> manages the evolution of a set of files – called a <strong>repository</strong> or <strong>repo</strong>.</p>
 <p>A <code>repository</code> can be <strong>public</strong> or <strong>private</strong>.<br><br></p>
 <p>The <span class="orange-bold">owner</span> of a repository can grant permission to others: e.g.&nbsp;read (only relevant for private), write (or <code>push</code>) or admin access to others.</p>
 </section>
-<section id="commit" class="slide level2">
-<h2>Commit</h2>
+<section id="staging-commits-and-tags" class="slide level2">
+<h2>Staging, commits and tags</h2>
+<p>Commmits</p>
 </section>
-<section id="issues" class="slide level2">
-<h2>Issues</h2>
-<p>ljnpkljn</p>
+<section id="remotes-cloning-and-forking" class="slide level2">
+<h2>Remotes, cloning and forking</h2>
 </section>
 <section id="branches" class="slide level2">
 <h2>Branches</h2>
-<p>It’s a list of things, bugs, feature requests, to dos, whatever</p>
+<p>Branches</p>
+<p>Switch to a branch</p>
+<p>git checkout [branch-name]</p>
 </section>
-<section id="branches-1" class="slide level2">
-<h2>Branches</h2>
+<section id="merging-and-conflicts" class="slide level2">
+<h2>Merging and conflicts</h2>
+</section>
+<section id="issues" class="slide level2">
+<h2>Issues</h2>
+<p>It’s a list of things, bugs, feature requests, to dos, whatever</p>
 <p>Issues are tightly integrated with email and therefore allow you to copy/embed important conversations in the associated repo.</p>
 <p>Issues can be assigned to people (e.g., to dos) and tagged (“bug” or “progress-report”).</p>
 <p>Issues are tightly integrated with commits and therefore allow you to record that the changes in this commit solve that problem which was discussed in that issue.</p>
 <p>As a new user of GitHub, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use.</p>
-</section>
-<section id="branches-2" class="slide level2">
-<h2>Branches</h2>
-<p>Branches</p>
 </section>
 <section id="pull-requests" class="slide level2">
 <h2>Pull requests</h2>
@@ -439,7 +448,7 @@ Advanced use
 </section>
 <section id="questions" class="slide level2">
 <h2>Questions?</h2>
-<p>No? Let’s play a game</p>
+<p>No? Let’s play a <strong>game</strong></p>
 </section>
 <section id="benefits-of-using-hosted-version-control" class="slide level2">
 <h2>Benefits of using hosted version control</h2>
@@ -914,21 +923,270 @@ Advanced use
 </section></section>
 <section>
 <section id="part-4-workflows" class="title-slide slide level1 center">
-<h1>[Part 4] workflows</h1>
+<h1>[Part 4] workflows:</h1>
 
 </section>
 <section id="lets-get-down-to-it" class="slide level2">
 <h2>Let’s get down to it</h2>
-<p>Our first repository</p>
+<p>Now that we are done setting up <code>Git</code>, <code>GitHub</code> and <code>RStudio</code>, it’s about damn time to see what was all this pain even for:</p>
+<p>We’ll go over three realistic <strong>workflows</strong> you may use in you daily life</p>
+<ol type="1">
+<li><strong>New project - <code>GitHub</code> first</strong> is the easiest way to get a working project.</li>
+<li><strong>Existing project - <code>GitHub</code> first</strong> is a deeply pragmatic way to get pre-existing work onto GitHub.</li>
+<li><strong>Existing project - <code>GitHub</code> last</strong> is the more “proper” way to connect existing local work to a remote on <code>GitHub</code>, especially if there’s already some <code>Git</code> history.</li>
+</ol>
+</section>
+<section id="create-a-repository" class="slide level2">
+<h2>1. Create a repository</h2>
+<p>You are all set up! It’s (finally) time to make your first repository!</p>
+<blockquote>
+<p>Go to <a href="https://github.com"><code>GitHub</code></a> and make sure you are logged in. <br>Click on your profile pic (top-right corner) &gt; Repositories &gt; <span class="green-button">New</span>.</p>
+</blockquote>
+<p>Fill some info in:</p>
+<blockquote>
+<p><strong>Repository name</strong>: Whatever you wish. Approach this as you would a <em>variable name</em>: descriptive but brief, <ins>no spaces</ins>. Letters, digits, <code>-</code>, <code>.</code>, or <code>_</code> are allowed.<br> <strong>Description</strong>: Write this for humans. It’s nice to have something here, so you’ll see it appear in the <code>README</code>. e.g.&nbsp;<em>“Analysis of the stuff”</em>.<br> <strong>Visibility</strong>: Public or private (can always change it later)<br> <strong>Add README</strong>: generally a good idea, this is the landing page for your repo<br> <strong>Templates</strong>, <strong><code>.gitignore</code></strong> and <strong>licences</strong> we will talk about in a moment, ignore for now.</p>
+</blockquote>
+<p>Click on <span class="green-button">Create repository</span>.</p>
+</section>
+<section id="clone-your-repo-to-your-local-computer" class="slide level2">
+<h2>Clone your repo to your local computer</h2>
+<p>Now, on the repo page, click the big green button that says <span class="green-button">&lt;&gt; Code</span>.</p>
+<div class="column" style="width:55%;">
+<p><span class="l-space">Copy a <em>clone URL</em> to your clipboard.</span></p>
+<p><span class="m-space">Remember when we talked about HTTPS and SSH? Here they are again.</span></p>
+<p><span class="l-space">The type of URL you copy determines the <strong>protocol</strong> <code>GitHub</code> will use, so if you have PAT set up, copy the HTTPS URL, if you are using SSH keys, go for SSH.</span></p>
+<p>Now, you have a few ways to get this onto your computer.</p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:40%;">
+<p><img data-src="imgs/clone-repo-url.png"></p>
+</div></section>
+<section id="clone-your-repo-to-your-local-computer-1" class="slide level2">
+<h2>Clone your repo to your local computer</h2>
+<p>Let’s use the URL we just copied from <code>GitHub</code>.</p>
+<div class="panel-tabset">
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">In the shell</a></li><li><a href="#tabset-8-2">In <code>R</code></a></li><li><a href="#tabset-8-3">In <code>RStudio</code></a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1">
+<p><span class="m-space">If your shell cooperates, you should be able to paste the whole <code>https://...</code> bit, but some shells are not (immediately) clipboard aware. In that sad case, you must type it (<em>accurately</em>), best of luck sailor!</span></p>
+<p>This should look something like this:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/<span class="op">&lt;</span>YOUR-USERNAME<span class="op">&gt;</span>/<span class="op">&lt;</span>YOUR-REPOSITORY<span class="op">&gt;</span>.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<div title="Where am I?">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Where am I?</strong></p>
+</div>
+<div class="callout-content">
+<p>Take charge of – or at least notice! – what directory you’re in.<br> <code>pwd</code> displays the working directory. <code>cd</code> is the command to change it.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-8-2">
+<p>Remember <code>usethis</code>?</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_from_github</span>(</span>
+<span id="cb21-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://github.com/&lt;YOUR-USERNAME&gt;/&lt;YOUR-REPOSITORY&gt;.git"</span>,</span>
+<span id="cb21-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">destdir =</span> <span class="st">"~/path/to/where/you/want/the/local/repo/"</span></span>
+<span id="cb21-4"><a aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="m-space">The first argument (<code>repo_spec</code>) accepts various forms of GitHub repo specifications (see the <a href="https://usethis.r-lib.org/reference/create_from_github.html">docs</a>). We will use the URL we just copied from GitHub.</span></p>
+<p>The <code>destdir</code> argument specifies the parent directory where you want the new folder (and local <code>Git</code> repo) to live. If you don’t specify it, <code>usethis</code> defaults to some very conspicuous place, like your Desktop.</p>
+</div>
+<div id="tabset-8-3">
+<p>Start a new <strong>Project</strong>:</p>
+<blockquote>
+<p>File &gt; New Project… &gt; Version Control &gt; Git &gt; In “Repository URL”, paste the URL of your new <code>GitHub</code> repo &gt; Accept the default project directory name (i.e.&nbsp;the <code>GitHub</code> repo name) &gt; And pay attention to where the Project will be saved locally &gt; Check “Open in new session” (that’s what you usually want in real life) and click on <span class="grey-button">Create Project</span></p>
+</blockquote>
+<div title="Troubles in paradise?">
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Troubles in paradise?</strong></p>
+</div>
+<div class="callout-content">
+<p>Do you NOT see an option to get the Project from <em>Version Control</em>? Restart RStudio and try again.<br>Still no luck? Check out these <a href="https://happygitwithr.com/rstudio-see-git">troubleshooting tips</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="exercise-make-a-repo-and-clone-it" class="slide level2">
+<h2><span class="bg-highlight-text">Exercise</span>: make a repo and clone it</h2>
+<ol type="1">
+<li>Create a repository (get creative) and give it a README</li>
+<li>Clone it on your laptop</li>
+<li>Make this new repo your working directory, list its files, display the README</li>
+<li>Bonus: what does <code>git remote show origin</code> tell you?</li>
+</ol>
+</section>
+<section id="make-a-local-change-and-commit-to-it" class="slide level2">
+<h2>Make a local change and <code>commit</code> to it</h2>
+<p>Every time you finish a valuable chunk of work (probably a few times a day)</p>
+<div class="panel-tabset">
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">In the shell</a></li><li><a href="#tabset-9-2">In <code>RStudio</code></a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1">
+<p>Make the repo your working directory</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>YOUR-REPOSITORY<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="m-up-space">Let’s make a small change:</span></p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"A line I wrote on my local computer "</span> <span class="op">&gt;&gt;</span> README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="m-up-space">I am happy with this change, now let’s stage (“<code>add</code>”) and <code>commit</code> to it</span></p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
+<span id="cb24-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Look ma, a commit from my local computer"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-9-2">
+<p>Let’s make a small change: e.g., adding the line <em>“This is a line from RStudio”</em> to the <code>README</code>.</p>
+<p><span class="l-space">Save your changes.</span></p>
+<p><span class="m-space">Open the <span class="grey-button">Git</span> tab in upper right pane (or wherever you have put your “Environment” pane, you eretic).</span></p>
+<p><span class="m-space">Check the “Staged” box for the files you want to commit and click (surprise) <span class="grey-button">Commit</span></span></p>
+<p><span class="m-space">Type a message in “Commit message”, e.g.&nbsp;<em>“Commit from RStudio”</em>.</span></p>
+<p><span class="m-space">Click <span class="grey-button">Commit</span>.</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="shall-we-tell-github-about-this" class="slide level2">
+<h2>Shall we tell <code>GitHub</code> about this?</h2>
+<p>Time to share (<code>push</code>) your changes with the world (or with <code>GitHub</code> anyway)</p>
+<p>Now, this will seem counterintuitive, but first let’s stop and… <strong><code>pull</code> from <code>GitHub</code></strong>.</p>
+<p>I doubt anything will happen (i.e.&nbsp;you’ll get <em><code>"Already up-to-date."</code></em>) but this is a good habit to catch… can you guess <em>why?</em></p>
+<div class="panel-tabset">
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">In the shell</a></li><li><a href="#tabset-10-2">In <code>RStudio</code></a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1">
+<p>(optional) get most recent version from <code>GitHub</code>:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="l-up-space">Send your local changes to <code>GitHub</code></span></p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-10-2">
+<p><span class="l-space">In the <span class="grey-button">Git</span> tab in RStudio:</span></p>
+<p><span class="l-space">(optional) Click <span class="blue-button">Pull</span> to get most recent version from <code>GitHub</code></span></p>
+<p>Click <span class="green-button">Push</span> to send your local changes to <code>GitHub</code>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="exercise-make-a-change-commit-and-push-it" class="slide level2">
+<h2><span class="bg-highlight-text">Exercise</span>: make a change, commit and push it</h2>
+<ol type="1">
+<li>Add a line to your README and verify that <code>Git</code> noticed the change</li>
+<li>Stage and commit this change</li>
+<li>Push to your remote repo</li>
+<li>Did you get challenged for a password?
+<ol type="a">
+<li>yes. why?</li>
+<li>no. why not?</li>
+</ol></li>
+<li>Confirm that <code>GitHub</code> registered the change</li>
+<li>(optional) You think you could do this whole exercise directly on the <code>GitHub</code> webpage?</li>
+</ol>
+</section>
+<section id="exisiting-project-github-first" class="slide level2">
+<h2>2. Exisiting project, <code>GitHub</code> first</h2>
+<p>What if you already have an existing project, somewhere in a directory on your computer?</p>
+<p>If this is not (yet) a <code>Git</code>-tracked project, it should <em>easy-easy</em></p>
+<ul>
+<li>First create a new repository on <code>GitHub</code> (whithout a <code>README</code> if happen to already have one)</li>
+<li>Clone it on you local computer</li>
+<li><strong>Bring your existing project over</strong>, using your favorite method of moving or copying files.</li>
+<li>Check that your new files appear as <em>new untracked files</em>.</li>
+<li>Stage, commit and… wait</li>
+</ul>
+<div title=" Don't push any data, for the love of God">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong> Don’t push any data, for the love of God</strong></p>
+</div>
+<div class="callout-content">
+<p>Take a moment to stop and think: this is about to leave your local computer and go to <code>GitHub</code>. Make sure you did not commit any <strong>data</strong>, <strong>passwords</strong> or <strong>anything else you don’t want to share</strong> with the world.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="say-hi-to-.gitignore-everyone" class="slide level2">
+<h2>Say hi to <code>.gitignore</code>, everyone</h2>
+<p><span class="m-space">You can absolutely keep a file <em>locally</em> in a repository, without ever committing it to the <code>GitHub</code> repo. Just let it sit there in your <code>Git</code> pane, without staging it. No harm done.</span></p>
+<p><span class="m-space">If this is a long-term situation, however, you may find it tidyer to list the file in <code>.gitignore</code>. This is a special file that tells <code>Git</code> to just <strong><em>ignore</em></strong> things inside a local folder.</span></p>
+<p>My <code>.gitignore</code> usuallly looks something like this:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">.DS_Store</span> <span class="co"># macOS</span></span>
+<span id="cb27-2"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">.Rhistory</span> <span class="co"># for R projects # or __pycache__/ # for Python projects</span></span>
+<span id="cb27-4"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">data/</span> <span class="co"># All things data</span></span>
+<span id="cb27-6"><a aria-hidden="true" tabindex="-1"></a><span class="ex">*.csv</span></span>
+<span id="cb27-7"><a aria-hidden="true" tabindex="-1"></a><span class="ex">*.rds</span></span>
+<span id="cb27-8"><a aria-hidden="true" tabindex="-1"></a><span class="ex">*.RData</span></span>
+<span id="cb27-9"><a aria-hidden="true" tabindex="-1"></a><span class="ex">*.sav</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercise-take-an-existing-project-and-make-into-a-github-repo" class="slide level2">
+<h2><span class="bg-highlight-text">Exercise</span>: take an existing project and make into a <code>GitHub</code> repo</h2>
+<ol type="1">
+<li>Choose an existing project on your local computer</li>
+<li>Create a new repository for it on <code>GitHub</code> (you can use a Private one if you are feeling paranoid)</li>
+<li>Clone it and bring your existing project over</li>
+<li>Check that your new files appear as <em>new untracked files</em>.</li>
+<li>Add a <code>.gitignore</code> to make sure your sensitive files are protected</li>
+<li>Stage and commit</li>
+<li>Push to your remote repo</li>
+<li>Confirm that you project is now on <code>GitHub</code>, and rejoice!</li>
+</ol>
+</section>
+<section id="why-github-first" class="slide level2">
+<h2>Why <code>GitHub</code> first?</h2>
+<p><span class="l-space">This is a somewhat technical but important point about <code>Git</code>.</span></p>
+<p>There is a big advantage of the <em>GitHub first, then RStudio/R</em> workflow:</p>
+<ul>
+<li>the remote <code>GitHub</code> repo is already configured as the <code>origin remote</code> for your local repo</li>
+<li>your local <code>main</code> branch is now tracking the <code>main</code> on <code>GitHub</code>.</li>
+</ul>
+<p><span class="l-space">The practical implication is that you are now set up to <code>push</code> and <code>pull</code>. Just like that. No need to fanny around setting up <code>Git</code> remotes and tracking branches on the command line.</span></p>
+<p><em>Wait, what are you talking about?</em> Take a look at:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote show origin</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="existing-project-github-last" class="slide level2">
+<h2>Existing project, <code>GitHub</code> last</h2>
+<p>What if you have an existing project, that is <strong>already a <code>Git</code> repo</strong> (with a history you care about), but it does not have a remote <code>GitHub</code> repo to it?</p>
+<p>This may be less desirable for a novice because there are more opportunities to get confused and make a mistake. But it is not the end of the world.</p>
+<p>Check out this <a href="https://happygitwithr.com/existing-github-last">tutorial</a> to sort out this kind of situations.</p>
 </section></section>
 <section>
 <section id="part-5-more-things" class="title-slide slide level1 center">
 <h1>[Part 5] more things</h1>
 
 </section>
+<section id="cleaning-up" class="slide level2">
+<h2>Cleaning up</h2>
+<p>You can delete the “local” repo (It’s just a regular directory on your computer).</p>
+<p>Note, if you are doing it in the shell, use:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> <span class="op">&lt;</span>YOUR-REPOSITORY<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-rf</code> will save you some time saying “yes” delete this hidden git file a gazillion times</p>
+<p>Then, in the browser, go to your repo’s landing page on <code>GitHub</code> &gt; Click on <em>Settings</em> &gt; Scroll down, click on <em>delete repository</em> and do as it asks.</p>
+</section>
+<section id="comparing-versions" class="slide level2">
+<h2>Comparing versions</h2>
+<p>git diff</p>
+</section>
 <section id="conclusions-and-goodbyes" class="slide level2">
 <h2>Conclusions and goodbyes</h2>
 <p>The workflows described here are widely regarded as current best practice, yet we generally neither practice nor preach it in academic settings.</p>
+<p>Now just “lather, rinse, repeat”. Do work somewhere: locally or on GitHub. Commit it. Push it or pull it, depending on where you did the work, get local and remote “synced up”. Repeat.</p>
 </section>
 <section id="resources" class="slide level2">
 <h2>Resources</h2>
