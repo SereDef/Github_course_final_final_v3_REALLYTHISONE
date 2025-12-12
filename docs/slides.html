@@ -6,7 +6,9 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.29">
 
   <meta name="author" content="Serena Defina">
@@ -211,169 +213,156 @@ Serena Defina
 </section>
 <section id="welcome" class="slide level2">
 <h2>Welcome</h2>
-<p>Welcome to our first <strong><code>Git</code> &amp; <code>Github</code></strong> course!<br><br></p>
+<p><span class="l-space">Welcome to our first <strong><code>Git</code> &amp; <code>Github</code></strong> course!</span></p>
 <div class="fragment">
-<h4 id="hi"><span class="darkblue-bold">Hi</span></h4>
-<p>My name is Serena, I work at Erasmus MC now for a few years mostly on epidemiology / molcular biology / neuroscience things.</p>
-<p><strong>Disaclaimer time</strong>: I am <ins>not an expert</ins>, I just use these tools somewhat often and find them, honestly, very cool<br><br></p>
+<p>Hi :wave:  My name is Serena — Data Scientist <span class="grey">Epidemiology / Neuroscience / Psychology</span></p>
+<p><span class="m-up-space l-space"><strong><em>Disaclaimer time</em></strong>: I am <ins>not an expert</ins><br>I use these tools daily and find them, honestly, really useful</span></p>
 </div>
 <div class="fragment">
 <p>Today, I’ll walk with you as you:</p>
 <ul>
-<li>Find out some (very cool) ways to integrate <code>Git</code> and <code>GitHub</code> into your daily work</li>
-<li>Install and congifure <code>Git</code> and get it working smoothly with <code>GitHub</code> <br><span style="color:grey">—&gt; in the <strong><em>shell</em></strong> &amp; in <strong><em>RStudio</em></strong></span></li>
-<li>Learn about a few key <strong>workflows</strong> for your most common tasks</li>
+<li>Find out some (<em>very cool</em>) ways to integrate <code>Git</code> and <code>GitHub</code> into your daily work</li>
+<li>Install and congifure <code>Git</code> and get it working smoothly with <code>GitHub</code> <br><span class="grey"><i class="fa-solid fa-arrow-right-long" aria-label="arrow-right-long"></i> in the <strong><em>shell</em></strong> &amp; in <strong><em>R</em></strong>/<strong><em>RStudio</em></strong></span></li>
+<li>Practice a few key <strong>workflows</strong> to solve common problems</li>
 </ul>
 </div>
 </section>
 <section id="some-more-disclaimers" class="slide level2">
 <h2>Some (more) disclaimers</h2>
+<p><br></p>
 <div class="fragment">
-<h3 id="about-you"><span class="darkblue-bold">About you</span></h3>
-<ins>
-No previous experience
-</ins>
-<p>is required, beside a general familiarity with <em>data analysis</em>.</p>
-<p>You will get the <em>most</em> out of this workshop if you are an <strong><code>R</code></strong> user. <br><br></p>
+<h3 id="about-you"><span class="darkblue">About you</span></h3>
+<p><span class="s-space"><ins>No previous experience</ins> required, beside a general familiarity with <em>data analysis</em>.</span></p>
+<p><span class="l-space">You will get the <em>most</em> out of this workshop if you are an <strong><code>R</code> user</strong>.</span></p>
 </div>
 <div class="fragment">
-<h3 id="about-this-worshop"><span class="darkblue-bold">About this worshop</span></h3>
-<p>It is <ins>not a complete guide</ins>. It is more of a <em>Git-starter pack</em> for <strong>research / teaching</strong> activities. <br><br></p>
+<h3 id="about-this-worshop"><span class="darkblue">About this worshop</span></h3>
+<p><span class="m-space">It is <ins>not a complete guide</ins>. It is more of a <span class="orange"><em>Git-starter pack</em></span> for <span class="orange"><strong>research</strong> / <strong>teaching</strong></span> activities.</span></p>
+<div title="Hungry for more?">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Tip</strong></p>
+<p><strong>Hungry for more?</strong></p>
 </div>
 <div class="callout-content">
-<p>There are a lot of excellent Git/Github tutorial materials online (see <a href="">Resources</a> for some suggestions).</p>
+<p>There are a lot of excellent Git/Github tutorial materials online.<br>Check out the <a href="">Resources</a> at the end of this presentation for some suggestions.</p>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="roadtrip-checklist" class="slide level2">
-<h2>Roadtrip checklist</h2>
+<section id="pre-trip-checklist" class="slide level2">
+<h2>Pre-trip checklist</h2>
 <p>You already have:</p>
-<ul>
-<li>A (free) <code>GitHub</code> account
+<ul class="task-list">
+<li><label><input type="checkbox" checked="">A (free) <code>GitHub</code> <strong>account</strong></label>
 <ul>
 <li>Students and educational/research staff: <a href="https://github.com/education">GitHub Education</a></li>
-<li>Courses or research/lab groups: <a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">GitHub Organizations</a></li>
+<li>Research/lab groups or courses: <a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">GitHub Organizations</a></li>
 </ul></li>
-<li>A laptop with:
+<li><label><input type="checkbox" checked="">A laptop with:</label>
 <ul>
 <li><code>Git</code> installed</li>
 <li><code>R</code> and <code>RStudio</code> (or <code>Positron</code>) up-to-date</li>
 </ul></li>
-<li>Stickers (help, done, question)</li>
+<li><label><input type="checkbox" checked="">Stickers</label></li>
 </ul>
+<p>  <span style="color:pink"><i class="fa-solid fa-square-full" aria-label="square-full"></i></span> help   <span style="color:yellow"><i class="fa-solid fa-square-full" aria-label="square-full"></i></span> question   <span style="color:lightblue"><i class="fa-solid fa-square-full" aria-label="square-full"></i></span> done</p>
+<p><img data-src="imgs/trip-checklist.png" class="absolute" style="bottom: 20px; right: 10px; width: 40%; "></p>
 </section>
 <section id="roadtrip-agenda" class="slide level2">
 <h2>Roadtrip agenda</h2>
-<div class="fragment">
 <ol type="1">
-<li>Big-picture motivation, people
+<li>Big-picture motivation (<em>and a pinch of ranting</em>)
 <ul>
 <li>Why would a researcher use a <em>version control system</em> (e.g., <code>Git</code>)?</li>
 <li>What’s the point of hosting your work online (e.g., on <code>GitHub</code>)?</li>
 </ul></li>
 </ol>
-</div>
 <ol start="2" type="1">
-<li class="fragment">Useful <code>Git</code>/<code>GitHub</code> <strong>concepts</strong> I keep in my purse</li>
-<li class="fragment">Getting started (the right way): <strong>configuration</strong> climbing</li>
+<li class="fragment"><span class="m-space">Useful <code>Git</code>/<code>GitHub</code> <strong>concepts</strong> I keep in my purse</span></li>
+<li class="fragment"><span class="m-space">Getting started (the right way): <strong>configuration</strong> climbing</span></li>
 <li class="fragment">Early <code>Git</code> wins: some basic <strong>workflows</strong> for everyday life</li>
 </ol>
-<div class="fragment">
+<div class="fragment column" style="width:60%;">
 <ol start="5" type="1">
 <li>The rest of the game: some lesser-known fun things you can do with <code>Github</code>
 <ul>
 <li>e.g.&nbsp;<code>Github Pages</code>, <code>Search</code>, and <code>Actions</code></li>
 </ul></li>
 </ol>
-</div>
+</div><p><img data-src="imgs/trip-map.png" class="absolute" style="bottom: 0px; right: 0px; width: 40%; "></p>
 </section>
 <section id="is-it-going-to-hurt" class="slide level2">
 <h2>Is it going to hurt?</h2>
-<p>Yes. <br><br></p>
+<p><span class="m-space">Yes.</span></p>
 <div class="fragment">
-<p><ins>Before you can get started</ins>, you have to: install <code>Git</code>, get local <code>Git</code> talking to <code>GitHub</code>, and make sure <code>RStudio</code> can talk to local <code>Git</code> (and, therefore, <code>GitHub</code>).</p>
-<p><span class="bg-highlight">This is <strong>one-time</strong> or <em>“once-per-computer”</em> pain</span> &amp; <span class="bg-highlight">we will do it <strong>together</strong>.</span> <br><br></p>
-</div>
-<div class="fragment">
-<p><ins>Beginner-intermediate use</ins> require (small) <strong>changes to your normal, daily workflow</strong>: dedicate a directory to each project, make it a <code>git</code> repository, (optionally) make it a RStudio project, periodically make <code>commit</code>s and push them to <code>Github</code>.</p>
-<p><span class="bg-highlight">It feels weird at first but quickly becomes second nature</span> &amp; <span class="bg-highlight">we will do it <strong>together</strong>.</span>. <br><br></p>
+<p><span class="s-space"><ins>Before you can get started</ins>, <span class="grey">you have to: install <code>Git</code>, get local <code>Git</code> talking to <code>GitHub</code>, and make sure <code>RStudio</code> can talk to local <code>Git</code> (and, therefore, <code>GitHub</code>).</span></span> <span class="m-space"><span class="bg-highlight">This is <strong>one-time</strong> or <em>“once-per-computer”</em> pain</span> &amp; <span class="bg-highlight">we will do it <strong>together</strong></span></span></p>
 </div>
 <div class="fragment">
-<ins>
-Advanced use
-</ins>
-<p>Do you use GitHub to <strong>work with other people</strong> or to <strong>coordinate your own work from multiple computers</strong>? <em>Knock-knock</em> - Who’s there? <strong><code>merge conflicts</code></strong>.</p>
-<div title="Handling **`merge conflicts`**">
-<div class="callout callout-caution callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p><span class="s-space"><ins>Beginner–intermediate use</ins> requires <span class="orange">(<em>small</em>) changes</span> to your normal, daily workflow: <span class="grey">e.g.&nbsp;dedicate a directory to each project, make it a <code>git</code> repository, periodically make commits and push them to <code>Github</code>.</span></span> <span class="m-space"><span class="bg-yellow"><em>It feels weird at first</em> but quickly becomes second nature</span> &amp; <span class="bg-highlight">we will do it <strong>together</strong></span></span></p>
 </div>
-<p><strong>Handling <strong><code>merge conflicts</code></strong></strong></p>
-</div>
-<div class="callout-content">
-<p>This is not one-time pain. The best remedy is <strong>prevention</strong>, which we will talk about today. <br> See <a href="">Resources</a> for more advanced tips on how to back out of tricky situations and tackle them on your own terms.</p>
-</div>
-</div>
-</div>
-</div>
+<div class="fragment">
+<p><span class="s-space"><ins>Advanced <code>GitHub</code> use</ins>, e.g.&nbsp;to <strong>work with other people</strong> or <strong>coordinate your own work from multiple computers</strong>? <span class="grey"><em>Knock-knock</em> — Who’s there? —</span> <span class="orange"><em>merge conflicts</em>.</span></span> <span class="m-space"><span class="bg-orange">This is not one-time pain</span> but <span class="bg-highlight">the best remedy is <strong>prevention</strong>, which we do today</span></span></p>
 </div>
 </section>
 <section>
 <section id="part-1" class="title-slide slide level1 center">
 <h1><span style="color: lightblue">Part 1</span></h1>
-<div class="r-fit-text">
-<p><strong><em>Excuse me,</em></strong><br> do you have a moment to <br> talk about <span class="darkblue">version control</span>?</p>
-</div>
+<div class="column" style="font-size: 100px">
+<p><strong><em>Excuse me,</em> do you have a moment to talk about <span class="darkblue"><em>version control</em></span> ?</strong></p>
+</div><p><img data-src="imgs/git-witness.png" class="absolute" style="top: 150px; right: 50px; "></p>
 </section>
-<section id="the-problem" class="slide level2">
-<h2>The problem</h2>
-<p>Scientific research and teaching produce <span class="orange-bold"><em>many</em> files</span>!</p>
-<p>There are data files, figures, tables, reports, slides, and (yes) source code…</p>
-<p><br></p>
-<p>Most of these files <span class="bg-highlight-text"><strong>evolve</strong> over the course of a project</span> and often <span class="bg-highlight-text">need to be <strong>shared</strong> with others</span>.</p>
-<p><br></p>
-<p>Without explicit and structured management, project organization can easily descend into <span class="orange">chaos</span>, taking time away from the primary work and reducing the quality of the final product (and of your life).</p>
-</section>
+<section id="why-bother-with-all-this" class="slide level2">
+<h2>Why bother with all this?</h2>
+<p><span class="m-space">I can think of two main reasons:</span></p>
+<div class="fragment column bg-highlight" style="width:46%;">
+<p><span class="darkblue center"><em>The noble reasons</em></span></p>
+<p><strong>Science is in <em>bad shape</em> people.</strong></p>
+<p><span class="orange">Replicability</span> and <span class="orange">traceability</span> of scientific claims is horrifyingly insufficient, across fields.</p>
+<p><span class="m-up-space"><em>You analysis is the scientific product, the paper is just advertisement.</em></span></p>
+<p>And analyses <em>should</em> (in principle)<br>be <strong>directly accessible</strong> to others,<br>or at least carefully<br>documented…</p>
+<p><img data-src="imgs/j-irreprod-results.jpg" class="absolute" style="transform: rotate(12deg); z-index: 10;left: 600px; bottom: 0px; width: 13%; "></p>
+</div><div class="column" style="width:3%;">
+
+</div><div class="fragment column bg-yellow" style="width:46%;">
+<p><span class="orange center"><em>The selfish reasons</em></span></p>
+<p>Research produces <strong><em>many</em> files</strong>: data files, figures, tables, docs, slides, and (yes) code…</p>
+<p>Most of these files <span class="orange"><strong>evolve</strong> over the course of a project</span> and often <span class="orange">need to be <strong>shared</strong></span> with others.</p>
+<p>Without explicit and structured management, project organization can easily descend into <span class="orange"><em>chaos</em></span>, and taking your mental wellbeing with it (ask me how I know…)</p>
+</div></section>
 <section id="the-poor-mans-version-of-version-control" class="slide level2">
 <h2>The <span class="darkblue"><em>“poor man’s version”</em></span> of version control</h2>
-<p><img data-src="imgs/poor-man-git-1.png" class="absolute" style="top: 150px; left: 20px; "></p>
+<p><img data-src="imgs/poor-man-git-1.png" class="absolute" style="top: 150px; left: 150px; height: 700px; "></p>
 </section>
 <section class="slide level2">
 
-<p>This <em>unhappy</em> result can be avoided by repurposing tools and workflows from the software development world.</p>
-<p><img data-src="imgs/poor-man-git-2.png" class="absolute" style="top: 150px; left: 20px; "></p>
+<p>This <em>unhappy</em> result can be avoided by <span class="darkblue">repurposing</span> tools and workflows from the software development world.</p>
+<p><img data-src="imgs/poor-man-git-2.png" class="absolute" style="top: 150px; left: 150px; height: 700px; "></p>
 </section>
 <section id="what-is-git" class="slide level2">
 <h2>What is <code>Git</code>?</h2>
 
-<img data-src="imgs/linus-torvalds-1.png" class="fixed-bottom-right r-stretch" style="--w: 35%;"><p><code>Git</code> is a <strong>version control system</strong>.</p>
-<p>It manages the evolution of a <em>set of files</em> (a <strong>repository</strong> or <strong>repo</strong>) in a sane, highly structured way.</p>
+<img data-src="imgs/linus-torvalds-1.png" class="fixed-bottom-right r-stretch" style="--w: 35%;"><p><code>Git</code> is a <span class="orange"><strong>version control system</strong></span>.</p>
+<p>It manages the evolution of a <em>set of files</em> (a <span class="darkblue"><strong>repository</strong></span> or <span class="darkblue"><strong>repo</strong></span>) in a sane, highly structured way.</p>
 <div class="text-wrap" style="--w: 70%;">
-<p><br><br> <span class="fragment"><code>Git</code>’s original purpose was to help groups of developers work collaboratively on big software projects.</span> <br><br> <span class="fragment">It is like a <em>“TrackChanges”</em> feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files.</span> <br><br></p>
+<p><br><br> <span class="fragment"><code>Git</code>’s original purpose was to help groups of developers work collaboratively on big software projects.</span> <br><br> <span class="fragment">It is like a <span class="darkblue"><em>“TrackChanges”</em></span> feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files.</span> <br><br></p>
 </div>
 <div class="text-wrap" style="--w: 65%;">
-<p><span class="fragment">It enables the distribution of files across different <strong>people</strong>, <strong>computers</strong>, and <strong>time</strong>.</span></p>
+<p><span class="fragment">It enables the distribution of <em>any file</em> across different <strong>people</strong>, <strong>computers</strong>, and across <strong>time</strong>.</span></p>
 </div>
 </section>
 <section id="now-the-bad-news" class="slide level2">
 <h2><em>Now the bad news</em></h2>
+<p><span class="m-up-space"><code>Git</code> was <ins>not built for you</ins>.</span></p>
+<p><span class="grey">You will undoubtedly notice this, so it’s best to know in advance.</span></p>
 <p><img data-src="imgs/linus-torvalds-2.png" class="fixed-bottom-right" style="--w: 35%;"></p>
 <div class="fragment">
-<p><br></p>
-<p>Git was <ins>not built for you</ins>.</p>
-<p>You will undoubtedly notice this, so it’s best to know in advance.</p>
-<p>Git’s model of file management can feel uncomfortably <em>rigid</em>, especially for beginners.</p>
+<p><code>Git</code>’s model of file management can feel uncomfortably <em>rigid</em>, especially for beginners.</p>
 </div>
 <div class="fragment text-wrap" style="--w: 60%;">
 <p><br></p>
@@ -383,26 +372,36 @@ Advanced use
 
 <aside><div>
 <p><em>“I like offending people because I think people who get offended, should be offended.”</em> <br></p>
-<p><span class="absolute" style="top: 40px; right: 0px; ">Linus Torvalds</span></p>
+<p><span class="absolute" style="top: 47px; right: 0px; ">Linus Torvalds</span></p>
 </div></aside></section>
 <section id="what-is-github" class="slide level2">
 <h2>What is <code>GitHub</code>?</h2>
-<p><code>GitHub</code> complements <code>Git</code> by providing a polished <span class="orange-bold">user interface</span> and <span class="orange-bold">distribution</span> mechanism for <code>Git</code> repositories. ::: {.fragment} * <code>Git</code> = software you use locally to record changes to a set of files. * <code>GitHub</code> = hosting service that provides a <code>Git</code>-aware home for such projects on the internet. :::</p>
-<p><br></p>
+<p><code>GitHub</code> complements <code>Git</code> by providing a polished <span class="orange"><strong>user interface</strong></span> and <span class="orange"><strong>distribution</strong></span> mechanism for <code>Git</code> <span class="darkblue">repositories</span>.</p>
+<div class="fragment">
+<ul>
+<li><code>Git</code> = software you use locally to record changes to a set of files.</li>
+<li><code>GitHub</code> = hosting service that provides a <code>Git</code>-aware home for such projects on the internet.</li>
+</ul>
+</div>
 <div class="fragment column bg-highlight" style="width:50%;">
-<p><code>GitHub</code> is like DropBox or Google Drive, but much, <em>much</em> better.<br><br></p>
+<p><span class="l-space"><code>GitHub</code> is like <span class="darkblue">DropBox</span> or <span class="darkblue">Google Drive</span>, but much, <em>much</em> better.</span></p>
 <p>It allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.</p>
 </div><div class="column" style="width:2%;">
 
 </div><div class="fragment column bg-highlight" style="width:40%;">
 <p>Many operations can be done entirely in the browser, including editing or adding files.</p>
-</div><p><span class="fragment">Let’s take a look!</span></p>
+</div><p><span class="fragment center">Let’s take a look!</span></p>
+</section>
+<section id="good-examples-in-bio-research" class="slide level2">
+<h2>Good examples in bio-research</h2>
+<p>A diverse range of efforts (from individual, to labs, to global collaborations) have chosen <code>GitHub</code> as productive place to share code and ideas</p>
+<p><img data-src="imgs/github-research-examples.png" class="absolute" style="top: 250px; left: 50px; height: 600px; "></p>
 </section></section>
 <section>
 <section id="part-2" class="title-slide slide level1 center">
 <h1><span style="color: lightblue">Part 2</span></h1>
 <div class="r-fit-text">
-<p><span class="darkblue-bold"><em>Fundamental <code>Git</code> / <code>GitHub</code> concepts I keep in my purse</em></span></p>
+<p><span class="darkblue"><strong><em>Fundamental <code>Git</code> / <code>GitHub</code> concepts I keep in my purse</em></strong></span></p>
 </div>
 </section>
 <section id="git-basics" class="slide level2">
@@ -415,23 +414,47 @@ Advanced use
 <h2>Repositories (repos) and roles</h2>
 <p>Recall: <code>Git</code> manages the evolution of a set of files – called a <strong>repository</strong> or <strong>repo</strong>.</p>
 <p>A <code>repository</code> can be <strong>public</strong> or <strong>private</strong>.<br><br></p>
-<p>The <span class="orange-bold">owner</span> of a repository can grant permission to others: e.g.&nbsp;read (only relevant for private), write (or <code>push</code>) or admin access to others.</p>
+<p>The <span class="orange"><strong>owner</strong></span> of a repository can grant permission to others: e.g.&nbsp;read (only relevant for private), write (or <code>push</code>) or admin access to others.</p>
 </section>
-<section id="staging-commits-and-tags" class="slide level2">
-<h2>Staging, commits and tags</h2>
-<p>Commmits</p>
+<section id="staging-and-commits" class="slide level2">
+<h2>Staging and commits</h2>
+<p>A <code>commit</code> is a <strong>snapshot</strong> of one or more files inside a folder.</p>
+<p>instead of saving a copy of a file, versioning it like _v2 or _SD, you create a commit. on the surface nothing changes but the history of that file is secretly saved</p>
+<p>When you commit a file or files, some information is saved along with the changes to the file</p>
+<p>You can add more information about the changes you’ve made in a commit <strong>message</strong></p>
 </section>
-<section id="remotes-cloning-and-forking" class="slide level2">
-<h2>Remotes, cloning and forking</h2>
+<section id="time-travel-hashs-and-tags" class="slide level2">
+<h2>Time travel, hashs and tags</h2>
+<p>Git stores the whole history of your project and makes it available to you</p>
+<p>Each of these commits has an id called a hash, wich makes it identifiable</p>
+<p>Getting the files from a commit in the past is known as doing a check out</p>
+<p>I can tell Git what commit I want to check out using the commit hash</p>
+<p>hash - a computer generated id checkout - time travel to a specific commit</p>
 </section>
-<section id="branches" class="slide level2">
-<h2>Branches</h2>
-<p>Branches</p>
+<section id="parallel-universes-branches" class="slide level2">
+<h2>Parallel universes: branches</h2>
+<p>So far, everything has been very linear and ordered</p>
+<p>This isn’t really how projects work, sometimes you want to make easily discardable experiments</p>
+<p>The way you do this in Git is with branches</p>
+<p>A branch is a moveable label attached to a commit</p>
+<p>The default branch name in Git is main (used to be master)</p>
+</section>
+<section id="parallel-universes-merging" class="slide level2">
+<h2>Parallel universes: merging</h2>
+<p>Branches are useful for trying out stuff, as they’re really easy to throw away if you decide you don’t like your changes</p>
 <p>Switch to a branch</p>
 <p>git checkout [branch-name]</p>
+<p>Once you’re happy with some work, you need a way to get it back into</p>
+<p>To get changes from one branch into another, you merge them</p>
+<p>branch - a moveable label that points to a commit merge - the combination of two or more branches</p>
 </section>
-<section id="merging-and-conflicts" class="slide level2">
-<h2>Merging and conflicts</h2>
+<section id="remotes-cloning-pulling-pushing-and-forking" class="slide level2">
+<h2>Remotes, cloning, pulling, pushing and forking</h2>
+<p>Everyone knows that you should back up your work regularly</p>
+<p>Ideally to somewhere that is geographically distinct from your computer</p>
+<p>n Git this place is called a remote. A very popular remote is Github</p>
+<p>To get some work from a remote for the first time you clone it</p>
+<p>remote - a computer with a repo on it clone - get the repo from the remote for the first time pull - get new commits to the repo from the remote push - send your new commits to the remote</p>
 </section>
 <section id="issues" class="slide level2">
 <h2>Issues</h2>
@@ -466,6 +489,7 @@ Advanced use
 </section>
 <section id="benefits-of-using-hosted-version-control-1" class="slide level2">
 <h2>Benefits of using hosted version control</h2>
+<p>enable collaboration and knowledge sharing between different remote contributors.</p>
 <ul>
 <li><p>Doing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect</p></li>
 <li><p>Collaboration is much more structured, with powerful tools for asynchronous workand managing versions</p></li>

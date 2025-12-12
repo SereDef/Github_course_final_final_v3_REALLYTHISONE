@@ -2,6 +2,7 @@
     /* Quarto Default Colors */
   --darkblue: #00008B;    /* Dark blue (footer/links) */
   --purple: #4859ab;   /* Light blue (code) */
+  --grey: #959597ff;
   
   /* Extended Color Palette */
   --lightpurple: #ecefffff;
@@ -9,7 +10,7 @@
   --jasmine: #e9c46a;
   --sandybrown: #f4a261;
   --burntpeach: #ff8533ff;
-  --orange: #e66400ff;
+  --orange: #de6519ff;
   --github-green: #17a90cff;
   --github-blue: #1b8bedff; 
 
@@ -60,32 +61,38 @@
   margin-top: 0.6em !important; 
 }
 
-.orange {
-  color: var(--orange);
+.center {
+  display: block;
+  text-align: center;
 }
 
-.orange-bold {
-  color: var(--orange);
-  font-weight: 700;
-}
+/* Color and highlighting  */
+.orange { color: var(--orange); }
 
-.darkblue {
-  color: var(--darkblue);
-}
+.darkblue { color: var(--darkblue); }
 
-.darkblue-bold {
-  color: var(--darkblue);
-  font-weight: 700;
-}
+.grey { color: var(--grey); }
 
 .bg-highlight {
   background-color: var(--lightpurple);
-  padding: 0.25em 0.5em;
-  border-radius: 10px;
+  padding: 0.2em 0.5em;
+  border-radius: 15px;
   /* color: var(--darkblue); */
 }
 
-.bg-highlight-text {
+.bg-yellow {
+  background-color: #fef3c6d1;
+  padding: 0.2em 0.5em;
+  border-radius: 15px;
+}
+
+.bg-orange {
+  background-color: #fedac6d0;
+  padding: 0.2em 0.5em;
+  border-radius: 15px;
+}
+
+.bg-jasmine {
   background-color: var(--jasmine);
   padding: 0.1em 0.4em;
   border-radius: 20px;
@@ -110,6 +117,11 @@
   color: rgba(57, 57, 57, 1);
   padding: 0.2em 0.4em;
   border-radius: 18px;
+}
+
+/* All bullets, all lists */
+li::marker {
+  color: #6d7cc6f6;
 }
 
 /* --- IMAGES -------------------------------------------------------------- */

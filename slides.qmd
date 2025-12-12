@@ -13,6 +13,7 @@ format:
     chalkboard: true
     code-line-numbers: false
     code-copy: hover
+    from: markdown+emoji
     # incremental: true
     # transition: fade
     # transition-speed: fast
