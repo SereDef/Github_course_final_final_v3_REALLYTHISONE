@@ -65,6 +65,8 @@ hosting services like GitHub, Bitbucket, and GitLab We have introduced Git’s p
 
 We target GitHub – not Bitbucket or GitLab – for the sake of specificity. However, all the big-picture principles and even some mechanics will carry over to these alternative hosting platforms.
 
+One reason for GitHub’s success is that it offers more than a simple source code hosting service [5,6]. It provides developers and researchers with a dynamic and collaborative environment, often referred to as a social coding platform, that supports peer review, commenting, and discussion [7]. A diverse range of efforts, ranging from individual to large bioinformatics projects, laboratory repositories, as well as global collaborations, have found GitHub to be a productive place to share code and ideas and to collaborate
+
 # Part 2: git fundamentals
 
 ## basics

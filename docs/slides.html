@@ -13,7 +13,7 @@
 
   <meta name="author" content="Serena Defina">
   <meta name="dcterms.date" content="2025-12-17">
-  <title>Git &amp; Github course - 17th Dec 2025 – Git &amp; Github   for researchers </title>
+  <title>Git &amp; Github course - 17th Dec 2025 –  Git &amp; Github   for researchers </title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -199,7 +199,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title"><strong><code>Git</code> &amp; <code>Github</code> <br> for researchers</strong><br><br></h1>
+  <h1 class="title"><br><strong><code>Git</code> &amp; <code>Github</code> <br> for researchers</strong><br><br></h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -215,7 +215,7 @@ Serena Defina
 <h2>Welcome</h2>
 <p><span class="l-space">Welcome to our first <strong><code>Git</code> &amp; <code>Github</code></strong> course!</span></p>
 <div class="fragment">
-<p>Hi :wave:  My name is Serena — Data Scientist <span class="grey">Epidemiology / Neuroscience / Psychology</span></p>
+<p>Hi 👋  My name is Serena — Data Scientist <span class="grey">Epidemiology / Neuroscience / Psychology</span></p>
 <p><span class="m-up-space l-space"><strong><em>Disaclaimer time</em></strong>: I am <ins>not an expert</ins><br>I use these tools daily and find them, honestly, really useful</span></p>
 </div>
 <div class="fragment">
@@ -237,7 +237,7 @@ Serena Defina
 </div>
 <div class="fragment">
 <h3 id="about-this-worshop"><span class="darkblue">About this worshop</span></h3>
-<p><span class="m-space">It is <ins>not a complete guide</ins>. It is more of a <span class="orange"><em>Git-starter pack</em></span> for <span class="orange"><strong>research</strong> / <strong>teaching</strong></span> activities.</span></p>
+<p><span class="m-space">It is <ins>not a complete guide</ins>. It is more of a</span><span class="orange"><em>Git-starter pack</em></span> for <span class="orange"><strong>research</strong> / <strong>teaching</strong></span> activities.</p>
 <div title="Hungry for more?">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -301,21 +301,21 @@ Serena Defina
 <h2>Is it going to hurt?</h2>
 <p><span class="m-space">Yes.</span></p>
 <div class="fragment">
-<p><span class="s-space"><ins>Before you can get started</ins>, <span class="grey">you have to: install <code>Git</code>, get local <code>Git</code> talking to <code>GitHub</code>, and make sure <code>RStudio</code> can talk to local <code>Git</code> (and, therefore, <code>GitHub</code>).</span></span> <span class="m-space"><span class="bg-highlight">This is <strong>one-time</strong> or <em>“once-per-computer”</em> pain</span> &amp; <span class="bg-highlight">we will do it <strong>together</strong></span></span></p>
+<p><span class="s-space"><ins>Before you can get started</ins>,</span><span class="grey">you have to: install <code>Git</code>, get local <code>Git</code> talking to <code>GitHub</code>, and make sure <code>RStudio</code> can talk to local <code>Git</code> (and, therefore, <code>GitHub</code>).</span> <span class="bg-highlight">This is <strong>one-time</strong> or <em>“once-per-computer”</em> pain</span> &amp; <span class="bg-highlight">we will do it <strong>together</strong></span></p>
 </div>
 <div class="fragment">
-<p><span class="s-space"><ins>Beginner–intermediate use</ins> requires <span class="orange">(<em>small</em>) changes</span> to your normal, daily workflow: <span class="grey">e.g.&nbsp;dedicate a directory to each project, make it a <code>git</code> repository, periodically make commits and push them to <code>Github</code>.</span></span> <span class="m-space"><span class="bg-yellow"><em>It feels weird at first</em> but quickly becomes second nature</span> &amp; <span class="bg-highlight">we will do it <strong>together</strong></span></span></p>
+<p><span class="s-space"><ins>Beginner–intermediate use</ins> requires</span><span class="orange">(<em>small</em>) changes</span> to your normal, daily workflow: <span class="grey">e.g.&nbsp;dedicate a directory to each project, make it a <code>git</code> repository, periodically make commits and push them to <code>Github</code>.</span> <span class="bg-yellow"><em>It feels weird at first</em> but quickly becomes second nature</span> &amp; <span class="bg-highlight">we will do it <strong>together</strong></span></p>
 </div>
 <div class="fragment">
-<p><span class="s-space"><ins>Advanced <code>GitHub</code> use</ins>, e.g.&nbsp;to <strong>work with other people</strong> or <strong>coordinate your own work from multiple computers</strong>? <span class="grey"><em>Knock-knock</em> — Who’s there? —</span> <span class="orange"><em>merge conflicts</em>.</span></span> <span class="m-space"><span class="bg-orange">This is not one-time pain</span> but <span class="bg-highlight">the best remedy is <strong>prevention</strong>, which we do today</span></span></p>
+<p><span class="s-space"><ins>Advanced <code>GitHub</code> use</ins>, e.g.&nbsp;to <strong>work with other people</strong> or <strong>coordinate your own work from multiple computers</strong>?</span><span class="grey"><em>Knock-knock</em> — Who’s there? —</span> <span class="orange"><em>merge conflicts</em>.</span> <span class="bg-orange">This is not one-time pain</span> but <span class="bg-highlight">the best remedy is <strong>prevention</strong>, which we do today</span></p>
 </div>
 </section>
 <section>
 <section id="part-1" class="title-slide slide level1 center">
 <h1><span style="color: lightblue">Part 1</span></h1>
 <div class="column" style="font-size: 100px">
-<p><strong><em>Excuse me,</em> do you have a moment to talk about <span class="darkblue"><em>version control</em></span> ?</strong></p>
-</div><p><img data-src="imgs/git-witness.png" class="absolute" style="top: 150px; right: 50px; "></p>
+<p><strong><em>Excuse me,</em></strong> <strong>do you have a moment to talk about <span class="darkblue"><em>version control</em></span> ?</strong></p>
+</div><p><img data-src="imgs/git-witness.png" class="absolute" style="top: 150px; right: 50px; width: 40%; "></p>
 </section>
 <section id="why-bother-with-all-this" class="slide level2">
 <h2>Why bother with all this?</h2>
@@ -331,7 +331,7 @@ Serena Defina
 
 </div><div class="fragment column bg-yellow" style="width:46%;">
 <p><span class="orange center"><em>The selfish reasons</em></span></p>
-<p>Research produces <strong><em>many</em> files</strong>: data files, figures, tables, docs, slides, and (yes) code…</p>
+<p>Research produces <strong><em>many</em></strong> <strong>files</strong>: data files, figures, tables, docs, slides, and (yes) code…</p>
 <p>Most of these files <span class="orange"><strong>evolve</strong> over the course of a project</span> and often <span class="orange">need to be <strong>shared</strong></span> with others.</p>
 <p>Without explicit and structured management, project organization can easily descend into <span class="orange"><em>chaos</em></span>, and taking your mental wellbeing with it (ask me how I know…)</p>
 </div></section>
@@ -350,7 +350,7 @@ Serena Defina
 <img data-src="imgs/linus-torvalds-1.png" class="fixed-bottom-right r-stretch" style="--w: 35%;"><p><code>Git</code> is a <span class="orange"><strong>version control system</strong></span>.</p>
 <p>It manages the evolution of a <em>set of files</em> (a <span class="darkblue"><strong>repository</strong></span> or <span class="darkblue"><strong>repo</strong></span>) in a sane, highly structured way.</p>
 <div class="text-wrap" style="--w: 70%;">
-<p><br><br> <span class="fragment"><code>Git</code>’s original purpose was to help groups of developers work collaboratively on big software projects.</span> <br><br> <span class="fragment">It is like a <span class="darkblue"><em>“TrackChanges”</em></span> feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files.</span> <br><br></p>
+<p><br><br> <span class="fragment"><code>Git</code>’s original purpose was to help groups of developers work collaboratively on big software projects.</span> <br><br> <span class="fragment">It is like a</span><span class="darkblue"><em>“TrackChanges”</em></span> feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files. <br><br></p>
 </div>
 <div class="text-wrap" style="--w: 65%;">
 <p><span class="fragment">It enables the distribution of <em>any file</em> across different <strong>people</strong>, <strong>computers</strong>, and across <strong>time</strong>.</span></p>
@@ -384,7 +384,7 @@ Serena Defina
 </ul>
 </div>
 <div class="fragment column bg-highlight" style="width:50%;">
-<p><span class="l-space"><code>GitHub</code> is like <span class="darkblue">DropBox</span> or <span class="darkblue">Google Drive</span>, but much, <em>much</em> better.</span></p>
+<p><span class="l-space"><code>GitHub</code> is like</span><span class="darkblue">DropBox</span> or <span class="darkblue">Google Drive</span>, but much, <em>much</em> better.</p>
 <p>It allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.</p>
 </div><div class="column" style="width:2%;">
 
@@ -396,65 +396,187 @@ Serena Defina
 <h2>Good examples in bio-research</h2>
 <p>A diverse range of efforts (from individual, to labs, to global collaborations) have chosen <code>GitHub</code> as productive place to share code and ideas</p>
 <p><img data-src="imgs/github-research-examples.png" class="absolute" style="top: 250px; left: 50px; height: 600px; "></p>
+</section>
+<section id="benefits-of-using-hosted-version-control" class="slide level2">
+<h2>Benefits of using hosted version control</h2>
+<p>In a nutshel: doing your work becomes tightly integrated with <strong>organizing</strong>, <strong>recording</strong>, and <strong>disseminating</strong> it. It’s not a separate, burdensome task you are tempted to <em>neglect</em>.</p>
+<ol type="1">
+<li>Tell the story of your project</li>
+<li>Travel back in time</li>
+<li>Experiment with changes</li>
+<li>Back up your work</li>
+<li>Make your work <strong>visible</strong>: The marginal effort required to create a <em>web presence</em> for a project is negligible. <code>GitHub</code> also makes a fantastic course management system for <strong>teachers</strong>.</li>
+<li><strong>Collaborate</strong> on projects. Collaboration and knowledge sharing becomes much easier and more structured, with collegues and remote contributors.</li>
+<li><code>Git</code> is WIDELY used outside these walls (required in most job positions). By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle</li>
+</ol>
+</section>
+<section id="benefits-of-using-hosted-version-control-1" class="slide level2">
+<h2>Benefits of using hosted version control</h2>
+<p>Even for <span class="darkblue"><em>private solo projects</em></span>, there are advantages to keeping a synced copy on <code>GitHub</code>:</p>
+<div class="fragment">
+<ol type="1">
+<li><p>When you are new with coding (or, frankly, even when you are not), it is common to <span class="orange">mess things up</span>. <br> Sometimes the easiest fix is to clone a fresh copy from <code>GitHub</code>, patch things up, and move on with your life.</p></li>
+<li><p>The highly functional web interface makes it a pleasure to browse through your own work. <br> You can <span class="orange">navigate</span> and <span class="orange">search</span> through multiple projects and files and across time.</p></li>
+</ol>
+</div>
 </section></section>
 <section>
 <section id="part-2" class="title-slide slide level1 center">
 <h1><span style="color: lightblue">Part 2</span></h1>
-<div class="r-fit-text">
-<p><span class="darkblue"><strong><em>Fundamental <code>Git</code> / <code>GitHub</code> concepts I keep in my purse</em></strong></span></p>
-</div>
+<div class="column" style="font-size: 100px">
+<p><span class="darkblue"><strong><em>Fundamental</em></strong><br><code>Git</code> / <code>GitHub</code> concepts and jargon</span></p>
+</div><p><img data-src="imgs/octocat-nobleman.jpg" class="absolute" style="top: 90px; right: 80px; width: 25%; "> <img data-src="imgs/git-vocabulary.png" class="absolute" style="top: 400px; right: 300px; width: 30%; "></p>
 </section>
 <section id="git-basics" class="slide level2">
 <h2>Git basics</h2>
-<p>Let’s talk a bit more about <code>Git</code>, introduce the most important basic ideas and define some <code>Git</code> <strong>vocabulary</strong> and link each concept to data science tasks and projects.</p>
-<p>Keep in mind that <em>actual usage</em> is the most effective way to build up a useful mental model for <code>Git</code>.</p>
-<p>As before, there many excellent external resources for <code>Git</code>, which you can find in the Resources.</p>
+<p><img data-src="imgs/octocat-nobleman.jpg" class="absolute" style="top: 90px; right: 80px; width: 25%; "></p>
+<p>Let’s talk a bit more about <code>Git</code>.</p>
+<p>In this sections we will:</p>
+<ul>
+<li>introduce the most important basic <strong>ideas</strong></li>
+<li>define some <code>Git</code> <strong>vocabulary</strong></li>
+<li>link each concept to <em>research-related tasks</em> or <em>projects</em></li>
+</ul>
+<div class="fragment">
+<p><span class="l-up-space m-space">Keep in mind that <em>actual usage</em> is the most effective way to build up a good mental model for <code>Git</code>, so don’t worry if some concept don’t feel so clear just yet</span></p>
+<p>Once again, there <em>many</em> excellent external resources for <code>Git</code>, which you can find in the <a href="">Resources</a> at the end of the presenation.</p>
+</div>
 </section>
 <section id="repositories-repos-and-roles" class="slide level2">
-<h2>Repositories (repos) and roles</h2>
-<p>Recall: <code>Git</code> manages the evolution of a set of files – called a <strong>repository</strong> or <strong>repo</strong>.</p>
-<p>A <code>repository</code> can be <strong>public</strong> or <strong>private</strong>.<br><br></p>
-<p>The <span class="orange"><strong>owner</strong></span> of a repository can grant permission to others: e.g.&nbsp;read (only relevant for private), write (or <code>push</code>) or admin access to others.</p>
+<h2><span class="darkblue">Repositories</span> ( <span class="darkblue">repos</span> ) and roles</h2>
+<p><span class="m-space"><em>Recall</em>: <code>Git</code> manages the evolution of a <strong>set of files</strong></span></p>
+<p>Such set of files (or directory) is called a <span class="darkblue"><strong>repository</strong></span> (<span class="darkblue"><strong>repo</strong></span> for friends).</p>
+<p><span class="l-up-space l-space">A repository can be</span><span class="bg-highlight"><strong>public</strong></span> or <span class="bg-highlight"><strong>private</strong></span>.</p>
+<p>The <span class="orange"><strong>owner</strong></span> of a repo can grant permission to <em>others</em> (<span class="darkblue"><strong>collaborators</strong></span>): e.g.&nbsp;read (only relevant for private repos), write (<code>push</code>) and admin access.</p>
+<p>A repo can be owned by a <em>person</em> or by an <span class="darkblue"><strong>organization</strong></span>.</p>
 </section>
-<section id="staging-and-commits" class="slide level2">
-<h2>Staging and commits</h2>
-<p>A <code>commit</code> is a <strong>snapshot</strong> of one or more files inside a folder.</p>
-<p>instead of saving a copy of a file, versioning it like _v2 or _SD, you create a commit. on the surface nothing changes but the history of that file is secretly saved</p>
-<p>When you commit a file or files, some information is saved along with the changes to the file</p>
-<p>You can add more information about the changes you’ve made in a commit <strong>message</strong></p>
+<section id="commits" class="slide level2">
+<h2>Commits</h2>
+<p>A <strong><code>commit</code></strong> is a <span class="darkblue"><strong>snapshot</strong></span> of one or more files inside a repository.</p>
+<p><span class="m-up-space s-space">Instead of saving a copy of a file, versioning it chaging it’s name (e.g.&nbsp;“[…] <em>_v2</em>” or “[…] <em>_SD</em>”), you create a <code>commit</code>.</span></p>
+<div class="column" style="width:70%;">
+<p><img data-src="imgs/commit-example.png" class="absolute" style="top: 300px; left: 0px; width: 70%; "></p>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:24%;">
+<p><span class="l-space">On the surface nothing changes, but the</span><span class="darkblue"><em>history</em></span> of that file is secretly saved.<br> This includes metadata (author, date, message)</p>
+<div class="fragment">
+<p>You can add more information about the changes you’ve made in a <span class="orange">commit <strong>message</strong></span></p>
+</div>
+</div></section>
+<section id="staging" class="slide level2">
+<h2>Staging</h2>
+<p><code>Git</code> commits actually happen in <ins><em>two distinct steps</em></ins> (though they are often used together).</p>
+<ol type="1">
+<li><span class="darkblue"><strong>Stage</strong></span> (via <code>git add</code>): tell <code>Git</code> <strong>which changes</strong> from your repo you intend to include in the next commit.</li>
+<li><strong>Commit</strong> (via <code>git commit</code>): take what is in the <em>staging area</em> and create a new commit object in the repo’s history, with its <strong>message</strong> and <strong>unique ID</strong>.</li>
+</ol>
+<div title="Why is this useful?">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Why is this useful?</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Recall</em>: a <code>commit</code> is a snapshot of <em>one <span class="darkblue"><strong>or more files</strong></span></em></p>
+<p>Staging lets you split your work into logical commits, even if you edited many files or made mixed changes in the same file.</p>
+<p>For example, you can stage only the lines related to a bugfix and commit them separately from formatting changes, improving history readability and making review and rollback easier.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="time-travel-hashs-and-tags" class="slide level2">
-<h2>Time travel, hashs and tags</h2>
-<p>Git stores the whole history of your project and makes it available to you</p>
-<p>Each of these commits has an id called a hash, wich makes it identifiable</p>
-<p>Getting the files from a commit in the past is known as doing a check out</p>
-<p>I can tell Git what commit I want to check out using the commit hash</p>
-<p>hash - a computer generated id checkout - time travel to a specific commit</p>
+<h2>Time travel: hashs and tags</h2>
+<p>Committing (well) helps you <span class="darkblue">tell the <strong>story of your project</strong></span> to yourself and to other people.</p>
+<p>But it does not end there… <code>Git</code> also lets you <strong>time travel</strong> through your project</p>
+<p>Getting the files from a commit in the past is known as doing a <span class="orange"><strong>check out</strong></span></p>
+<div class="column" style="width:50%;">
+<p><img data-src="imgs/commit-hash.png" class="absolute" style="top: 300px; left: 0px; width: 50%; "></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:40%;">
+<p><span class="m-up-space l-space"><em>Recall</em>: each commit has a <strong>unique ID</strong> called a</span><span class="darkblue"><strong>hash</strong></span>.</p>
+<p>You can tell <code>Git</code> what commit I want to <em>check out</em> using (part of) the commit hash.</p>
+</div><p>My other commits <em>still exist</em>, but when I look in my repo, it’s <em>as if they never happened</em>.</p>
+<p>You can also give certain <em>important</em> commits a <strong>special name</strong> (a <span class="darkblue"><strong>tag</strong></span>) that you can then use instead of their hash, to refer to them during time travel. People often use tags for software versions.</p>
 </section>
 <section id="parallel-universes-branches" class="slide level2">
 <h2>Parallel universes: branches</h2>
-<p>So far, everything has been very linear and ordered</p>
-<p>This isn’t really how projects work, sometimes you want to make easily discardable experiments</p>
-<p>The way you do this in Git is with branches</p>
-<p>A branch is a moveable label attached to a commit</p>
-<p>The default branch name in Git is main (used to be master)</p>
+<p>So far, everything has been very linear and ordered. The thing is… this isn’t really how projects work.</p>
+<p>Sometimes you want to <strong>try something out</strong>, make <em>experiments</em>. The way you do this in Git is with <span class="orange"><strong>branches</strong></span></p>
+<p>A branch is a <em>moveable label attached to a commit</em>.</p>
+<div class="column" style="width:50%;">
+<p><img data-src="imgs/branches-example.png" class="absolute" style="top: 400px; left: 0px; height: 40%; "></p>
+</div><div class="column" style="width:9%;">
+
+</div><div class="column" style="width:40%;">
+<p><span class="m-up-space m-space">The <strong>default branch</strong> name in <code>Git</code> is <strong><code>main</code></strong> (<ins>not</ins> <code>master</code>!)</span></p>
+<p>It’s common for the <code>main</code> branch to hold a <em>stable</em> version of the code or files, while other branches contain <strong>work in progress</strong>.</p>
+</div></section>
+<section id="quantum-collapse-merging" class="slide level2">
+<h2>Quantum collapse: merging</h2>
+<p>Branches are easy to throw away if you decide you don’t like your changes.</p>
+<p>But if you are happy with some work, you typically want to combine it back into the <code>main</code> branch.</p>
+<p><span class="m-up-space">To get changes from one branch into another, you</span><span class="orange"><strong>merge</strong></span> them.</p>
+<div class="column" style="width:50%;">
+<p><img data-src="imgs/branches-merge.png" class="absolute" style="top: 400px; left: 0px; height: 40%; "></p>
+</div><div class="column" style="width:14%;">
+
+</div><div class="column" style="width:35%;">
+<p><span class="m-up-space l-space">This last commit is a <strong>combination</strong> of all of the commits from both branches.</span></p>
+<p><span class="grey">* Different collaborators can work on different branches independently!</span></p>
+</div></section>
+<section id="remote-vs.-local" class="slide level2">
+<h2>Remote (vs.&nbsp;local)</h2>
+<p>Everyone knows that you should <strong>back up</strong> your work regularly, ideally to somewhere geographically distinct from your computer.</p>
+<p>In <code>Git</code> this place is called a <span class="darkblue"><strong>remote</strong></span>. A very popular place to put your remotes is <code>Github</code>.</p>
+<p>Having a <em>remote</em> copy of your repos has several advantages:</p>
+<ul>
+<li>Safer</li>
+<li>Access from different places</li>
+<li>Shared access with other people</li>
+</ul>
 </section>
-<section id="parallel-universes-merging" class="slide level2">
-<h2>Parallel universes: merging</h2>
-<p>Branches are useful for trying out stuff, as they’re really easy to throw away if you decide you don’t like your changes</p>
-<p>Switch to a branch</p>
-<p>git checkout [branch-name]</p>
-<p>Once you’re happy with some work, you need a way to get it back into</p>
-<p>To get changes from one branch into another, you merge them</p>
-<p>branch - a moveable label that points to a commit merge - the combination of two or more branches</p>
-</section>
-<section id="remotes-cloning-pulling-pushing-and-forking" class="slide level2">
-<h2>Remotes, cloning, pulling, pushing and forking</h2>
-<p>Everyone knows that you should back up your work regularly</p>
-<p>Ideally to somewhere that is geographically distinct from your computer</p>
-<p>n Git this place is called a remote. A very popular remote is Github</p>
-<p>To get some work from a remote for the first time you clone it</p>
-<p>remote - a computer with a repo on it clone - get the repo from the remote for the first time pull - get new commits to the repo from the remote push - send your new commits to the remote</p>
+<section id="working-on-your-remotes-cloning-pushing-and-pulling" class="slide level2">
+<h2>Working on (your) remotes: cloning, pushing and pulling</h2>
+<p><img data-src="imgs/clone-push-pull-0.png" class="absolute" style="top: 110px; left: 20px; height: 80%; "></p>
+<div class="fragment">
+<div class="absolute m-up-space" style="top: 10%; left: 62%; ">
+<p>To get some work <em>from a remote</em> on your local computer (for the first time) you <span class="darkblue"><strong>clone</strong></span> it.</p>
+</div>
+<p><img data-src="imgs/clone-push-pull-1.png" class="absolute" style="top: 110px; left: 20px; height: 80%; "></p>
+</div>
+<div class="fragment">
+<p><img data-src="imgs/clone-push-pull-2.png" class="absolute" style="top: 110px; left: 20px; height: 80%; "></p>
+</div>
+<div class="fragment">
+<div class="absolute m-up-space" style="top: 35%; left: 62%; ">
+<p>To send new updates to the remote you <span class="darkblue"><strong>push</strong></span></p>
+</div>
+<p><img data-src="imgs/clone-push-pull-3.png" class="absolute" style="top: 110px; left: 20px; height: 80%; "></p>
+</div>
+<div class="fragment">
+<div class="absolute m-up-space" style="top: 50%; left: 62%; ">
+<p>To get new updates (commits) from the remote you <span class="darkblue"><strong>pull</strong></span></p>
+</div>
+<p><img data-src="imgs/clone-push-pull-4.png" class="absolute" style="top: 110px; left: 20px; height: 80%; "></p>
+</div>
+</section></section>
+<section>
+<section id="working-on-someone-elses-repo-forking-and-pull-requests" class="title-slide slide level1 center">
+<h1>Working on someone else’s repo: forking and pull requests</h1>
+<p>There are two ways to get a “copy” of a remote directory</p>
+<ol type="1">
+<li><strong>Cloning</strong> gives you a local copy of a repo; Cloning is a client-side Git operation that creates a full local copy of some remote repository (original or fork) on your machine. Cloning is used whenever you want to work on code locally</li>
+<li><strong>Forking</strong> gives you <em>your own remote copy</em> of someone else’s repo. Forking creates a new remote repository under your user or organization, starting from another repo’s contents and history. Forking is used when you want your own independent remote for an existing project, especially when you are not a collaborator on the original repo (e.g., open-source contributions via pull requests).</li>
+</ol>
+<p>In many workflows, you fork first (to create your own remote), then clone that fork to your machine and work there. A fork can be kept in sync with its upstream repo (e.g., by adding an upstream remote and pulling), but it remains a separate remote with its own issues, pull requests, and permissions.</p>
+<p>To propose changes back to the original: <code>pull requests</code> instead of pushing directly. With a clone of the original repo, you can push back only if you have write permission; otherwise you still need some separate remote (often a fork) that you can push to.</p>
+<p>A pull request is a formal proposal that says: “Here are some changes I would like to make.” It might be linked to a specific issue: “Related to #14.” or “Fixes #56”. GitHub facilitates and preserves the discussion of the proposal, holistically and line-by-line.</p>
 </section>
 <section id="issues" class="slide level2">
 <h2>Issues</h2>
@@ -464,43 +586,12 @@ Serena Defina
 <p>Issues are tightly integrated with commits and therefore allow you to record that the changes in this commit solve that problem which was discussed in that issue.</p>
 <p>As a new user of GitHub, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use.</p>
 </section>
-<section id="pull-requests" class="slide level2">
-<h2>Pull requests</h2>
-<p>Git allows a project to have multiple, independent branches of development, with the notion that some should eventually be merged back into the main development branch.</p>
-<p>A pull request is a formal proposal that says: “Here are some changes I would like to make.” It might be linked to a specific issue: “Related to #14.” or “Fixes #56”. GitHub facilitates and preserves the discussion of the proposal, holistically and line-by-line.</p>
-</section>
 <section id="questions" class="slide level2">
 <h2>Questions?</h2>
 <p>No? Let’s play a <strong>game</strong></p>
 </section>
-<section id="benefits-of-using-hosted-version-control" class="slide level2">
-<h2>Benefits of using hosted version control</h2>
-<p>Even for <span class="darkblue"><em>private solo projects</em></span>, there are advantages to keeping a synced copy on <code>GitHub</code>:</p>
-<div class="fragment">
-<ol type="1">
-<li>When you are new with coding (or, frankly, even when you are not), it is common to <span class="orange">mess things up</span>. <br> Sometimes the easiest fix is to clone a fresh copy from <code>GitHub</code>, patch things up, and move on with your life.</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="2" type="1">
-<li>The highly functional web interface makes it a pleasure to browse through your own work. <br> You can <span class="orange">navigate</span> and <span class="orange">search</span> through multiple projects and files and across time.</li>
-</ol>
-</div>
-</section>
-<section id="benefits-of-using-hosted-version-control-1" class="slide level2">
-<h2>Benefits of using hosted version control</h2>
-<p>enable collaboration and knowledge sharing between different remote contributors.</p>
-<ul>
-<li><p>Doing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect</p></li>
-<li><p>Collaboration is much more structured, with powerful tools for asynchronous workand managing versions</p></li>
-<li><p>The marginal effort required to create a web presence for a project is negligible</p></li>
-<li><p>GitHub makes a fantastic course management system for teachers. You can exchange actual working code with your students and explore the associated results</p></li>
-<li><p>WIDELY used outside these walls (required in most job positions)</p></li>
-<li><p>By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle</p></li>
-</ul>
-</section>
 <section id="break" class="slide level2">
-<h2>[Break]</h2>
+<h2>Break</h2>
 <aside class="notes">
 <p>Let’s walk through some basic operations to confirm you have installed the necessary software and that the necessary connections are being made, between tools on your computer and between your computer and <code>GitHub</code>.</p>
 <style type="text/css">
@@ -1206,6 +1297,13 @@ Serena Defina
 <section id="comparing-versions" class="slide level2">
 <h2>Comparing versions</h2>
 <p>git diff</p>
+</section>
+<section id="fun-facts" class="slide level2">
+<h2>Fun facts</h2>
+<p>The <code>GitHub</code> mascot is named <strong>Octocat</strong>, a <code>merge</code> between an octopuss and cat.</p>
+<p>Do you know the story behind this logo creation?</p>
+<p>The idea came from the “octopus merge” – the practice of combining three or more branches of development. The logo was created by Simon Oxley, who doesn’t remember creating it, apparently. Initially, Simon thought of calling his creation <em>“Octopuss”</em> (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.</p>
+<p>In the end, <code>GitHub</code> decided to go with <em>Octocat</em> (for obvious reasons).</p>
 </section>
 <section id="conclusions-and-goodbyes" class="slide level2">
 <h2>Conclusions and goodbyes</h2>

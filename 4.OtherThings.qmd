@@ -22,6 +22,15 @@ Then, in the browser, go to your repo’s landing page on `GitHub` > Click on *S
 
 git diff
 
+## Fun facts 
+The `GitHub` mascot is named **Octocat**, a `merge` between an octopuss and cat. 
+
+Do you know the story behind this logo creation?
+
+The idea came from the “octopus merge” – the practice of combining three or more branches of development. The logo was created by Simon Oxley, who doesn't remember creating it, apparently. Initially, Simon thought of calling his creation *"Octopuss"* (combination of octopus and pussycat) to represent how complex code combines can create peculiar things. 
+
+In the end, `GitHub` decided to go with *Octocat* (for obvious reasons).
+
 ## Conclusions and goodbyes
 The workflows described here are widely regarded as current best practice, yet we generally neither practice nor preach it in academic settings.
 

@@ -8,6 +8,7 @@ format:
     css: styles.css
     center: false
     slide-number: c/t
+    center-title-slide: false
     controls: true
     preview-links: true
     chalkboard: true

@@ -4,14 +4,14 @@
     "href": "slides.html#welcome",
     "title": "Git & Github  for researchers",
     "section": "Welcome",
-    "text": "Welcome\nWelcome to our first Git & Github course!\n\nHi :wave:  My name is Serena — Data Scientist Epidemiology / Neuroscience / Psychology\nDisaclaimer time: I am not an expertI use these tools daily and find them, honestly, really useful\n\n\nToday, I’ll walk with you as you:\n\nFind out some (very cool) ways to integrate Git and GitHub into your daily work\nInstall and congifure Git and get it working smoothly with GitHub  in the shell & in R/RStudio\nPractice a few key workflows to solve common problems"
+    "text": "Welcome\nWelcome to our first Git & Github course!\n\nHi 👋  My name is Serena — Data Scientist Epidemiology / Neuroscience / Psychology\nDisaclaimer time: I am not an expertI use these tools daily and find them, honestly, really useful\n\n\nToday, I’ll walk with you as you:\n\nFind out some (very cool) ways to integrate Git and GitHub into your daily work\nInstall and congifure Git and get it working smoothly with GitHub  in the shell & in R/RStudio\nPractice a few key workflows to solve common problems"
   },
   {
     "objectID": "slides.html#some-more-disclaimers",
     "href": "slides.html#some-more-disclaimers",
     "title": "Git & Github  for researchers",
     "section": "Some (more) disclaimers",
-    "text": "Some (more) disclaimers\n\n\nAbout you\nNo previous experience required, beside a general familiarity with data analysis.\nYou will get the most out of this workshop if you are an R user.\n\n\nAbout this worshop\nIt is not a complete guide. It is more of a Git-starter pack for research / teaching activities.\n\n\n\n\n\n\n\nHungry for more?\n\n\nThere are a lot of excellent Git/Github tutorial materials online.Check out the Resources at the end of this presentation for some suggestions."
+    "text": "Some (more) disclaimers\n\n\nAbout you\nNo previous experience required, beside a general familiarity with data analysis.\nYou will get the most out of this workshop if you are an R user.\n\n\nAbout this worshop\nIt is not a complete guide. It is more of aGit-starter pack for research / teaching activities.\n\n\n\n\n\n\n\nHungry for more?\n\n\nThere are a lot of excellent Git/Github tutorial materials online.Check out the Resources at the end of this presentation for some suggestions."
   },
   {
     "objectID": "slides.html#pre-trip-checklist",
@@ -32,7 +32,7 @@
     "href": "slides.html#is-it-going-to-hurt",
     "title": "Git & Github  for researchers",
     "section": "Is it going to hurt?",
-    "text": "Is it going to hurt?\nYes.\n\nBefore you can get started, you have to: install Git, get local Git talking to GitHub, and make sure RStudio can talk to local Git (and, therefore, GitHub). This is one-time or “once-per-computer” pain & we will do it together\n\n\nBeginner–intermediate use requires (small) changes to your normal, daily workflow: e.g. dedicate a directory to each project, make it a git repository, periodically make commits and push them to Github. It feels weird at first but quickly becomes second nature & we will do it together\n\n\nAdvanced GitHub use, e.g. to work with other people or coordinate your own work from multiple computers? Knock-knock — Who’s there? — merge conflicts. This is not one-time pain but the best remedy is prevention, which we do today"
+    "text": "Is it going to hurt?\nYes.\n\nBefore you can get started,you have to: install Git, get local Git talking to GitHub, and make sure RStudio can talk to local Git (and, therefore, GitHub). This is one-time or “once-per-computer” pain & we will do it together\n\n\nBeginner–intermediate use requires(small) changes to your normal, daily workflow: e.g. dedicate a directory to each project, make it a git repository, periodically make commits and push them to Github. It feels weird at first but quickly becomes second nature & we will do it together\n\n\nAdvanced GitHub use, e.g. to work with other people or coordinate your own work from multiple computers?Knock-knock — Who’s there? — merge conflicts. This is not one-time pain but the best remedy is prevention, which we do today"
   },
   {
     "objectID": "slides.html#why-bother-with-all-this",
@@ -53,7 +53,7 @@
     "href": "slides.html#what-is-git",
     "title": "Git & Github  for researchers",
     "section": "What is Git?",
-    "text": "What is Git?\n\nGit is a version control system.\nIt manages the evolution of a set of files (a repository or repo) in a sane, highly structured way.\n\n Git’s original purpose was to help groups of developers work collaboratively on big software projects.  It is like a “TrackChanges” feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files. \n\n\nIt enables the distribution of any file across different people, computers, and across time."
+    "text": "What is Git?\n\nGit is a version control system.\nIt manages the evolution of a set of files (a repository or repo) in a sane, highly structured way.\n\n Git’s original purpose was to help groups of developers work collaboratively on big software projects.  It is like a“TrackChanges” feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files. \n\n\nIt enables the distribution of any file across different people, computers, and across time."
   },
   {
     "objectID": "slides.html#now-the-bad-news",
@@ -67,7 +67,7 @@
     "href": "slides.html#what-is-github",
     "title": "Git & Github  for researchers",
     "section": "What is GitHub?",
-    "text": "What is GitHub?\nGitHub complements Git by providing a polished user interface and distribution mechanism for Git repositories.\n\n\nGit = software you use locally to record changes to a set of files.\nGitHub = hosting service that provides a Git-aware home for such projects on the internet.\n\n\n\nGitHub is like DropBox or Google Drive, but much, much better.\nIt allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.\n\n\n\nMany operations can be done entirely in the browser, including editing or adding files.\nLet’s take a look!"
+    "text": "What is GitHub?\nGitHub complements Git by providing a polished user interface and distribution mechanism for Git repositories.\n\n\nGit = software you use locally to record changes to a set of files.\nGitHub = hosting service that provides a Git-aware home for such projects on the internet.\n\n\n\nGitHub is likeDropBox or Google Drive, but much, much better.\nIt allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.\n\n\n\nMany operations can be done entirely in the browser, including editing or adding files.\nLet’s take a look!"
   },
   {
     "objectID": "slides.html#good-examples-in-bio-research",
@@ -77,53 +77,81 @@
     "text": "Good examples in bio-research\nA diverse range of efforts (from individual, to labs, to global collaborations) have chosen GitHub as productive place to share code and ideas"
   },
   {
+    "objectID": "slides.html#benefits-of-using-hosted-version-control",
+    "href": "slides.html#benefits-of-using-hosted-version-control",
+    "title": "Git & Github  for researchers",
+    "section": "Benefits of using hosted version control",
+    "text": "Benefits of using hosted version control\nIn a nutshel: doing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect.\n\nTell the story of your project\nTravel back in time\nExperiment with changes\nBack up your work\nMake your work visible: The marginal effort required to create a web presence for a project is negligible. GitHub also makes a fantastic course management system for teachers.\nCollaborate on projects. Collaboration and knowledge sharing becomes much easier and more structured, with collegues and remote contributors.\nGit is WIDELY used outside these walls (required in most job positions). By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle"
+  },
+  {
+    "objectID": "slides.html#benefits-of-using-hosted-version-control-1",
+    "href": "slides.html#benefits-of-using-hosted-version-control-1",
+    "title": "Git & Github  for researchers",
+    "section": "Benefits of using hosted version control",
+    "text": "Benefits of using hosted version control\nEven for private solo projects, there are advantages to keeping a synced copy on GitHub:\n\n\nWhen you are new with coding (or, frankly, even when you are not), it is common to mess things up.  Sometimes the easiest fix is to clone a fresh copy from GitHub, patch things up, and move on with your life.\nThe highly functional web interface makes it a pleasure to browse through your own work.  You can navigate and search through multiple projects and files and across time."
+  },
+  {
     "objectID": "slides.html#git-basics",
     "href": "slides.html#git-basics",
     "title": "Git & Github  for researchers",
     "section": "Git basics",
-    "text": "Git basics\nLet’s talk a bit more about Git, introduce the most important basic ideas and define some Git vocabulary and link each concept to data science tasks and projects.\nKeep in mind that actual usage is the most effective way to build up a useful mental model for Git.\nAs before, there many excellent external resources for Git, which you can find in the Resources."
+    "text": "Git basics\n\nLet’s talk a bit more about Git.\nIn this sections we will:\n\nintroduce the most important basic ideas\ndefine some Git vocabulary\nlink each concept to research-related tasks or projects\n\n\nKeep in mind that actual usage is the most effective way to build up a good mental model for Git, so don’t worry if some concept don’t feel so clear just yet\nOnce again, there many excellent external resources for Git, which you can find in the Resources at the end of the presenation."
   },
   {
     "objectID": "slides.html#repositories-repos-and-roles",
     "href": "slides.html#repositories-repos-and-roles",
     "title": "Git & Github  for researchers",
-    "section": "Repositories (repos) and roles",
-    "text": "Repositories (repos) and roles\nRecall: Git manages the evolution of a set of files – called a repository or repo.\nA repository can be public or private.\nThe owner of a repository can grant permission to others: e.g. read (only relevant for private), write (or push) or admin access to others."
+    "section": "Repositories ( repos ) and roles",
+    "text": "Repositories ( repos ) and roles\nRecall: Git manages the evolution of a set of files\nSuch set of files (or directory) is called a repository (repo for friends).\nA repository can bepublic or private.\nThe owner of a repo can grant permission to others (collaborators): e.g. read (only relevant for private repos), write (push) and admin access.\nA repo can be owned by a person or by an organization."
   },
   {
-    "objectID": "slides.html#staging-and-commits",
-    "href": "slides.html#staging-and-commits",
+    "objectID": "slides.html#commits",
+    "href": "slides.html#commits",
     "title": "Git & Github  for researchers",
-    "section": "Staging and commits",
-    "text": "Staging and commits\nA commit is a snapshot of one or more files inside a folder.\ninstead of saving a copy of a file, versioning it like _v2 or _SD, you create a commit. on the surface nothing changes but the history of that file is secretly saved\nWhen you commit a file or files, some information is saved along with the changes to the file\nYou can add more information about the changes you’ve made in a commit message"
+    "section": "Commits",
+    "text": "Commits\nA commit is a snapshot of one or more files inside a repository.\nInstead of saving a copy of a file, versioning it chaging it’s name (e.g. “[…] _v2” or “[…] _SD”), you create a commit.\n\n\n\n\n\nOn the surface nothing changes, but thehistory of that file is secretly saved. This includes metadata (author, date, message)\n\nYou can add more information about the changes you’ve made in a commit message"
+  },
+  {
+    "objectID": "slides.html#staging",
+    "href": "slides.html#staging",
+    "title": "Git & Github  for researchers",
+    "section": "Staging",
+    "text": "Staging\nGit commits actually happen in two distinct steps (though they are often used together).\n\nStage (via git add): tell Git which changes from your repo you intend to include in the next commit.\nCommit (via git commit): take what is in the staging area and create a new commit object in the repo’s history, with its message and unique ID.\n\n\n\n\n\n\n\n\nWhy is this useful?\n\n\nRecall: a commit is a snapshot of one or more files\nStaging lets you split your work into logical commits, even if you edited many files or made mixed changes in the same file.\nFor example, you can stage only the lines related to a bugfix and commit them separately from formatting changes, improving history readability and making review and rollback easier."
   },
   {
     "objectID": "slides.html#time-travel-hashs-and-tags",
     "href": "slides.html#time-travel-hashs-and-tags",
     "title": "Git & Github  for researchers",
-    "section": "Time travel, hashs and tags",
-    "text": "Time travel, hashs and tags\nGit stores the whole history of your project and makes it available to you\nEach of these commits has an id called a hash, wich makes it identifiable\nGetting the files from a commit in the past is known as doing a check out\nI can tell Git what commit I want to check out using the commit hash\nhash - a computer generated id checkout - time travel to a specific commit"
+    "section": "Time travel: hashs and tags",
+    "text": "Time travel: hashs and tags\nCommitting (well) helps you tell the story of your project to yourself and to other people.\nBut it does not end there… Git also lets you time travel through your project\nGetting the files from a commit in the past is known as doing a check out\n\n\n\n\n\nRecall: each commit has a unique ID called ahash.\nYou can tell Git what commit I want to check out using (part of) the commit hash.\nMy other commits still exist, but when I look in my repo, it’s as if they never happened.\nYou can also give certain important commits a special name (a tag) that you can then use instead of their hash, to refer to them during time travel. People often use tags for software versions."
   },
   {
     "objectID": "slides.html#parallel-universes-branches",
     "href": "slides.html#parallel-universes-branches",
     "title": "Git & Github  for researchers",
     "section": "Parallel universes: branches",
-    "text": "Parallel universes: branches\nSo far, everything has been very linear and ordered\nThis isn’t really how projects work, sometimes you want to make easily discardable experiments\nThe way you do this in Git is with branches\nA branch is a moveable label attached to a commit\nThe default branch name in Git is main (used to be master)"
+    "text": "Parallel universes: branches\nSo far, everything has been very linear and ordered. The thing is… this isn’t really how projects work.\nSometimes you want to try something out, make experiments. The way you do this in Git is with branches\nA branch is a moveable label attached to a commit.\n\n\n\n\n\nThe default branch name in Git is main (not master!)\nIt’s common for the main branch to hold a stable version of the code or files, while other branches contain work in progress."
   },
   {
-    "objectID": "slides.html#parallel-universes-merging",
-    "href": "slides.html#parallel-universes-merging",
+    "objectID": "slides.html#quantum-collapse-merging",
+    "href": "slides.html#quantum-collapse-merging",
     "title": "Git & Github  for researchers",
-    "section": "Parallel universes: merging",
-    "text": "Parallel universes: merging\nBranches are useful for trying out stuff, as they’re really easy to throw away if you decide you don’t like your changes\nSwitch to a branch\ngit checkout [branch-name]\nOnce you’re happy with some work, you need a way to get it back into\nTo get changes from one branch into another, you merge them\nbranch - a moveable label that points to a commit merge - the combination of two or more branches"
+    "section": "Quantum collapse: merging",
+    "text": "Quantum collapse: merging\nBranches are easy to throw away if you decide you don’t like your changes.\nBut if you are happy with some work, you typically want to combine it back into the main branch.\nTo get changes from one branch into another, youmerge them.\n\n\n\n\n\nThis last commit is a combination of all of the commits from both branches.\n* Different collaborators can work on different branches independently!"
   },
   {
-    "objectID": "slides.html#remotes-cloning-pulling-pushing-and-forking",
-    "href": "slides.html#remotes-cloning-pulling-pushing-and-forking",
+    "objectID": "slides.html#remote-vs.-local",
+    "href": "slides.html#remote-vs.-local",
     "title": "Git & Github  for researchers",
-    "section": "Remotes, cloning, pulling, pushing and forking",
-    "text": "Remotes, cloning, pulling, pushing and forking\nEveryone knows that you should back up your work regularly\nIdeally to somewhere that is geographically distinct from your computer\nn Git this place is called a remote. A very popular remote is Github\nTo get some work from a remote for the first time you clone it\nremote - a computer with a repo on it clone - get the repo from the remote for the first time pull - get new commits to the repo from the remote push - send your new commits to the remote"
+    "section": "Remote (vs. local)",
+    "text": "Remote (vs. local)\nEveryone knows that you should back up your work regularly, ideally to somewhere geographically distinct from your computer.\nIn Git this place is called a remote. A very popular place to put your remotes is Github.\nHaving a remote copy of your repos has several advantages:\n\nSafer\nAccess from different places\nShared access with other people"
+  },
+  {
+    "objectID": "slides.html#working-on-your-remotes-cloning-pushing-and-pulling",
+    "href": "slides.html#working-on-your-remotes-cloning-pushing-and-pulling",
+    "title": "Git & Github  for researchers",
+    "section": "Working on (your) remotes: cloning, pushing and pulling",
+    "text": "Working on (your) remotes: cloning, pushing and pulling\n\n\n\nTo get some work from a remote on your local computer (for the first time) you clone it.\n\n\n\n\n\n\n\n\nTo send new updates to the remote you push\n\n\n\n\n\nTo get new updates (commits) from the remote you pull"
   },
   {
     "objectID": "slides.html#issues",
@@ -133,13 +161,6 @@
     "text": "Issues\nIt’s a list of things, bugs, feature requests, to dos, whatever\nIssues are tightly integrated with email and therefore allow you to copy/embed important conversations in the associated repo.\nIssues can be assigned to people (e.g., to dos) and tagged (“bug” or “progress-report”).\nIssues are tightly integrated with commits and therefore allow you to record that the changes in this commit solve that problem which was discussed in that issue.\nAs a new user of GitHub, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use."
   },
   {
-    "objectID": "slides.html#pull-requests",
-    "href": "slides.html#pull-requests",
-    "title": "Git & Github  for researchers",
-    "section": "Pull requests",
-    "text": "Pull requests\nGit allows a project to have multiple, independent branches of development, with the notion that some should eventually be merged back into the main development branch.\nA pull request is a formal proposal that says: “Here are some changes I would like to make.” It might be linked to a specific issue: “Related to #14.” or “Fixes #56”. GitHub facilitates and preserves the discussion of the proposal, holistically and line-by-line."
-  },
-  {
     "objectID": "slides.html#questions",
     "href": "slides.html#questions",
     "title": "Git & Github  for researchers",
@@ -147,25 +168,11 @@
     "text": "Questions?\nNo? Let’s play a game"
   },
   {
-    "objectID": "slides.html#benefits-of-using-hosted-version-control",
-    "href": "slides.html#benefits-of-using-hosted-version-control",
-    "title": "Git & Github  for researchers",
-    "section": "Benefits of using hosted version control",
-    "text": "Benefits of using hosted version control\nEven for private solo projects, there are advantages to keeping a synced copy on GitHub:\n\n\nWhen you are new with coding (or, frankly, even when you are not), it is common to mess things up.  Sometimes the easiest fix is to clone a fresh copy from GitHub, patch things up, and move on with your life.\n\n\n\n\nThe highly functional web interface makes it a pleasure to browse through your own work.  You can navigate and search through multiple projects and files and across time."
-  },
-  {
-    "objectID": "slides.html#benefits-of-using-hosted-version-control-1",
-    "href": "slides.html#benefits-of-using-hosted-version-control-1",
-    "title": "Git & Github  for researchers",
-    "section": "Benefits of using hosted version control",
-    "text": "Benefits of using hosted version control\nenable collaboration and knowledge sharing between different remote contributors.\n\nDoing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect\nCollaboration is much more structured, with powerful tools for asynchronous workand managing versions\nThe marginal effort required to create a web presence for a project is negligible\nGitHub makes a fantastic course management system for teachers. You can exchange actual working code with your students and explore the associated results\nWIDELY used outside these walls (required in most job positions)\nBy using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle"
-  },
-  {
     "objectID": "slides.html#break",
     "href": "slides.html#break",
     "title": "Git & Github  for researchers",
-    "section": "[Break]",
-    "text": "[Break]\n\nLet’s walk through some basic operations to confirm you have installed the necessary software and that the necessary connections are being made, between tools on your computer and between your computer and GitHub."
+    "section": "Break",
+    "text": "Break\n\nLet’s walk through some basic operations to confirm you have installed the necessary software and that the necessary connections are being made, between tools on your computer and between your computer and GitHub."
   },
   {
     "objectID": "slides.html#half-the-battle",
@@ -369,6 +376,13 @@
     "title": "Git & Github  for researchers",
     "section": "Comparing versions",
     "text": "Comparing versions\ngit diff"
+  },
+  {
+    "objectID": "slides.html#fun-facts",
+    "href": "slides.html#fun-facts",
+    "title": "Git & Github  for researchers",
+    "section": "Fun facts",
+    "text": "Fun facts\nThe GitHub mascot is named Octocat, a merge between an octopuss and cat.\nDo you know the story behind this logo creation?\nThe idea came from the “octopus merge” – the practice of combining three or more branches of development. The logo was created by Simon Oxley, who doesn’t remember creating it, apparently. Initially, Simon thought of calling his creation “Octopuss” (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.\nIn the end, GitHub decided to go with Octocat (for obvious reasons)."
   },
   {
     "objectID": "slides.html#conclusions-and-goodbyes",
