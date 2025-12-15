@@ -1,0 +1,243 @@
+---
+# revealjs-plugins:
+#   - editable
+# filters:
+#   - editable
+---
+
+# [Part 2]{style="color: lightblue"}
+
+::: {style="font-size: 100px; text-align: left !important; max-width: 50%"}
+[**Fundamental<br>`Git` / `GitHub` concepts and jargon**]{.darkblue}
+:::
+
+![](imgs/octocat-nobleman.jpg){.absolute top="100" right="80" width="25%"}
+![](imgs/git-vocabulary.png){.absolute top="420" right="310" width="30%"}
+
+## Git basics
+
+![](imgs/octocat-nobleman.jpg){.absolute top="100" right="80" width="25%"}
+
+[Let's talk a bit more about `Git`.]{.l-space}
+
+In this sections we will:
+
+-   introduce the most important basic **ideas**
+-   define some `Git` **vocabulary**
+-   link each concept to *research-related tasks* or *projects*
+
+::: fragment
+[Keep in mind that *actual usage* is the most effective way to build up a good mental model for `Git`, so don't worry if some concept don't feel so clear just yet]{.l-up-space .m-space}
+
+Once again, there *many* excellent external resources for `Git`, which you can find in the [Resources]() at the end of the presenation.
+:::
+
+## [Repositories]{.darkblue} ( [repos]{.darkblue} ) and roles
+
+[*Recall*: `Git` manages the evolution of a **set of files**]{.m-space}
+
+Such set of files (or directory) is called a [**repository**]{.darkblue} ([**repo**]{.darkblue} for friends).
+
+[A repository can be [**public**]{.bg-highlight} or [**private**]{.bg-highlight}.]{.l-up-space .l-space}
+
+The [**owner**]{.orange} of a repo can grant permission to *others* ([**collaborators**]{.darkblue}): [e.g. read (only relevant for private repos), write (`push`) and admin access.]{.grey}
+
+A repo can be owned by a *person* or by an [**organization**]{.darkblue}.
+
+## Commits
+
+A **`commit`** is a [**snapshot**]{.darkblue} of one or more files inside a repository.
+
+::::{.fragment}
+[Instead of saving a copy of a file, versioning it chaging it's name (e.g. "\[...\] *\_v2*" or "\[...\] *\_SD*"), you create a `commit`.]{.m-up-space .s-space}
+
+::: {.column width="70%"}
+![](imgs/commit-example.png){.absolute top="300" left="0" width="70%"}
+:::
+::::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="24%"}
+
+[On the surface nothing changes, but the [*history*]{.darkblue} of that file is secretly saved, including [*metadata*]{.darkblue} (e.g. author, date, message)]{.m-space .fragment}
+
+[You can add more information about the changes you’ve made in a [commit **message**]{.orange}]{.fragment}
+
+:::
+
+## Staging
+
+`Git` commits actually happen in <ins>*two distinct steps*</ins> (though they are often used together).
+
+1.  [**Stage**]{.darkblue} (via `git add`): tell `Git` **which changes** from your repo you intend to include in the next commit.
+2.  **Commit** (via `git commit`): take what is in the *staging area* and create a new commit object in the repo's history, with its **message** and **unique ID**.
+
+::: {.callout-note title="Why is this useful?"}
+*Recall*: a `commit` is a snapshot of *one [**or more files**]{.darkblue}*
+
+Staging lets you split your work into logical commits, even if you edited many files or made mixed changes in the same file.
+
+For example, you can stage only the lines related to a bugfix and commit them separately from formatting changes, improving history readability and making review and rollback easier.
+:::
+
+## Time travel: hashs and tags
+
+Committing (well) helps you [tell the **story of your project**]{.darkblue} to yourself and to other people.
+
+But it does not end there... `Git` also lets you **time travel** through your project
+
+Getting the files from a commit in the past is known as doing a [**check out**]{.orange}
+
+::: {.column width="50%"}
+![](imgs/commit-hash.png){.absolute top="300" left="0" width="50%"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+[*Recall*: each commit has a **unique ID** called a [**hash**]{.darkblue}.]{.m-up-space .l-space}
+
+You can tell `Git` what commit I want to *check out* using (part of) the commit hash.
+:::
+
+My other commits *still exist*, but when I look in my repo, it’s *as if they never happened*.
+
+You can also give certain *important* commits a **special name** (a [**tag**]{.darkblue}) that you can then use instead of their hash, to refer to them during time travel. People often use tags for software versions.
+
+## Parallel universes: branches
+
+So far, everything has been very linear and ordered. The thing is... this isn’t really how projects work.
+
+Sometimes you want to **try something out**, make *experiments*. The way you do this in Git is with [**branches**]{.orange}
+
+A branch is a *moveable label attached to a commit*.
+
+::: {.column width="50%"}
+![](imgs/branches-example.png){.absolute top="400" left="0" height="40%"}
+:::
+
+::: {.column width="9%"}
+:::
+
+::: {.column width="40%"}
+[The **default branch** name in `Git` is **`main`** (<ins>not</ins> `master`!)]{.m-up-space .m-space}
+
+It’s common for the `main` branch to hold a *stable* version of the code or files, while other branches contain **work in progress**.
+:::
+
+## Quantum collapse: merging
+
+Branches are easy to throw away if you decide you don’t like your changes.
+
+But if you are happy with some work, you typically want to combine it back into the `main` branch.
+
+[To get changes from one branch into another, you ]{.m-up-space}[**merge**]{.orange} them.
+
+::: {.column width="50%"}
+![](imgs/branches-merge.png){.absolute top="400" left="0" height="40%"}
+:::
+
+::: {.column width="14%"}
+:::
+
+::: {.column width="35%"}
+[This last commit is a **combination** of all of the commits from both branches.]{.m-up-space .l-space}
+
+[\* Different collaborators can work on different branches independently!]{.grey}
+:::
+
+## Remote (vs. local)
+
+Everyone knows that you should **back up** your work regularly, ideally to somewhere geographically distinct from your computer.
+
+In `Git` this place is called a [**remote**]{.darkblue}. A very popular place to put your remotes is `Github`.
+
+Having a *remote* copy of your repos has several advantages:
+
+-   Safer
+-   Access from different places
+-   Shared access with other people
+
+## Working on (your) remotes: cloning, pushing and pulling
+
+![](imgs/clone-push-pull-0.png){.absolute top="110" left="20" height="80%"}
+
+:::: fragment
+::: {.absolute .m-up-space left="62%" top="10%"}
+To get some work *from a remote* on your local computer (for the first time) you [**clone**]{.darkblue} it.
+:::
+
+![](imgs/clone-push-pull-1.png){.absolute top="110" left="20" height="80%"}
+::::
+
+::: fragment
+![](imgs/clone-push-pull-2.png){.absolute top="110" left="20" height="80%"}
+:::
+
+:::: fragment
+::: {.absolute .m-up-space left="62%" top="35%"}
+To send new updates to the remote you [**push**]{.darkblue}
+:::
+
+![](imgs/clone-push-pull-3.png){.absolute top="110" left="20" height="80%"}
+::::
+
+:::: fragment
+::: {.absolute .m-up-space left="62%" top="50%"}
+To get new updates (commits) from the remote you [**pull**]{.darkblue}
+:::
+
+![](imgs/clone-push-pull-4.png){.absolute top="110" left="20" height="80%"}
+::::
+
+## Working on someone else's repo: forking and pull requests
+**Cloning** is a *client-side* `Git` operation: it creates a *local copy* of a remote repo. The remote repo can be original or a fork.
+
+[**Forking**]{.orange} gives you *your own remote copy* of someone else’s repo. It creates a new remote repository under your user (or organization), starting from another repo’s contents and history. 
+
+When you are <ins>not a collaborator</ins> on the original repo (e.g., open-source contributions), you usually want your own independent remote for an existing project
+
+In these workflows, you **fork first** (to create your own remote), **then clone** that fork to your machine and work there. 
+
+A fork can be kept in sync with its [**upstream repo**]{.darkblue} (by `pulling`).
+
+To propose changes back to the original, you''ll use a [**pull request**]{.orange} instead of `pushing` directly. 
+
+## `GitHub` Issues
+
+[[**Issues**]{.orange} are essentially a **list of things**: bugs, feature requests, to-dos, whatever]{.m-space}
+
+[Issues can be *assigned* to people (e.g., to-dos) and *tagged* (“bug” or “progress-report”).]{.m-space}
+
+They are tightly integrated with:
+
+* **email**, allowing you to copy/embed important conversations in the associated repo;
+* **commits** allowing you to record that, e.g. *"the changes in this commit solve the problem discussed in that issue."*
+
+[As a new `GitHub` user, one of the most productive things you can do is to use `GitHub` issues to provide a clear **bug report** or **feature request** for a package you use.]{.l-up-space .fragment}
+
+## Questions?
+
+[No? Let's play a **game**]{.l-space}
+
+### Break time 
+
+## Bonus: fun fact
+The `GitHub` mascot is named **Octocat**, a `merge` between an octopuss and cat. 
+
+Do you know the story behind this logo creation?
+
+:::{.column width="65%"}
+The idea came from the “octopus merge” – the practice of combining three or more branches of development. The logo was created by Simon Oxley, who doesn't remember creating it, apparently. Initially, Simon thought of calling his creation *"Octopuss"* (combination of octopus and pussycat) to represent how complex code combines can create peculiar things. 
+:::
+:::{.column width="30%"}
+![](imgs/octocat.png){.absolute top="110" right="80" width="25%"}
+:::
+
+In the end, `GitHub` decided to go with *Octocat* (for obvious reasons).
+
+
+

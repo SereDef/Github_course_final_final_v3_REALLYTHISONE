@@ -144,7 +144,7 @@ li::marker {
   height: auto !important;  /* maintain aspect ratio */
 }
 
-/* --- CODE CHUNKS --------------------------------------------------------- */
+/* --- CODE CHUNKS -------------------------------------------------------- */
 
 code.sourceCode {
   font-size: 1.5em !important; /* Adjust multiplier as needed */
@@ -155,4 +155,20 @@ code.sourceCode {
 /* Change all callout text size */
 .callout {
   font-size: 0.9em !important;
+}
+
+/* --- TITLE SLIDES ------------------------------------------------------ */
+
+.reveal .left-align {
+  text-align: left !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.reveal .left-align h1,
+.reveal .left-align h2,
+.reveal .left-align p {
+  text-align: left !important;
 }

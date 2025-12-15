@@ -144,7 +144,7 @@ li::marker {
   height: auto !important;  /* maintain aspect ratio */
 }
 
-/* --- CODE CHUNKS --------------------------------------------------------- */
+/* --- CODE CHUNKS -------------------------------------------------------- */
 
 code.sourceCode {
   font-size: 1.5em !important; /* Adjust multiplier as needed */

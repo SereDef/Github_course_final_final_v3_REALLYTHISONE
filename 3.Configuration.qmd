@@ -1,0 +1,380 @@
+---
+# revealjs-plugins:
+#   - editable
+# filters:
+#   - editable
+---
+
+# [Part 3]{style="color: lightblue"}
+
+::: {style="font-size: 100px; text-align: left !important; max-width: 55%"}
+[**Setting-up<br>`Git` and `GitHub`<br>(the *right* way)<br>**]{.darkblue}
+:::
+
+![](imgs/octocat-architect.png){.absolute bottom="0" top="100" right="30" height="70%"}
+
+## Half the battle
+
+Getting all the necessary software [installed]{.darkblue}, [configured]{.darkblue}, and [playing nicely together]{.darkblue} is honestly *half the battle* when first adopting `Git`. 
+
+:::{.fragment .m-space}
+You will find far more resources for *how to use Git* than for [**installation**]{.orange} and [**configuration**]{.orange}. 
+:::
+
+:::{.fragment}
+Why? The experts …
+
+- Have been doing this for years. It’s just not hard for them anymore.
+- Probably use some flavor of `Unix` & they may secretly (or not so secretly) take pride in neither using nor knowing anything about Windows.
+- In their defense, it’s **hard to write installation instructions**.<br>Failures can be specific to an individual OS or even individual computer...
+:::
+
+:::{.fragment .center .l-up-space }
+But... we are in this together! So let's set you up (the right way)
+:::
+
+## Is R and RStudio up to date?
+This is a great time to make sure your R installation is [current]{.orange}. 
+
+``` r
+# Check your current R version 
+R.version.string
+
+# ... and (optionally) update your R packages
+update.packages(ask = FALSE, checkBuilt = TRUE)
+```
+
+::: {.callout-note title="Is my `R` version *“old”*?" .fragment}
+`R` had a major version change in April 2020, with the release of `4.0.0`. It is a good idea to be on the current *major version* (meaning **`4.something`**)
+
+Each major version is followed by several years of smaller (*minor* and *patch*) releases. You can be more relaxed about upgrading minor versions, but you still want to stay *reasonably current*. My advise: never fall **more than 1 minor version behind**.
+
+You don’t want to adopt new things on day one. But at some point, running old versions of software adds unnecessary difficulty. **So get current, people.** 
+:::
+
+## The shell
+The [**shell**]{.orange} is a program on your computer whose job is to run other programs. 
+
+Also known as: `terminal`, `command line`, `console` or `bash`
+
+In research departments, you usually see this program when working on a ***server*** (that does not have a GUI client). 
+
+:::{.fragment .m-up-space .l-space}
+Even if you do most of your `Git` operations via a [*client*]{.orange} (e.g., `RStudio` or `GitHub`), you will sometimes need tp work in the **shell**. 
+:::
+
+:::{.fragment style="max-width: 45%"}
+As you get more comfortable with `Git`, you might even *prefer* to do more and more via the shell. 
+
+So, let's get acquainted...
+:::
+
+![](imgs/shell.png){.absolute bottom="0" right="0" height="50%"}
+
+## Opening the shell
+
+:::: panel-tabset
+### From&ensp;`RStudio`
+It is often handy to launch a shell from `RStudio`, hear me out. 
+
+Why? Because `RStudio` makes an effort to put you in a *sane working directory*<br>(the current project).
+
+[To launch a shell within `RStudio`: [*Tools > Terminal*]{.bg-highlight}]{.m-up-space}
+
+### On macOS
+[The shell is often called the **“terminal”**.]{.m-space}
+
+One way to launch it is via Spotlight Search: hit [`Command⌘`]{.bg-highlight}+[`Space`]{.bg-highlight} and start typing *“terminal”*.
+
+### Windows is special... not in a good way
+::: {.column width="70%"}
+There are *many possible shells* you can end up in. 
+
+Unless you know better, use the **Git Bash** shell. This is the shell that ships with [Git for Windows](https://gitforwindows.org/) (so, you will have it on your system once you install `Git`).
+
+* RStudio should automatically detect the presence of **Git Bash**. You can inspect and influence this via<br> [*Tools > Global Options > Terminal*]{.bg-highlight}. 
+* To access **Git Bash** outside of RStudio: open the the Windows menu, click on the “Git” folder and select “Git Bash”.
+:::
+
+![](imgs/git-bash-windows.png){.absolute bottom=0 right=10 width=450}
+
+::::
+
+## Is `Git` installed?
+Go to the shell and type: 
+
+``` sh
+which git
+```
+This should give you the path to your **`Git` executable**.
+
+[Let's also check which version you are using:]{.l-up-space}
+
+``` sh
+git --version
+```
+[If you see something like `git: command not found` you (likely) <ins>don't have `Git` intalled</ins>.]{.l-up-space}
+
+Let's fix that.
+
+## Install `Git` (if you haven't)
+[You need `Git`, so let's install it.]{.l-space}
+
+::: panel-tabset
+### Windows
+Install [Git for Windows](https://gitforwindows.org/), also known as `msysgit` or **“Git Bash”**, to get `Git` in addition to some other useful tools, such as the `Bash shell`.
+
+> NOTE: When asked about *“Adjusting your PATH environment”*, make sure to select **“Git from the command line and also from 3rd-party software”**. Otherwise, accept the defaults.
+
+You should now have a `Git` executable at: `C:/Program Files/Git/bin/git.exe`.
+
+### macOS
+[Install the **Xcode** command line tools (not all of Xcode), which includes `Git`.]{.l-space}
+
+In the terminal type:
+``` sh
+xcode-select --install
+```
+
+### Linux
+[Install `Git` via your distro’s package manager.]{.l-space}
+
+Ubuntu or Debian:
+``` sh
+sudo apt-get install git
+```
+Fedora or RedHat:
+``` sh
+sudo yum install git
+```
+:::
+
+## Introduce yourself to `Git`{.scrollable}
+
+::: panel-tabset
+
+### In the shell
+Type:
+``` sh
+git config --global user.name "Serena Defina"
+git config --global user.email "sere.def@gmail.com"
+```
+
+> *What user name should I use?*<br>This doesn't matter. Your commits will be labelled with this user name though, so make it informative to potential collaborators (and future you).
+
+> *What email should I use?*<br>This <ins>must</ins> be the email associated with your `GitHub` account.
+
+:::{.column  width="40%"}
+Wait, what happened?
+``` sh
+git config --global --list
+```
+:::
+:::{.column  width="5%"}
+:::
+:::{.column  width="55%"}
+Check out the [Software Carpentry](https://swcarpentry.github.io/git-novice/02-setup.html) for more things you can do with `git config`.
+:::
+
+### In&ensp;`R`
+You can also set your `Git` user name and email from within `R` thanks to the `usethis` package.
+
+``` r
+# Install usethis (if needed)
+# install.packages("usethis") # or pak::pak("usethis")
+
+library(usethis) 
+use_git_config(user.name = "Serena Defina", user.email = "sere.def@gmail.com")
+```
+> I do quite a bit of R package dev, so I have `library(usethis)` in my `.Rprofile` file.
+:::
+
+## Can you hear me now? {.scrollable}
+[So, you have `Git` working on your local machine (yey). Now it's time to talk to `GitHub`.]{.l-space}
+
+::: {.fragment}
+*Recall*: `GitHub` is a [remote `Git` server]{.darkblue}. 
+
+To interact with it, we have to make a [request]{.orange} containing some [**credentials**]{.orange}. 
+
+[[*In English please*]{.bg-yellow}: we need to prove that we are a specific `GitHub` user, who’s allowed to do whatever we’re asking to do.]{.l-space}
+:::
+::::{.fragment}
+There are two ways (or [*"protocols"*]{.darkblue}) to communicate with a remote server, each using different credentials.
+
+* [**HTTPS**]{.orange}: use a **personal access token (PAT)**
+* [**SSH**]{.orange}: use **SSH keys**
+
+:::{.callout-tip title="HTTPS or SSH?"}
+GitHub recommends HTTPS, presumably becasue it is *easier* to get working (especially for Windows users). Tech-y people will die on the SSH hill.
+
+Anyway, don't worry too much. This is not an all-or-nothing decision and it’s a relatively easy to revisit later. 
+:::
+::::
+
+## Set up personal access tokens (PAT) for HTTPS
+::: panel-tabset
+
+### In&ensp;`R`
+Remember `usethis`?
+``` r
+usethis::create_github_token()
+```
+Copy the generated PAT to your clipboard and use it every time a `Git` operation asks for your [*password*]{.darkblue} (*very confusing*, I know)
+
+[...but best to **store the PAT** right now so you won't loose it:]{.m-up-space}
+
+Back to `R`:
+``` r
+gitcreds::gitcreds_set() 
+``` 
+Paste the PAT in response to the dialogue in the console.
+
+[**Done!** Check your set-up with:]{.m-up-space}
+``` r
+usethis::git_sitrep()
+``` 
+
+### On GitHub
+*Assuming you are signed in
+
+Go to: [https://github.com/settings/tokens](https://github.com/settings/tokens)
+
+> *Click on your profile icon (top right corner) > Settings > Developer Settings (at end of the sidebar menu) > Personal access tokens > Tokens (classic)*
+
+Click on [*Generate new token*]{.grey-button} > [*Generate new token (classic)*]{.grey-button}
+
+Select scopes: `“repo”`, `“user”`, and `“workflow”` (default from `usethis`)
+
+Click on [Generate token]{.green-button}.
+
+Copy the generated PAT to your clipboard.
+
+Provide this PAT next time a `Git` operation asks for your password... or store it in your favourite password manager.
+:::
+
+## Set up keys for SSH
+Here is what is going to happen: 
+
+- We'll generate a **key pair** (i.e. two long strings of characters): one [*public*]{.orange} and one [*private*]{.orange} key. 
+- We'll place the *public* key on a *server* (aka `GitHub`!), 
+- We'll add the *private* key to our `ssh-agent` on the *client* (aka your computer!). 
+- When the two match up, the system unlocks without the need for a password. *Magic*.
+
+:::{.callout-tip title="Some advice"}
+[It's normal to associate multiple public keys with your GitHub account. You should probably have one key pair per computer (at least, I do this).]{m-space}
+
+You can increase security even more by protecting the private key with a **passphrase**. <br>However, that requires some additional configuration (nothing mad, have a google at it)
+:::
+
+## Step 1: generate SSH keys {.scrollable}
+
+::: panel-tabset
+
+### From&ensp;`RStudio`
+Go to [*Tools > Global Options… > Git/SVN > Create SSH Key…*]{.bg-highlight}
+
+[`RStudio` will prompt you for a (optional) passphrase.]{m-up-space}
+
+[If you’re completely new at all this, *skip the passphrase for now*. You can implement it next time, when you are more comfortable with system configuration.]{.m-space}
+
+Click on [Create]{.grey-button}
+
+`RStudio` will generate and store the files `~/.ssh/id_ed25519` and `~/.ssh/id_ed25519.pub`.
+
+:::{.callout-note title="SSH keys file names"}
+SSH key files follow the typical pattern `id_<something>.pub` (the public key) and `id_<something>` (the private key), where `<something>` reflects the key *type*.
+
+`rsa` historically has been the most common. However, these days `GitHub` encourages users to generate SSH keys with the `ed25519` algorithm instead (default option).
+:::
+
+### From the shell
+Create the key pair: 
+
+[*a meaningful comment could be the name of your computer, for example]{.grey}
+``` sh
+ssh-keygen -t ed25519 -C "DESCRIPTIVE-COMMENT"
+```
+If your system is too old to support the ed25519 algorithm, substitute "`ed25519`" with "`rsa -b 4096`".
+
+Accept the proposal to save the key in the default location (just press [`Enter`]{.bg-highlight})
+
+You have the option to protect the key with a passphrase. 
+
+If you’re completely new at all this, skip the passphrase and implement it next time, when you are more comfortable with system configuration. 
+:::
+
+## Step 2: the client
+We need to tell your `ssh-agent` about the key.
+
+:::{.callout-caution title=""}
+Things get a little *OS-specific* around here. When in doubt, consult [GitHub’s instructions for SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh), which is kept current and accounts for more unusual situations than I can.
+:::
+
+::: panel-tabset
+### On Linux or macOS
+Make sure ssh-agent is enabled:
+``` sh
+eval "$(ssh-agent -s)"
+```
+You should see something like "`Agent pid <some number>`". 
+
+If this fails, try again as superuser (`sudo su` > `eval "$(ssh-agent -s)"` > `exit`).
+
+Add your key to the ssh agent:
+``` sh
+ssh-add ~/.ssh/id_ed25519
+```
+[If you set a passphrase, you’ll be challenged for it here.]{.grey}
+
+### On Windows
+In the `Git Bash` shell, make sure ssh-agent is enabled:
+``` sh
+eval $(ssh-agent -s)
+```
+You should see something like "`Agent pid <some number>`". 
+
+Add your key to the ssh agent:
+``` sh
+ssh-add ~/.ssh/id_ed25519
+```
+:::
+
+## Step 3: the server
+The last thing we need to do is store a copy of your public key on `GitHub`.
+
+1. Copy the public key onto your clipboard. 
+
+::: panel-tabset
+
+### In&ensp;`RStudio`
+Go to [*Tools > Global Options… > Git/SVN*]{.bg-highlight}. 
+
+You should see something like `~/.ssh/id_ed25519` in the SSH Key box.
+
+Click on [*View public key*]{.darkblue} and copy that to your clipboard.
+
+### In the shell
+Open the `~/.ssh/id_ed25519.pub` file (in whatever editor) and copy its content.
+
+Some examples: `pbcopy < ~/.ssh/id_ed25519.pup` (on macOS), `xclip -sel clip < ~/.ssh/id_ed25519.pub` (on Linux), `clip < ~/.ssh/id_ed25519.pub` (on Windows)
+
+:::
+<br>
+`2.` Got to `GitHub` and register the public key
+
+> *Click on your profile pic (upper right corner) > Settings > SSH and GPG keys > New SSH key. Paste your public key in the “Key” box. Give it an informative title (e.g. the descriptive comment you used during key creation). Click "Add SSH key".*
+
+
+## Done!
+Thank god, you are now set-up and ready to use `Git`.
+
+We all deserve a [**break**]{.orange}.
+
+[But first, one last test for peace of mind:]{.l-up-space}
+```sh
+ssh -T git@github.com
+```
+<br><br>
+
+### Questions? {.center}

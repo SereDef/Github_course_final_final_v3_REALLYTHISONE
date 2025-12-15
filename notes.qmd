@@ -98,10 +98,11 @@ For new or existing projects, you will:
 Dedicate a directory (a.k.a “folder”) to it. Make it an RStudio Project. Make it a Git repository. Go about your usual business. But instead of only saving individual files, periodically you make a commit, which takes a multi-file snapshot of the entire project. Have you ever versioned a file by adding your initials or the date? That is effectively a commit, albeit only for a single file: it is a version that is significant to you and that you might want to inspect or revert to later. Push commits to GitHub periodically. This is like sharing a document with colleagues on DropBox or sending it out as an email attachment. It signals you’re ready to make your work visible to others and invite comment or edits.
 
 
+# Part3: Configuration
+Let's walk through some basic operations to confirm you have installed the necessary software and that the necessary connections are being made, between tools on your computer and between your computer and `GitHub`.
 
 
-
-# Part3: Workflows 
+# Part4: Workflows 
 
 ## Clone your repo to your local computer
 You can also personalize this default by setting the `usethis.destdir` option in your `.Rprofile`.
