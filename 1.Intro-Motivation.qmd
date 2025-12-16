@@ -224,9 +224,7 @@ It allows others to browse project files, explore their history, sync up with th
 Many operations can be done entirely in the browser, including editing or adding files.
 :::
 
-[Let's take a look!]{.fragment .center}
-
-## Some examples in bio-research
+## Some nice examples from bio-research
 
 A diverse range of efforts (from individual, to labs, to global collaborations) have chosen `GitHub` as productive place to share code and ideas
 
@@ -234,7 +232,7 @@ A diverse range of efforts (from individual, to labs, to global collaborations) 
 
 ## Benefits of using hosted version control {.scrollable}
 
-*In a nutshel*: doing your work becomes tightly integrated with [**organizing**]{.darkblue}, [**recording**]{.darkblue}, and [**disseminating**]{.darkblue} it. It's not a separate, burdensome task you are tempted to *neglect*.
+[In a nutshel:]{.grey} doing your work becomes tightly integrated with [**organizing**]{.darkblue}, [**recording**]{.darkblue}, and [**disseminating**]{.darkblue} it. [It's not a separate, burdensome task you are tempted to *neglect*.]{.fragment}
 
 :::{.incremental}
 1.  [Tell the **story** of your project]{.orange}.<br>Make analytical decisions **traceable** by documenting them as you go.

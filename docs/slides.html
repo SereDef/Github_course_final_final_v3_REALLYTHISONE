@@ -398,16 +398,15 @@ Serena Defina
 
 </div><div class="fragment column bg-highlight" style="width:40%;">
 <p>Many operations can be done entirely in the browser, including editing or adding files.</p>
-</div><p><span class="fragment center">Let’s take a look!</span></p>
-</section>
-<section id="some-examples-in-bio-research" class="slide level2">
-<h2>Some examples in bio-research</h2>
+</div></section>
+<section id="some-nice-examples-from-bio-research" class="slide level2">
+<h2>Some nice examples from bio-research</h2>
 <p>A diverse range of efforts (from individual, to labs, to global collaborations) have chosen <code>GitHub</code> as productive place to share code and ideas</p>
 <p><img data-src="imgs/github-research-examples.png" class="absolute" style="top: 250px; left: 50px; height: 600px; "></p>
 </section>
 <section id="benefits-of-using-hosted-version-control" class="slide level2 scrollable">
 <h2>Benefits of using hosted version control</h2>
-<p><em>In a nutshel</em>: doing your work becomes tightly integrated with <span class="darkblue"><strong>organizing</strong></span>, <span class="darkblue"><strong>recording</strong></span>, and <span class="darkblue"><strong>disseminating</strong></span> it. It’s not a separate, burdensome task you are tempted to <em>neglect</em>.</p>
+<p><span class="grey">In a nutshel:</span> doing your work becomes tightly integrated with <span class="darkblue"><strong>organizing</strong></span>, <span class="darkblue"><strong>recording</strong></span>, and <span class="darkblue"><strong>disseminating</strong></span> it. <span class="fragment">It’s not a separate, burdensome task you are tempted to <em>neglect</em>.</span></p>
 <ol type="1">
 <li class="fragment"><span class="orange">Tell the <strong>story</strong> of your project</span>.<br>Make analytical decisions <strong>traceable</strong> by documenting them as you go.</li>
 <li class="fragment"><span class="orange"><strong>Back up</strong> your work</span>!</li>
@@ -429,7 +428,7 @@ Serena Defina
 <h2>Git basics</h2>
 <p><img data-src="imgs/octocat-nobleman.jpg" class="absolute" style="top: 100px; right: 80px; width: 25%; "></p>
 <p><span class="l-space">Let’s talk a bit more about <code>Git</code>.</span></p>
-<p>In this sections we will:</p>
+<p>In this section we will:</p>
 <ul>
 <li>introduce the most important basic <strong>ideas</strong></li>
 <li>define some <code>Git</code> <strong>vocabulary</strong></li>
@@ -437,7 +436,7 @@ Serena Defina
 </ul>
 <div class="fragment">
 <p><span class="l-up-space m-space">Keep in mind that <em>actual usage</em> is the most effective way to build up a good mental model for <code>Git</code>, so don’t worry if some concept don’t feel so clear just yet</span></p>
-<p>Once again, there <em>many</em> excellent external resources for <code>Git</code>, which you can find in the <a href="">Resources</a> at the end of the presenation.</p>
+<p>Once again, there <em>many</em> excellent external <a href="">Resources</a> at the end of the presenation.</p>
 </div>
 </section>
 <section id="repositories-repos-and-roles" class="slide level2">
@@ -445,31 +444,32 @@ Serena Defina
 <p><span class="m-space"><em>Recall</em>: <code>Git</code> manages the evolution of a <strong>set of files</strong></span></p>
 <p>Such set of files (or directory) is called a <span class="darkblue"><strong>repository</strong></span> (<span class="darkblue"><strong>repo</strong></span> for friends).</p>
 <p><span class="l-up-space l-space">A repository can be <span class="bg-highlight"><strong>public</strong></span> or <span class="bg-highlight"><strong>private</strong></span>.</span></p>
+<div class="fragment">
+<h4 id="roles">Roles</h4>
 <p>The <span class="orange"><strong>owner</strong></span> of a repo can grant permission to <em>others</em> (<span class="darkblue"><strong>collaborators</strong></span>): <span class="grey">e.g.&nbsp;read (only relevant for private repos), write (<code>push</code>) and admin access.</span></p>
-<p>A repo can be owned by a <em>person</em> or by an <span class="darkblue"><strong>organization</strong></span>.</p>
+<p>A repo can be owned by a <em>person</em> or by an <span class="darkblue"><strong>Organization</strong></span>.</p>
+</div>
 </section>
 <section id="commits" class="slide level2">
 <h2>Commits</h2>
 <p>A <strong><code>commit</code></strong> is a <span class="darkblue"><strong>snapshot</strong></span> of one or more files inside a repository.</p>
-<div class="fragment">
-<p><span class="m-up-space s-space">Instead of saving a copy of a file, versioning it chaging it’s name (e.g.&nbsp;“[…] <em>_v2</em>” or “[…] <em>_SD</em>”), you create a <code>commit</code>.</span></p>
+<p><span class="m-up-space s-space fragment">Instead of saving a copy of a file, versioning it chaging it’s name (e.g.&nbsp;“[…] <em>_v2</em>” or “[…] <em>_SD</em>”), you create a <code>commit</code>.</span></p>
 <div class="column" style="width:70%;">
 <p><img data-src="imgs/commit-example.png" class="absolute" style="top: 300px; left: 0px; width: 70%; "></p>
-</div></div>
-<div class="column" style="width:3%;">
+</div><div class="column" style="width:3%;">
 
 </div><div class="column" style="width:24%;">
 <p><span class="m-space fragment">On the surface nothing changes, but the <span class="darkblue"><em>history</em></span> of that file is secretly saved, including <span class="darkblue"><em>metadata</em></span> (e.g.&nbsp;author, date, message)</span></p>
-<p><span class="fragment">You can add more information about the changes you’ve made in a <span class="orange">commit <strong>message</strong></span></span></p>
+<p><span class="fragment">You can <em>add information</em> about the changes you made in a <span class="orange">commit <strong>message</strong></span></span></p>
 </div></section>
 <section id="staging" class="slide level2">
 <h2>Staging</h2>
-<p><code>Git</code> commits actually happen in <ins><em>two distinct steps</em></ins> (though they are often used together).</p>
+<p><em>Actually</em>, <code>Git</code> commits happen in <ins><em>two distinct steps</em></ins> (though they are often used together).</p>
 <ol type="1">
-<li><span class="darkblue"><strong>Stage</strong></span> (via <code>git add</code>): tell <code>Git</code> <strong>which changes</strong> from your repo you intend to include in the next commit.</li>
-<li><strong>Commit</strong> (via <code>git commit</code>): take what is in the <em>staging area</em> and create a new commit object in the repo’s history, with its <strong>message</strong> and <strong>unique ID</strong>.</li>
+<li class="fragment"><span class="darkblue"><strong>Stage</strong></span> (via <code>git add</code>): tell <code>Git</code> <strong>which changes</strong> from your repo you intend to include in the next commit.</li>
+<li class="fragment"><strong>Commit</strong> (via <code>git commit</code>): take what is in the <em>staging area</em> and create a new commit object in the repo’s history, with its <strong>message</strong> and <strong>unique ID</strong>.</li>
 </ol>
-<div title="Why is this useful?">
+<div class="fragment" title="Why is this useful?">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -488,24 +488,28 @@ Serena Defina
 </div>
 </section>
 <section id="time-travel-hashs-and-tags" class="slide level2">
-<h2>Time travel: hashs and tags</h2>
-<p>Committing (well) helps you <span class="darkblue">tell the <strong>story of your project</strong></span> to yourself and to other people.</p>
-<p>But it does not end there… <code>Git</code> also lets you <strong>time travel</strong> through your project</p>
-<p>Getting the files from a commit in the past is known as doing a <span class="orange"><strong>check out</strong></span></p>
+<h2>Time travel: <span class="darkblue">hashs</span> and <span class="darkblue">tags</span></h2>
+<p>Commits help you <span class="darkblue">tell the <strong>story of your project</strong></span> (to yourself and to other people).</p>
+<p>But it does not end there… <span class="fragment"><code>Git</code> also lets you <strong>time travel</strong> through your project.</span></p>
+<p><span class="m-up-space fragment">Getting the files from a commit in the past is known as doing a <span class="orange"><strong>check out</strong></span></span></p>
+<div class="fragment">
 <div class="column" style="width:50%;">
 <p><img data-src="imgs/commit-hash.png" class="absolute" style="top: 300px; left: 0px; width: 50%; "></p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:40%;">
-<p><span class="m-up-space l-space"><em>Recall</em>: each commit has a <strong>unique ID</strong> called a <span class="darkblue"><strong>hash</strong></span>.</span></p>
+<p><span class="m-up-space m-space"><em>Recall</em>: each commit has a <strong>unique ID</strong> called a <span class="darkblue"><strong>hash</strong></span>.</span></p>
 <p>You can tell <code>Git</code> what commit I want to <em>check out</em> using (part of) the commit hash.</p>
 </div><p>My other commits <em>still exist</em>, but when I look in my repo, it’s <em>as if they never happened</em>.</p>
-<p>You can also give certain <em>important</em> commits a <strong>special name</strong> (a <span class="darkblue"><strong>tag</strong></span>) that you can then use instead of their hash, to refer to them during time travel. People often use tags for software versions.</p>
+</div>
+<p><span class="fragment">You can also give certain commits a <strong>special name</strong> (a <span class="darkblue"><strong>tag</strong></span>) that you can then use to refer to them during time travel <span class="grey">e.g.&nbsp;people often use tags for <em>software versions</em>.</span></span></p>
 </section>
 <section id="parallel-universes-branches" class="slide level2">
-<h2>Parallel universes: branches</h2>
+<h2>Parallel universes: <span class="darkblue">branches</span></h2>
 <p>So far, everything has been very linear and ordered. The thing is… this isn’t really how projects work.</p>
-<p>Sometimes you want to <strong>try something out</strong>, make <em>experiments</em>. The way you do this in Git is with <span class="orange"><strong>branches</strong></span></p>
+<p>Sometimes you want to <strong>try something out</strong>, make <em>experiments</em>.</p>
+<p><span class="fragment">The way you do this in Git is with <span class="orange"><strong>branches</strong></span></span></p>
+<div class="fragment">
 <p>A branch is a <em>moveable label attached to a commit</em>.</p>
 <div class="column" style="width:50%;">
 <p><img data-src="imgs/branches-example.png" class="absolute" style="top: 400px; left: 0px; height: 40%; "></p>
@@ -514,12 +518,14 @@ Serena Defina
 </div><div class="column" style="width:40%;">
 <p><span class="m-up-space m-space">The <strong>default branch</strong> name in <code>Git</code> is <strong><code>main</code></strong> (<ins>not</ins> <code>master</code>!)</span></p>
 <p>It’s common for the <code>main</code> branch to hold a <em>stable</em> version of the code or files, while other branches contain <strong>work in progress</strong>.</p>
-</div></section>
+</div></div>
+</section>
 <section id="quantum-collapse-merging" class="slide level2">
-<h2>Quantum collapse: merging</h2>
+<h2>Quantum collapse: <span class="darkblue">merging</span></h2>
 <p>Branches are easy to throw away if you decide you don’t like your changes.</p>
 <p>But if you are happy with some work, you typically want to combine it back into the <code>main</code> branch.</p>
-<p><span class="m-up-space">To get changes from one branch into another, you</span><span class="orange"><strong>merge</strong></span> them.</p>
+<div class="fragment">
+<p><span class="m-up-space">To get changes from one branch into another, you <span class="orange"><strong>merge</strong></span> them.</span></p>
 <div class="column" style="width:50%;">
 <p><img data-src="imgs/branches-merge.png" class="absolute" style="top: 400px; left: 0px; height: 40%; "></p>
 </div><div class="column" style="width:14%;">
@@ -527,20 +533,23 @@ Serena Defina
 </div><div class="column" style="width:35%;">
 <p><span class="m-up-space l-space">This last commit is a <strong>combination</strong> of all of the commits from both branches.</span></p>
 <p><span class="grey">* Different collaborators can work on different branches independently!</span></p>
-</div></section>
-<section id="remote-vs.-local" class="slide level2">
-<h2>Remote (vs.&nbsp;local)</h2>
-<p>Everyone knows that you should <strong>back up</strong> your work regularly, ideally to somewhere geographically distinct from your computer.</p>
-<p>In <code>Git</code> this place is called a <span class="darkblue"><strong>remote</strong></span>. A very popular place to put your remotes is <code>Github</code>.</p>
-<p>Having a <em>remote</em> copy of your repos has several advantages:</p>
-<ul>
-<li>Safer</li>
-<li>Access from different places</li>
-<li>Shared access with other people</li>
-</ul>
+</div></div>
 </section>
-<section id="working-on-your-remotes-cloning-pushing-and-pulling" class="slide level2">
-<h2>Working on (your) remotes: cloning, pushing and pulling</h2>
+<section id="remote-vs.-local-repositories" class="slide level2">
+<h2><span class="darkblue">Remote</span> (vs.&nbsp;local) repositories</h2>
+<p>Everyone knows that you should <strong>back up your work</strong> regularly, ideally somewhere geographically distinct from your computer.</p>
+<p>In <code>Git</code> this place is called a <span class="darkblue"><strong>remote</strong></span>. <span class="fragment">A very popular place to put your remotes is <code>Github</code>.</span></p>
+<div class="fragment">
+<p><span class="m-up-space">Having a <em>remote</em> copy of your repos has several advantages:</span></p>
+<ul>
+<li>It’s <strong>safer</strong>: you won’t loose your work</li>
+<li>Can be <strong>accessed from different places</strong>: e.g.&nbsp;a server, your work laptop, your personal laptop…</li>
+<li>Can have <strong>shared access with other people</strong> (if you want it to)</li>
+</ul>
+</div>
+</section>
+<section id="working-with-your-remotes-cloning-pushing-and-pulling" class="slide level2">
+<h2>Working with (your) remotes: <span class="darkblue">cloning</span>, <span class="darkblue">pushing</span> and <span class="darkblue">pulling</span></h2>
 <p><img data-src="imgs/clone-push-pull-0.png" class="absolute" style="top: 110px; left: 20px; height: 80%; "></p>
 <div class="fragment">
 <div class="absolute m-up-space" style="top: 10%; left: 62%; ">
@@ -564,39 +573,58 @@ Serena Defina
 <p><img data-src="imgs/clone-push-pull-4.png" class="absolute" style="top: 110px; left: 20px; height: 80%; "></p>
 </div>
 </section>
-<section id="working-on-someone-elses-repo-forking-and-pull-requests" class="slide level2">
-<h2>Working on someone else’s repo: forking and pull requests</h2>
-<p><strong>Cloning</strong> is a <em>client-side</em> <code>Git</code> operation: it creates a <em>local copy</em> of a remote repo. The remote repo can be original or a fork.</p>
-<p><span class="orange"><strong>Forking</strong></span> gives you <em>your own remote copy</em> of someone else’s repo. It creates a new remote repository under your user (or organization), starting from another repo’s contents and history.</p>
-<p>When you are <ins>not a collaborator</ins> on the original repo (e.g., open-source contributions), you usually want your own independent remote for an existing project</p>
-<p>In these workflows, you <strong>fork first</strong> (to create your own remote), <strong>then clone</strong> that fork to your machine and work there.</p>
-<p>A fork can be kept in sync with its <span class="darkblue"><strong>upstream repo</strong></span> (by <code>pulling</code>).</p>
-<p>To propose changes back to the original, you’’ll use a <span class="orange"><strong>pull request</strong></span> instead of <code>pushing</code> directly.</p>
-</section>
-<section id="github-issues" class="slide level2">
-<h2><code>GitHub</code> Issues</h2>
+<section id="working-with-someone-elses-repo-forking-and-pull-requests" class="slide level2">
+<h2>Working with someone else’s repo: <span class="darkblue">forking</span> and <span class="darkblue">pull requests</span></h2>
+<p><strong>Cloning</strong> is a <em>client-side</em> <code>Git</code> operation: it creates a <em>local copy</em> of a remote repo.</p>
+<div class="fragment">
+<p>When you are <ins>not a collaborator</ins> on the original repo <span class="grey">(e.g., open-source contributions)</span>, you usually want your own <em>independent remote</em> to work with.</p>
+<p><img data-src="imgs/fork-setup.png" class="absolute" style="top: 230px; right: 30px; height: 60%; "></p>
+</div>
+<div class="column fragment m-up-space" style="width:60%;">
+<p><span class="orange"><strong>Forking</strong></span> creates a <em>new remote copy</em> of someone else’s repo (the <span class="darkblue"><strong>upstream repo</strong></span>), under your user.</p>
+<p><span class="m-up-space">To propose changes back to the original, you’ll use a <span class="orange"><strong>pull request</strong></span> (<span class="orange">PR</span>) instead of <code>pushing</code> directly.</span></p>
+</div></section>
+<section id="githubs-got-issues" class="slide level2">
+<h2><code>GitHub</code>’s got Issues</h2>
 <p><span class="m-space"><span class="orange"><strong>Issues</strong></span> are essentially a <strong>list of things</strong>: bugs, feature requests, to-dos, whatever</span></p>
-<p><span class="m-space">Issues can be <em>assigned</em> to people (e.g., to-dos) and <em>tagged</em> (“bug” or “progress-report”).</span></p>
+<p><span class="m-space">Issues are handy for project management becasue they can be <span class="darkblue"><em>assigned</em> to people</span> (e.g., to-dos) and <span class="darkblue"><em>tagged</em></span> (e.g.&nbsp;<span class="grey-button"><code>bug</code></span> or <span class="grey-button"><code>progress-report</code></span>).</span></p>
 <p>They are tightly integrated with:</p>
 <ul>
-<li><strong>email</strong>, allowing you to copy/embed important conversations in the associated repo;</li>
+<li><strong>email</strong>, allowing you to copy/embed important conversations in the associated repo</li>
 <li><strong>commits</strong> allowing you to record that, e.g.&nbsp;<em>“the changes in this commit solve the problem discussed in that issue.”</em></li>
 </ul>
-<p><span class="l-up-space fragment">As a new <code>GitHub</code> user, one of the most productive things you can do is to use <code>GitHub</code> issues to provide a clear <strong>bug report</strong> or <strong>feature request</strong> for a package you use.</span></p>
+<div class="fragment m-up-space">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>As a new <code>GitHub</code> user, one of the most productive things you can do is to use <code>GitHub</code> issues to provide a clear <strong>bug report</strong> or <strong>feature request</strong> for a package you use.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="questions" class="slide level2">
 <h2>Questions?</h2>
+<p><br></p>
 <p><span class="l-space">No? Let’s play a <strong>game</strong></span></p>
-<h3 id="break-time">Break time</h3>
+<p><br></p>
+<h3 class="center" id="and-then-break-time">and then… <span class="orange">break time</span></h3>
 </section>
 <section id="bonus-fun-fact" class="slide level2">
-<h2>Bonus: fun fact</h2>
+<h2>Bonus: <span class="orange">fun fact</span></h2>
 <p>The <code>GitHub</code> mascot is named <strong>Octocat</strong>, a <code>merge</code> between an octopuss and cat.</p>
 <p>Do you know the story behind this logo creation?</p>
 <div class="column" style="width:65%;">
-<p>The idea came from the “octopus merge” – the practice of combining three or more branches of development. The logo was created by Simon Oxley, who doesn’t remember creating it, apparently. Initially, Simon thought of calling his creation <em>“Octopuss”</em> (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.</p>
+<p>The idea came from the <em>“octopus merge”</em> – the practice of combining three or more branches of development.</p>
+<p>The logo was created by Simon Oxley (who doesn’t remember creating it, apparently). Initially, Simon thought of calling his creation <em>“Octopuss”</em> (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.</p>
 </div><div class="column" style="width:30%;">
-<p><img data-src="imgs/octocat.png" class="absolute" style="top: 110px; right: 80px; width: 25%; "></p>
+<p><img data-src="imgs/octocat.png" class="absolute" style="top: 200px; right: 120px; width: 25%; "></p>
 </div><p>In the end, <code>GitHub</code> decided to go with <em>Octocat</em> (for obvious reasons).</p>
 </section></section>
 <section>
@@ -974,58 +1002,61 @@ Serena Defina
 <section id="part-4" class="title-slide slide level1">
 <h1><span style="color: lightblue">Part 4</span></h1>
 <div style="font-size: 100px; text-align: left !important; max-width: 55%">
-<p><span class="darkblue"><strong>Daily<br><code>Git</code> / <code>GitHub</code> workflows<br><br></strong></span></p>
+<p><span class="darkblue"><strong>Daily<br><code>Git</code> / <code>GitHub</code> workflows</strong><br><br></span></p>
 </div>
 <p><img data-src="imgs/octocat-training.png" class="absolute" style="top: 100px; bottom: 0px; right: 50px; height: 80%; "></p>
 </section>
 <section id="lets-get-down-to-it" class="slide level2">
 <h2>Let’s get down to it</h2>
-<p><span class="l-space">Now that we are done setting up, it’s about damn time to see what was all this pain even for:</span></p>
-<p>In this section, we’ll go over three <em>realistic</em> <strong>workflows</strong> you may use in you daily life</p>
+<p><span class="l-space">Now that we are done setting up, it’s about damn time to see what was all that pain even for:</span></p>
+<div class="fragment">
+<p>In this section, we’ll go over four <strong><em>realistic</em> workflows</strong> you may use in you daily <code>Git</code>ventures</p>
 <ol type="1">
 <li><span class="darkblue"><strong>New project - <code>GitHub</code> first</strong></span>: the easiest way to get a working project.</li>
 <li><span class="darkblue"><strong>Existing project - <code>GitHub</code> first</strong></span>: a deeply pragmatic way to get pre-existing work onto <code>GitHub</code>.</li>
-<li><span class="darkblue"><strong>Existing project - <code>GitHub</code> last</strong></span>: the more “<em>proper</em>” way to connect existing local work to <code>GitHub</code>, when there’s already some <code>Git</code> history.</li>
+<li><span class="darkblue"><strong>Existing project - <code>GitHub</code> last</strong></span>: the “<em>proper</em>” way to connect existing local work to <code>GitHub</code>, when there’s already a <code>Git</code> history.</li>
 <li><span class="darkblue"><strong>Contributing to someone else’s work</strong></span>: your gateway drug to open-source heaven.</li>
 </ol>
+</div>
 </section>
 <section id="create-a-repository" class="slide level2">
-<h2>1. Create a repository</h2>
+<h2><code>(1)</code> Create a repository</h2>
 <p>It’s (finally) time to make your first repository!</p>
 <blockquote>
-<p>Go to <a href="https://github.com"><code>GitHub</code></a> and make sure you are logged in. <br><em>Click on your profile pic (top-right corner) &gt; Repositories &gt;</em> <span class="green-button">New</span>.</p>
+<p>Go to <a href="https://github.com"><code>GitHub</code></a> and make sure you are logged in. <br><em>Click on your profile pic (top-right corner) &gt; Repositories &gt;</em> <span class="green-button">New</span></p>
 </blockquote>
 <p>Fill some info in:</p>
 <blockquote>
-<p><strong>Repository name</strong>: Whatever you wish. Approach this as you would a <em>variable name</em>: descriptive but brief, <ins>no spaces</ins>. Letters, digits, <code>-</code>, <code>.</code>, or <code>_</code> are allowed.<br> <strong>Description</strong> (for humans): It’s nice to have something here, so you’ll see it appear in the <code>README</code>. e.g.&nbsp;<em>“Analysis of the stuff”</em>.<br> <strong>Visibility</strong>: Public or private (can always change it later)<br> <strong>Add README</strong>: generally a good idea, this is the landing page for your repo<br> <strong>Templates</strong>, <strong><code>.gitignore</code></strong> and <strong>licences</strong> we will talk about in a moment, ignore for now.</p>
+<p><strong>Repository name</strong>: approach this as you would a <em>variable name</em>: descriptive but brief, <ins>no spaces</ins>. Letters, digits, <code>-</code>, <code>.</code>, or <code>_</code> are allowed.<br> <strong>Description</strong> (for humans): It’s nice to have something here, so you’ll see it appear in the <code>README</code>. e.g.&nbsp;<em>“Analysis of the stuff”</em>.<br> <strong>Visibility</strong>: Public or private (don’t sweat it, can always change it later)<br> <strong>Add README</strong>: generally a good idea, this is the landing page for your repo<br> <strong>Templates</strong>, <strong><code>.gitignore</code></strong> and <strong>licences</strong> we will talk about in a moment, ignore for now.</p>
 </blockquote>
-<p>Click on <span class="green-button">Create repository</span>.</p>
+<p>Click on <span class="green-button">Create repository</span></p>
 </section>
-<section id="clone-your-repo-to-your-local-computer" class="slide level2">
-<h2>Clone your repo to your local computer</h2>
-<p>Now, on the repo page, click the big green button that says <span class="green-button">&lt;&gt; Code</span>.</p>
+<section id="clone-your-repo-to-your-computer" class="slide level2">
+<h2>Clone your repo to your computer</h2>
+<p>Now, on the repo page, click the big green button that says <span class="green-button">&lt;&gt; Code</span></p>
 <div class="column" style="width:55%;">
 <p><span class="l-space">Copy a <em>clone URL</em> to your clipboard.</span></p>
 <p><span class="m-space">Remember when we talked about HTTPS and SSH? Here they are again.</span></p>
 <p><span class="l-space">The type of URL you copy determines the <strong>protocol</strong> <code>GitHub</code> will use, so if you have PAT set up, copy the HTTPS URL, if you are using SSH keys, go for SSH.</span></p>
-<p>Now, you have a few ways to get this onto your computer.</p>
+<p>Now, you have a few ways to get this onto your computer…</p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:40%;">
 <p><img data-src="imgs/clone-repo-url.png"></p>
 </div></section>
-<section id="clone-your-repo-to-your-local-computer-1" class="slide level2">
-<h2>Clone your repo to your local computer</h2>
+<section id="clone-your-repo-to-your-computer-1" class="slide level2">
+<h2>Clone your repo to your computer</h2>
 <p>Let’s use the URL we just copied from <code>GitHub</code>.</p>
 <div class="panel-tabset">
 <ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">In the shell</a></li><li><a href="#tabset-8-2">In <code>R</code></a></li><li><a href="#tabset-8-3">In <code>RStudio</code></a></li></ul>
 <div class="tab-content">
 <div id="tabset-8-1">
+<blockquote>
 <p><span class="m-space">If your shell cooperates, you should be able to paste the whole <code>https://...</code> bit, but some shells are not (immediately) clipboard aware. In that sad case, you must type it (<em>accurately</em>), best of luck sailor!</span></p>
+</blockquote>
 <p>This should look something like this:</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/<span class="op">&lt;</span>YOUR-USERNAME<span class="op">&gt;</span>/<span class="op">&lt;</span>YOUR-REPOSITORY<span class="op">&gt;</span>.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
-<div title="Where am I?">
+<div class="m-up-space" title="Where am I?">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1085,7 +1116,7 @@ Serena Defina
 </section>
 <section id="make-a-local-change-and-commit-to-it" class="slide level2">
 <h2>Make a local change and <code>commit</code> to it</h2>
-<p>Every time you finish a valuable chunk of work (probably a few times a day)</p>
+<p>Every time you finish a <em>valuable chunk of work</em> (probably a few times a day)</p>
 <div class="panel-tabset">
 <ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">In the shell</a></li><li><a href="#tabset-9-2">In <code>RStudio</code></a></li></ul>
 <div class="tab-content">
@@ -1101,7 +1132,7 @@ Serena Defina
 <div id="tabset-9-2">
 <p>Let’s make a small change: e.g., adding the line <em>“This is a line from RStudio”</em> to the <code>README</code>.</p>
 <p><span class="l-space">Save your changes.</span></p>
-<p><span class="m-space">Open the <span class="grey-button">Git</span> tab in upper right pane (or wherever you have put your “Environment” pane, you eretic).</span></p>
+<p><span class="m-space">Open the <span class="grey-button">Git</span> tab in upper right pane <span class="grey">(or wherever you have put your “Environment” pane, you eretic)</span>.</span></p>
 <p><span class="m-space">Check the “Staged” box for the files you want to commit and click (surprise) <span class="grey-button">Commit</span></span></p>
 <p><span class="m-space">Type a message in “Commit message”, e.g.&nbsp;<em>“Commit from RStudio”</em>.</span></p>
 <p><span class="m-space">Click <span class="grey-button">Commit</span>.</span></p>
@@ -1112,8 +1143,10 @@ Serena Defina
 <section id="shall-we-tell-github-about-this" class="slide level2">
 <h2>Shall we tell <code>GitHub</code> about this?</h2>
 <p>Time to share (<code>push</code>) your changes with the world (or with <code>GitHub</code> anyway)</p>
+<div class="fragment">
 <p>Now, this will seem counterintuitive, but first let’s stop and… <strong><code>pull</code> from <code>GitHub</code></strong>.</p>
-<p>I doubt anything will happen (i.e.&nbsp;you’ll get <em><code>"Already up-to-date."</code></em>) but this is a good habit to catch… can you guess <em>why?</em></p>
+<p>I doubt anything will happen (i.e.&nbsp;you’ll get <code>"Already up-to-date."</code>) but this is a good habit to catch… can you guess <em>why?</em></p>
+</div>
 <div class="panel-tabset">
 <ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">In the shell</a></li><li><a href="#tabset-10-2">In <code>RStudio</code></a></li></ul>
 <div class="tab-content">
@@ -1147,7 +1180,7 @@ Serena Defina
 </ol>
 </section>
 <section id="exisiting-project-github-first" class="slide level2">
-<h2>2. Exisiting project, <code>GitHub</code> first</h2>
+<h2><code>(2)</code> Exisiting project, <code>GitHub</code> first</h2>
 <p>What if you already have an existing project, somewhere in a directory on your computer?</p>
 <p>If this is not (yet) a <code>Git</code>-tracked project, it should <em>easy-easy</em></p>
 <ul>
@@ -1157,14 +1190,14 @@ Serena Defina
 <li class="fragment">Check that your new files appear as <em>new untracked files</em>.</li>
 <li class="fragment">Stage, commit and… wait</li>
 </ul>
-<div class="fragment" title=" Don't push any data, for the love of God">
+<div class="fragment" title="Don't push any data, for the love of God">
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong> Don’t push any data, for the love of God</strong></p>
+<p><strong>Don’t push any data, for the love of God</strong></p>
 </div>
 <div class="callout-content">
 <p>Take a moment to stop and think: this is about to leave your local computer and go to <code>GitHub</code>. Make sure you did not commit any <strong>data</strong>, <strong>passwords</strong> or <strong>anything else you don’t want to share</strong> with the world.</p>
@@ -1211,16 +1244,16 @@ Serena Defina
 <li>the remote <code>GitHub</code> repo is already configured as the <code>origin remote</code> for your local repo</li>
 <li>your local <code>main</code> branch is now tracking the <code>main</code> on <code>GitHub</code>.</li>
 </ul>
-<p><span class="l-space">The practical implication is that you are now set up to <code>push</code> and <code>pull</code>. No need to fanny around setting up <code>Git</code> remotes and tracking branches on the command line.</span></p>
-<p><em>Wait, what are you talking about?</em></p>
+<p><span class="l-space">The practical implication is that you are <strong>already set up to <code>push</code> and <code>pull</code></strong>. No need to fanny around setting up <code>Git</code> remotes and tracking branches in the shell.</span></p>
+<p><span class="orange"><em>Wait, what are you talking about?</em></span></p>
 <p>Let’s a look at:</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote show origin</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="existing-project-github-last" class="slide level2">
-<h2>3. Existing project, <code>GitHub</code> last</h2>
-<p>If you have followed any other <code>Git</code> tutorial however, chances are that your first step would look something like:</p>
+<h2><code>(3)</code> Existing project, <code>GitHub</code> last</h2>
+<p>If you have followed any <em>other</em> <code>Git</code> tutorial though, chances are that you started from:</p>
 <div class="panel-tabset">
-<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">In the shell</a></li><li><a href="#tabset-11-2">Can be de done in <code>R</code> too, fyi</a></li></ul>
+<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">In the shell</a></li><li><a href="#tabset-11-2">Can be de done in <code>R</code> too, <em>FYI</em></a></li></ul>
 <div class="tab-content">
 <div id="tabset-11-1">
 <div class="sourceCode" id="cb28"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1230,9 +1263,10 @@ Serena Defina
 </div>
 </div>
 </div>
-<p><span class="l-up-space m-space fragment">In this situation, you will have an existing project, that is <strong>already a <code>Git</code> repo</strong> (with a history you care about), but it does not have a remote <code>GitHub</code> repo yet.</span></p>
+<p><span class="l-up-space m-space fragment">In this situation, you will have an existing project, that is <strong>already a <code>Git</code> repo</strong> (with a history you care about), but it <strong>does not have a remote <code>GitHub</code> repo</strong> yet.</span></p>
 <div class="fragment">
-<p>This may be less desirable for a novice because there are more opportunities to get confused and make a mistake.</p>
+<p>This may be less ideal for a newbie, because there are more opportunities to get confused and make a mistake.</p>
+<p>But it’s not the end of the world… let’s tackle this.</p>
 </div>
 </section>
 <section id="create-and-connect-a-github-repo" class="slide level2">
@@ -1246,7 +1280,7 @@ Serena Defina
 <p>Note: you <ins>must</ins> have a <strong>personal access token (PAT)</strong> configured for this.</p>
 </blockquote>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>[What will happen:]{m-up-space}</p>
+<p><span class="m-up-space">What will happen:</span></p>
 <ul>
 <li>Creates a new repo on GitHub.</li>
 <li>Configures that new repo as the <strong>origin remote</strong> for the local repo.</li>
@@ -1270,40 +1304,202 @@ Serena Defina
 </div>
 </section>
 <section id="contribute-to-someone-elses-work" class="slide level2">
-<h2>4. Contribute to someone else’s work</h2>
-<p>[TBD]</p>
+<h2><code>(4)</code> Contribute to someone else’s work</h2>
+<p><span class="m-space">The open-source community is cozy, and you are always welcome 😄</span></p>
+<p><span class="m-space">POV: you want to get a copy of someone else’s repo (<code>OWNER/REPO</code>) and propose a change.</span></p>
+<div class="fragment">
+<p>Here is what needs to happen:</p>
+<ol type="1">
+<li><span class="orange"><strong>fork</strong></span> the <strong><em>source</em> repo</strong> (<code>OWNER/REPO</code>): i.e.&nbsp;create a remote copy of the source repo on <code>GitHub</code>.</li>
+<li><strong>clone</strong> your fork (<code>YOU/REPO</code>) on your computer</li>
+<li><span class="grey">(Optional, but recommended)</span> Configure the source repo as the <code>upstream</code> remote</li>
+<li><span class="grey">(Optional, but recommended)</span> Configure your local <code>main</code> branch (or whatever the default is) to track <code>upstream/main</code> (instead of <code>origin/main</code>)</li>
+<li><span class="grey">(Optional, but <em>very</em> recommended)</span>Create a <strong>new branch</strong> where to make your changes</li>
+<li>Send a <span class="darkblue"><strong>pull request</strong></span> to <code>OWNER</code>, to propose your changes.</li>
+</ol>
+</div>
+</section>
+<section id="fork-clone-configure-steps-1-4" class="slide level2 scrollable">
+<h2>Fork, clone &amp; configure (steps 1-4)</h2>
+<div class="panel-tabset">
+<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">In <code>R</code></a></li><li><a href="#tabset-13-2">In the shell</a></li></ul>
+<div class="tab-content">
+<div id="tabset-13-1">
+<div class="sourceCode" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_from_github</span>(</span>
+<span id="cb33-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://github.com/OWNER/REPO"</span>,</span>
+<span id="cb33-3"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">destdir =</span> <span class="st">"~/path/to/where/you/want/the/local/repo/"</span>,</span>
+<span id="cb33-4"><a aria-hidden="true" tabindex="-1"></a>  <span class="at">fork =</span> <span class="cn">TRUE</span></span>
+<span id="cb33-5"><a aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will complete steps <strong>1-4</strong>, putting you in perfect position to:</p>
+<p><code>(a)</code> sync up with ongoing developments in the source repo and</p>
+<p><code>(b)</code> propose new changes from your fork.</p>
+<p><span class="m-up-space m-space">If you are using <code>RStudio</code>, it will also create and open an RStudio Project for you.</span></p>
+<p>Let’s check what happened:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_remotes</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-13-2">
+<blockquote>
+<p>Assuming you’re already on the source repo page: click on <span class="grey-button">Fork</span> (upper right corner) &gt; accept the defaults &gt; click on <span class="green-button">Create fork</span></p>
+</blockquote>
+<p>This creates a copy of <code>REPO</code> under your <code>GitHub</code> account and takes you there in the browser.</p>
+<p>Now <strong>clone</strong> <code>YOU/REPO</code> (you already know how).</p>
+<p>Next, we need to make sure we stay <em>current</em> with developments in the source repo:</p>
+<ol type="1">
+<li>Configure the source repo as the <code>upstream</code> remote</li>
+</ol>
+<p>Copy the URL of the <strong>source</strong> repo (<code>OWNER/REPO</code>).</p>
+<blockquote>
+<p>It’s easy to get to from your fork (<code>YOU/REPO</code>), via the <span class="darkblue">forked from</span> link in the upper left.</p>
+</blockquote>
+<p>Then:</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb35-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add upstream https://github.com/OWNER/REPO.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="m-up-space">Now that <code>upstream</code> is configured, <em>especially</em> if you configured it for the first time, do:</span></p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch upstream</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This should get you nicely up to date with all the remote info you need.</p>
+<p><span class="m-up-space"><code>2.</code> Configure your local <code>main</code> branch to track <code>upstream/main</code>.</span></p>
+<p>Last thing:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb37-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">--set-upstream-to</span> upstream/main</span>
+<span id="cb37-2"><a aria-hidden="true" tabindex="-1"></a><span class="co"># git branch -u upstream/main # for lazy people</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="m-up-space">Ok, let’s check what happened:</span></p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb38-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="m-up-space"><strong>Done!</strong> (finally)</span></p>
+<p><span class="grey">If you found this kind of long and tedious, consider using <code>usethis::create_from_github()</code> next time…</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="create-a-new-branch" class="slide level2">
+<h2>Create a new branch</h2>
+<p>When working on a fork, it is a good idea to <strong>never mess with the <code>main</code> branch</strong>.</p>
+<div class="panel-tabset">
+<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">In <code>R</code></a></li><li><a href="#tabset-14-2">In the shell</a></li></ul>
+<div class="tab-content">
+<div id="tabset-14-1">
+<div class="sourceCode" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">pr_init</span>(<span class="at">branch =</span> <span class="st">"BRANCH-NAME"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will create a local branch called <code>BRANCH-NAME</code> and “switch to it” (or <em>“check it out”</em>).</p>
+</div>
+<div id="tabset-14-2">
+<p>Create a new branch:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb40-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch BRANCH-NAME</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Switch to the new branch:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb41-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout BRANCH-NAME</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Or you can use the <strong>shortcut</strong> <code>git checkout -b BRANCH-NAME</code></p>
+</div>
+</div>
+</div>
+<p><span class="m-up-space m-space">Now, just make your changes and <em>commit them as usual</em>.</span></p>
+</section>
+<section id="submit-a-pull-request" class="slide level2">
+<h2>Submit a pull request</h2>
+<p>The last thing we need to do is let <code>OWNER</code> know about the chage we want to propose.</p>
+<div class="panel-tabset">
+<ul id="tabset-15" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-15-1">In <code>R</code></a></li><li><a href="#tabset-15-2">In the shell / <code>GitHub</code></a></li></ul>
+<div class="tab-content">
+<div id="tabset-15-1">
+<div class="sourceCode" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">pr_push</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This pushes the local change to <em>your copy</em> of <code>REPO</code> on <code>GitHub</code> and opens a browser window.</p>
+<p>All is left for you to do is click <span class="green-button">Create pull request</span> to make the PR.</p>
+<p><code>GitHub</code> will ping <code>OWNER</code> for you, they will review our pull request and the rest is out of your hands.</p>
+</div>
+<div id="tabset-15-2">
+<p>Make sure you first push your changes to the <code>remote</code>, e.g.:</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb43-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin BRANCH-NAME.​</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then, go to the your fork’s page on <code>GitHub</code> and select the <code>BRANCH-NAME</code>.</p>
+<blockquote>
+<p>You should see a <span class="bg-yellow">yellow banner</span>, with a <span class="green-button">Compare &amp; pull request</span> button, click on that &gt; <span class="darkblue">compare across forks</span> &gt; choose the “base branch” (this is the branch of the upstream repository you’d like to merge changes into, probably <code>main</code>)</p>
+</blockquote>
+<p>Add a title and description and hit <span class="green-button">Create pull request</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="you-are-asking-too-many-questions" class="slide level2">
+<h2>You are asking too many questions</h2>
+<div class="m-up-space" title=" Why you should never commit to `main` (on a fork)">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong> Why you should never commit to <code>main</code> (on a fork)</strong></p>
+</div>
+<div class="callout-content">
+<p>When you do commit to <code>main</code>, it creates a <em>divergence between that branch’s history</em> in the source repo vs.&nbsp;your repo. <strong><em>Nothing but pain will come from this.</em></strong></p>
+<p>Instead, treat <code>main</code> as read-only: it will make life much easier when you want to pull upstream work into your copy.</p>
+<p>The <code>OWNER</code> of <code>REPO</code> will also be happier to receive your pull request from a non-main branch.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="m-up-space" title=" Why track `upstream/main` instead of `origin/main`">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong> Why track <code>upstream/main</code> instead of <code>origin/main</code></strong></p>
+</div>
+<div class="callout-content">
+<p>So that a simple <code>git pull</code> pulls from the <strong>source repo</strong>, not from your fork.</p>
+<p>It also means a simple <code>git push</code> will (attempt to) push to the source repo, which will almost always be rejected since you probably do not have permission. This failure will alert you to the fact that you’re doing something questionable, while it’s still easy to back out.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="you-didnt-ask-enough-questions" class="slide level2">
+<h2>You didn’t ask enough questions</h2>
+<p><br><br></p>
+<h3 class="center" id="any-quesitons">Any quesitons?</h3>
+</section>
+<section id="exercise-contribute-to-this-presentation" class="slide level2">
+<h2><span class="bg-jasmine">Exercise</span>: contribute to this presentation</h2>
+<ol type="1">
+<li>Choose a <code>GitHub</code> project you would like to contribute to. If you don’t have one in your heart (yet) you can pick <a href="https://github.com/SereDef/Github_course_final_final_v3_REALLYTHISONE">this workshop</a></li>
+<li>Fork this repository, and clone it down</li>
+<li>Create a new branch, and give it a <em>fab</em> name</li>
+<li>Contribute by going to the next slide and adding a <strong>dad joke</strong></li>
+<li>Send me a pull request and stay tuned for my stap of approval</li>
+</ol>
+</section>
+<section id="exercise-add-a-dad-joke-here" class="slide level2">
+<h2><span class="bg-jasmine">Exercise</span>: add a dad joke here</h2>
+</section>
+<section id="ok-break-please" class="slide level2">
+<h2>Ok, break please</h2>
 </section></section>
 <section>
 <section id="part-5" class="title-slide slide level1">
 <h1><span style="color: lightblue">Part 5</span></h1>
-<div style="font-size: 100px; text-align: left !important; max-width: 50%">
-<p><span class="darkblue"><strong>A few more tips + fun things you can do with <code>GitHub</code></strong></span></p>
+<div style="font-size: 100px; text-align: left !important; max-width: 55%">
+<p><span class="darkblue"><strong>A few more tips <code>+</code> fun things you can do with <code>GitHub</code></strong></span></p>
 </div>
-<p><img data-src="imgs/octocat-homer.jpg" class="absolute" style="top: 200px; bottom: 0px; right: 50px; height: 50%; "></p>
+<p><img data-src="imgs/octocat-homer.jpg" class="absolute" style="top: 350px; bottom: 0px; right: 100px; height: 50%; "></p>
 </section>
 <section id="build-an-online-presence-github-pages" class="slide level2 scrollable">
-<h2>Build an online presence: <code>GitHub Pages</code></h2>
-<p><code>GitHub</code> offers static <strong>website hosting</strong> directly from your repository via <strong><code>GitHub Pages</code></strong>.</p>
-<p>With <em>very minimal set-up</em> you get a website that:</p>
+<h2>Build an <span class="orange">online presence</span>: <code>GitHub Pages</code></h2>
+<p><code>GitHub</code> offers static <strong>website hosting</strong> directly from your repository via <strong><code>GitHub Pages</code></strong>. With <em>very minimal set-up</em> you get a website that:</p>
 <ul>
-<li>is completely <strong>free</strong> (for public repositories). You can also use your own custom domain at no extra cost</li>
+<li>is completely <span class="orange"><strong>free</strong></span> (for public repositories).<br>You can even use your own <em>custom domain</em> at no extra cost</li>
 <li>is <em>automatically deployed</em>: just push your code and your site updates instantly</li>
 <li>has built-in version control (<code>Git</code> history and rollback capability)</li>
 </ul>
 <div class="fragment">
 <p><em>But… what can I use it for?</em></p>
 <ul>
-<li>Personal and/or lab website (e.g.&nbsp;see <a href="https://seredef.github.io/">mine</a>)</li>
-<li>A project website or documentation page (e.g.&nbsp;see <a href="https://seredef.github.io/verywise/index.html">this R package</a>)</li>
-<li>Presetations or courses (like this one!)</li>
-<li>A blog</li>
-<li>(With a bit of extra work) an interactive dashboard</li>
+<li><strong>Personal and/or lab website</strong> (e.g.&nbsp;see <a href="https://seredef.github.io/">mine</a>)</li>
+<li>A project website or <strong>documentation</strong> page (e.g.&nbsp;see <a href="https://seredef.github.io/verywise/index.html">this R package</a>)</li>
+<li>Presetations or <strong>courses</strong> (like this one!)</li>
+<li>A <strong>blog</strong></li>
+<li>(With a bit of extra work) an interactive <strong>dashboard</strong></li>
 </ul>
 </div>
-<p><img data-src="imgs/github-pages-logo.png" class="absolute" style="bottom: 0px; right: 0px; height: 30%; "></p>
+<p><img data-src="imgs/github-pages-logo.png" class="absolute" style="bottom: 0px; right: 20px; height: 30%; "></p>
 </section>
 <section id="build-an-online-presence-just-plain-github" class="slide level2">
-<h2>Build an online presence: just plain <code>GitHub</code></h2>
+<h2>Build an <span class="orange">online presence</span>: just plain <code>GitHub</code></h2>
 <p>Even without <code>Pages</code>, the browsability of <code>GitHub</code> makes your work accessible to people who care about your content but who don’t (yet) use <code>Git</code> themselves.</p>
 <p>Here are some tips to make your repos look <em>extra nice</em>:</p>
 <div class="fragment m-up-space">
@@ -1324,106 +1520,103 @@ Serena Defina
 <p>Check out this <a href="https://happygitwithr.com/classroom-overview">tutorial</a></p>
 </section>
 <section id="finding-stuff-let-me-github-search-that-for-you" class="slide level2">
-<h2>Finding stuff: let me <code>GitHub Search</code> that for you</h2>
+<h2><span class="orange">Finding stuff</span>: let me <code>GitHub Search</code> that for you</h2>
 <p>Did you ever find a function that <em>seems useful</em> has no examples? Or is poorly documented? Wouldn’t it be nice to find functioning instances of it “<em>in the wild</em>”?</p>
-<p>The <strong><code>GitHub Search</code></strong> box is just what the doctor ordered</p>
-<p><img data-src="imgs/github-search.png" class="absolute" style="bottom: 200px; right: 50px; height: 10%; "></p>
-<p><span class="l-up-space">For example, see how packages on CRAN use the <code>llply()</code> function from <code>plyr</code>:</span></p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a aria-hidden="true" tabindex="-1"></a><span class="st">"llply"</span> owner:cran language:R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong><code>GitHub Search</code></strong> has <em>loads</em> of useful setting and options.</p>
+<p><span class="l-up-space">The <strong><code>GitHub Search</code></strong> box is just what the doctor ordered.</span></p>
+<p><img data-src="imgs/github-search.png" class="absolute" style="bottom: 550px; right: 30px; height: 10%; "></p>
+<p><span class="l-up-space">For example, wonder how packages on CRAN use the <code>llply()</code> function from <code>plyr</code>?</span></p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb44-1"><a aria-hidden="true" tabindex="-1"></a><span class="st">"llply"</span> owner:cran language:R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="l-up-space"><strong><code>GitHub Search</code></strong> has <em>loads</em> of useful setting and options.</span></p>
 <p>Read about them <a href="https://github.com/search/advanced">here</a>, <a href="https://help.github.com/articles/searching-code/">here</a> and <a href="https://help.github.com/articles/search-syntax/">here</a></p>
 </section>
 <section id="finding-stuff-the-file-finder" class="slide level2">
-<h2>Finding stuff: the file finder</h2>
-<p><img data-src="imgs/github-file-finder.png" class="absolute" style="top: 90px; right: 50px; height: 60%; "></p>
-<p><span class="l-up-space">Press <span class="bg-highlight"><code>t</code></span> to activate the <a href="https://github.blog/news-insights/the-library/introducing-the-file-finder/">file finder</a> whenever you’re in a repo’s file and directory view.</span></p>
-<p><em>AWESOME</em>, especially when there are files tucked into lots of subdirectories.</p>
+<h2><span class="orange">Finding stuff</span>: the <code>file finder</code></h2>
+<p><img data-src="imgs/github-file-finder.png" class="absolute" style="bottom: 640px; right: 70px; height: 10%; "></p>
+<div class="column" style="width:70%;">
+<p><span class="l-up-space">Whenever you are on a repo’s page, you can press <span class="bg-highlight"><code>t</code></span> to<br>activate the <a href="https://github.blog/news-insights/the-library/introducing-the-file-finder/">file finder</a>.</span></p>
+</div><p>This is <em>very helpful</em>, especially when there are files tucked into lots of subdirectories.</p>
 <div class="fragment l-up-space">
-<h4 id="you-found-it-dont-loose-it">You found it, don’t loose it</h4>
-<p>Press <span class="bg-highlight"><code>y</code></span> to get a <a href="https://docs.github.com/en/repositories/working-with-files/using-files/getting-permanent-links-to-files">permanent link</a> when you’re viewing a specific file.</p>
-<p>Watch what changes in the URL.</p>
-<p>This is handy if you are want to link to a specific file or to specific lines, so that your links will not break, even when the file is deleted, renamed or if lines get inserted or deleted.</p>
+<h4 id="you-found-it-dont-loose-it"><span class="darkblue">You found it, don’t loose it</span></h4>
+<p>When you’re viewing a specific file, you can press <span class="bg-highlight"><code>y</code></span> to get a <a href="https://docs.github.com/en/repositories/working-with-files/using-files/getting-permanent-links-to-files">permanent link</a> to that specific file or specific line(s) inside that file.</p>
+<p><span class="m-up-space"><em>What’s a permanent link?</em></span></p>
+<p>Good question. This is a link that will not break, even when the file is deleted, renamed or if lines get inserted / deleted.</p>
 </div>
 </section>
 <section id="let-people-correct-you-on-the-internet" class="slide level2">
 <h2>Let people correct you on the internet</h2>
 <p><span class="m-space">They love that!</span></p>
-<p>You can also create a link that takes people directly to an <strong>editing interface</strong> in the browser.</p>
+<p><em>Speaking of links</em>, did you know that you can create a link that takes people directly to an <strong>editing interface</strong> in the browser.</p>
 <blockquote>
 <p>Behind the scenes (assuming the click-er is signed into <code>GitHub</code>, and they are not you) this will create a fork in their account and send you a pull request for the changes.</p>
 </blockquote>
-<p><span class="l-up-space">An edit link would look something like this:</span></p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a aria-hidden="true" tabindex="-1"></a>[Click here to edit<span class="sc">!</span>](<span class="sc">&lt;</span>URL to your repo<span class="sc">&gt;</span><span class="er">/</span>edit<span class="sc">/</span>main<span class="sc">/</span><span class="er">&lt;</span>path to target source file<span class="sc">&gt;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="l-up-space">An <span class="orange"><strong>edit link</strong></span> would look something like this:</span></p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb45-1"><a aria-hidden="true" tabindex="-1"></a>[Click here to edit!](&lt;YOU REPO URL&gt;/edit/main/&lt;path to target source file&gt;)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="automate-tasks-github-actions" class="slide level2">
 <h2>Automate tasks: <code>GitHub Actions</code></h2>
 <p>Automated (and reproducible!) workflows can be built directly into <code>GitHub</code> with <code>Actions</code>.</p>
 <div class="fragment l-up-space">
+<p><em>But… what can I use it for?</em></p>
 <ul>
-<li>Automatically re-run analyses (in a clean environment), for example, whenever code or data changes; freezing computations for reproducibility.</li>
-<li>Automatically render manuscripts, presentations, and/or reports</li>
-<li>Schedule workflows (e.g.&nbsp;check for new papers on a topic, either regularly or with manual triggers)</li>
-<li>Continuous integration: e.g.&nbsp;when the code (or the data) is updated, run some validation checks / test.</li>
+<li><strong>Automatically re-run analyses</strong> (in a clean environment), for example, whenever code or data changes –&gt; freezing computations for <strong>reproducibility</strong>.</li>
+<li>Automatically render <strong>manuscripts</strong>, <strong>presentations</strong>, and/or <strong>reports</strong></li>
+<li><strong>Schedule</strong> workflows (regularly or with “manual: triggers), e.g.&nbsp;
+<ul>
+<li>Search PubMed for new papers on a topic, every month</li>
+<li>Whenever the code (or the data) is <em>updated</em>, run some validation checks / tests (a little something called <strong>continuous integration</strong>)</li>
+</ul></li>
 </ul>
 </div>
-<div class="fragment l-up-space">
+<div class="fragment m-up-space">
 <p>There is a whole <a href="https://github.com/marketplace?type=actions">marketplace</a> of <code>Actions</code> out there.</p>
-<p>Check this <a href="https://cct-datascience.quarto.pub/github-actions-for-automating-scientific-workflows/#/title-slide">tutorial</a> for researchers.</p>
+<p>Also check this <a href="https://cct-datascience.quarto.pub/github-actions-for-automating-scientific-workflows/#/title-slide">tutorial</a> for researchers.</p>
 </div>
 </section>
 <section id="project-management-with-github-projects" class="slide level2">
 <h2>Project management with <code>GitHub Projects</code></h2>
 <p><code>GitHub</code> provides built-in tools for planning, tracking, and coordinating work so you can manage entire projects alongside your code and writing.​</p>
-<p><code>GitHub Projects</code> sits on top of issues and pull requests as a flexible table, board, and roadmap that you can filter, sort, and group to match your workflow.​</p>
-<p><img data-src="imgs/github-project-management.png" class="absolute" style="top: 130px; right: 50px; height: 65%; "></p>
+<p><code>GitHub Projects</code> sits on top of issues and pull requests as a flexible <strong>table</strong>, <strong>board</strong>, and <strong>roadmap</strong> that you can <em>filter</em>, <em>sort</em>, and <em>group</em> to match your workflow.​</p>
+<p><img data-src="imgs/github-project-management.png" class="absolute" style="top: 320px; right: 210px; height: 65%; "></p>
 </section>
-<section id="some-extra-tips-cleaning-up" class="slide level2">
-<h2>Some extra tips: cleaning up</h2>
-<p>You can delete the “local” repo (It’s just a regular directory on your computer).</p>
-<p>Note, if you are doing it in the shell, use:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb35-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> <span class="op">&lt;</span>YOUR-REPOSITORY<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="some-extra-tips-for-the-way-cleaning-up" class="slide level2">
+<h2>Some extra tips for the way: cleaning up</h2>
+<p>You can delete the “local” repo whenever you like (it’s just a regular directory on your computer).</p>
+<p><span class="l-up-space">But, if you are doing it in the shell, use:</span></p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb46-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> <span class="op">&lt;</span>YOUR-REPOSITORY<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-rf</code> will save you some time saying “yes” delete this hidden git file a gazillion times</p>
-<p>Then, in the browser, go to your repo’s landing page on <code>GitHub</code> &gt; Click on <em>Settings</em> &gt; Scroll down, click on <em>delete repository</em> and do as it asks.</p>
+<p><span class="l-up-space">You also want to remove the remote repo?</span></p>
+<p>In the browser, go to your repo’s landing page &gt; Click on <em>Settings</em> &gt; Scroll all the way down, click on <em>delete repository</em> and do as it asks.</p>
 </section>
-<section id="some-extra-tips-comparing-versions" class="slide level2">
-<h2>Some extra tips: comparing versions</h2>
-<div class="sourceCode" id="cb36"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="some-extra-tips-for-the-way-comparing-versions" class="slide level2">
+<h2>Some extra tips for the way: comparing versions</h2>
+<p><code>RStudio</code> will provide you with pretty ways to see the differences between versions.</p>
+<p>In the shell, use:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb47-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="conclusions-and-goodbyes" class="slide level2">
 <h2>Conclusions and goodbyes</h2>
-<p>The workflows described here are widely regarded as current best practice, yet we generally neither practice nor preach it in academic settings.</p>
-<p>Now just “lather, rinse, repeat”. Do work somewhere: locally or on GitHub. Commit it. Push it or pull it, depending on where you did the work, get local and remote “synced up”. Repeat.</p>
+<p>There you have it, you are now an honest <code>GitHub</code> citizen.</p>
+<p><span class="l-space">Now just <span class="orange"><em>“lather, rinse, repeat”</em></span>.</span></p>
+<p>The tools and workflows we saw today are widely regarded as <strong>current best practice</strong>, yet, sadly, we generally neither practice nor preach it in academic settings.</p>
+<p>…but that was until you came around!</p>
+<p><span class="darkblue center l-up-space l-space"><strong>Thanks for listening to me &lt;3</strong></span></p>
+<p>See you on <code>GitHub</code></p>
+<p>xoxo,</p>
+<p><code>SereDef</code></p>
 </section>
-<section id="comic-relief" class="slide level2">
-<h2>Comic relief</h2>
-<p>git-man-page-generator And, of course, the underlying source is also available on GitHub: https://github.com/Lokaltog/git-man-page-generator If you can tolerate adult and often offensive language, you might enjoy:</p>
-<p>http://www.commitlogsfromlastnight.com http://ohshitgit.com/</p>
-</section>
-<section id="resources" class="slide level2">
+<section id="resources" class="slide level2 scrollable">
 <h2>Resources</h2>
-<p><a href="https://doi.org/10.1080/00031305.2017.1399928">Bryan, J. (2018)</a>. Excuse Me, Do You Have a Moment to Talk About Version Control? <em>The American Statistician</em>, 72(1), 20–27.</p>
-<p>Git Tutorials from Atlassian https://www.atlassian.com/git/tutorials/</p>
-<p>Git explainers, heavy on the diagrams</p>
-<p>https://twitter.com/JennyBryan/status/743548245645791232</p>
-<p>A Visual Git Reference http://marklodato.github.io/visual-git-guide/index-en.html</p>
-<p>A successful Git branching model http://nvie.com/posts/a-successful-git-branching-model/</p>
-<p>A successful Git branching model considered harmful https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/</p>
-<p>Git Tutorials from Atlassian https://www.atlassian.com/git/tutorials/</p>
-<p>Software Carpentry Git Novice Lesson http://swcarpentry.github.io/git-novice/</p>
-<p>Michael Freeman slides on Git collaboration http://slides.com/michaelfreeman/git-collaboration#/</p>
-<p>GitHub Training materials https://services.github.com/kit/</p>
-<p>Git for Ages 4 and Up https://www.youtube.com/watch?v=3m7BgIvC-uQ</p>
-<p>Learn Git Branching http://learngitbranching.js.org</p>
-<p>A Git Workflow Walkthrough Series http://vallandingham.me/git-workflow.html</p>
-<p>Git from the inside out https://codewords.recurse.com/issues/two/git-from-the-inside-out</p>
-<p>Git in Practice by Mike McQuaid is an more approachable book, probably better than Pro Git (below) for most people starting out. Ancillary materials on GitHub.</p>
-<p>The book Pro Git is fantastic and comprehensive.</p>
-<p>Oh My Git! is a free and open source interactive game for learning Git. It’s very beginner friendly, using a graph to visualise the worktree. Lessons can be completed using a playing card interface in addition to the built-in command line, which is there for when users become more comfortable.</p>
-<p>GitHub’s own training materials may be helpful. They also point to many other resources</p>
-<p>Find a powerful Git client (chapter 8) if you’d like to minimize your usage of Git from the command line.</p>
-<p>Ten Simple Rules for Taking Advantage of Git and GitHub http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947</p>
-<p>RStudio’s guide Version Control with Git and SVN</p>
-<p>The book Team Geek has insightful advice for the human and collaborative aspects of version control. It proposes Git strategies suited to different characteristics of teams.</p>
+<p><a href="http://swcarpentry.github.io/git-novice/">Software Carpentry - Version Control with Git</a></p>
+<p><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a> by Jenny Bryan</p>
+<p><a href="https://doi.org/10.1080/00031305.2017.1399928">Bryan, J. (2018)</a> Excuse Me, Do You Have a Moment to Talk About Version Control? <em>The American Statistician</em>, 72(1), 20–27.</p>
+<p><a href="https://doi.org/10.1371/journal.pcbi.1004947">Perez-Riverol, Y. et al.&nbsp;(2016)</a> Ten Simple Rules for Taking Advantage of Git and GitHub. <em>PLOS Computational Biology</em>, 12(7): e1004947.</p>
+<p><a href="https://www.manning.com/books/git-in-practice">Git in Practice</a> by Mike McQuaid</p>
+<p><a href="https://www.atlassian.com/git/tutorials/">Git Tutorials from Atlassian</a></p>
+<p><a href="http://marklodato.github.io/visual-git-guide/index-en.html">A Visual Git Reference</a></p>
+<p><a href="https://www.youtube.com/watch?v=3m7BgIvC-uQ">Git for Ages 4 and Up</a></p>
+<p><a href="http://ohshitgit.com/">Oh Shit, Git!?!</a></p>
+<p><a href="https://training.github.com/">GitHub’s own training materials</a></p>
+<p><a href="https://ohmygit.org/">Oh My Git!</a>: a free and open source interactive game for learning Git.</p>
 
 
 </section></section>

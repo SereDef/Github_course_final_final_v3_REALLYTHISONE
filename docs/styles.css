@@ -16,12 +16,12 @@
 
 }
 
-/* for development */
-.reveal .slides {
+/* for development: so I can see the slide size */
+/* .reveal .slides {
   border: 2px solid rgb(25, 0, 255);
   width: 1600px;
   height: 900px;
-}
+} */
 
 /* --- TEXT ---------------------------------------------------------------- */
 
@@ -155,4 +155,20 @@ code.sourceCode {
 /* Change all callout text size */
 .callout {
   font-size: 0.9em !important;
+}
+
+/* --- TITLE SLIDES ------------------------------------------------------ */
+
+.reveal .left-align {
+  text-align: left !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.reveal .left-align h1,
+.reveal .left-align h2,
+.reveal .left-align p {
+  text-align: left !important;
 }

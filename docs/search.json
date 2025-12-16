@@ -67,14 +67,14 @@
     "href": "slides.html#what-is-github",
     "title": "Git & Github  for researchers",
     "section": "What is GitHub?",
-    "text": "What is GitHub?\nGitHub complements Git by providing a polished user interface and distribution mechanism for Git repositories.\n\n\nGit = software you use locally to record changes to a set of files.\nGitHub = hosting service that provides a Git-aware home for such projects on the internet.\n\n\n\nGitHub is like DropBox or Google Drive, but much, much better.\nIt allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.\n\n\n\nMany operations can be done entirely in the browser, including editing or adding files.\nLet’s take a look!"
+    "text": "What is GitHub?\nGitHub complements Git by providing a polished user interface and distribution mechanism for Git repositories.\n\n\nGit = software you use locally to record changes to a set of files.\nGitHub = hosting service that provides a Git-aware home for such projects on the internet.\n\n\n\nGitHub is like DropBox or Google Drive, but much, much better.\nIt allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.\n\n\n\nMany operations can be done entirely in the browser, including editing or adding files."
   },
   {
-    "objectID": "slides.html#good-examples-in-bio-research",
-    "href": "slides.html#good-examples-in-bio-research",
+    "objectID": "slides.html#some-nice-examples-from-bio-research",
+    "href": "slides.html#some-nice-examples-from-bio-research",
     "title": "Git & Github  for researchers",
-    "section": "Good examples in bio-research",
-    "text": "Good examples in bio-research\nA diverse range of efforts (from individual, to labs, to global collaborations) have chosen GitHub as productive place to share code and ideas"
+    "section": "Some nice examples from bio-research",
+    "text": "Some nice examples from bio-research\nA diverse range of efforts (from individual, to labs, to global collaborations) have chosen GitHub as productive place to share code and ideas"
   },
   {
     "objectID": "slides.html#benefits-of-using-hosted-version-control",
@@ -84,95 +84,95 @@
     "text": "Benefits of using hosted version control\nIn a nutshel: doing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect.\n\nTell the story of your project.Make analytical decisions traceable by documenting them as you go.\nBack up your work!\nTravel back in time and experiment with changes.When you are new with coding (or, frankly, even when you are not), it is common to mess things up. Sometimes the easiest fix is to get a fresh copy from GitHub and move on with your life.\nMake it visible: little extra effort required to create a web presence for a project.The highly functional web interface makes it a pleasure to browse through your own work.You can navigate and search through multiple projects and files and across time.\nCollaboration and knowledge sharing is much easier and more structured (with collegues as well as remote contributors).GitHub also makes a fantastic course management system for teachers.\nGit is WIDELY used outside these walls (required for most job positions).By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle"
   },
   {
-    "objectID": "slides.html#benefits-of-using-hosted-version-control-1",
-    "href": "slides.html#benefits-of-using-hosted-version-control-1",
-    "title": "Git & Github  for researchers",
-    "section": "Benefits of using hosted version control",
-    "text": "Benefits of using hosted version control\nEven for private solo projects, there are advantages to keeping a synced copy on GitHub:\n\n\nWhen you are new with coding (or, frankly, even when you are not), it is common to mess things up.  Sometimes the easiest fix is to clone a fresh copy from GitHub, patch things up, and move on with your life.\nThe highly functional web interface makes it a pleasure to browse through your own work.  You can navigate and search through multiple projects and files and across time."
-  },
-  {
     "objectID": "slides.html#git-basics",
     "href": "slides.html#git-basics",
     "title": "Git & Github  for researchers",
     "section": "Git basics",
-    "text": "Git basics\n\nLet’s talk a bit more about Git.\nIn this sections we will:\n\nintroduce the most important basic ideas\ndefine some Git vocabulary\nlink each concept to research-related tasks or projects\n\n\nKeep in mind that actual usage is the most effective way to build up a good mental model for Git, so don’t worry if some concept don’t feel so clear just yet\nOnce again, there many excellent external resources for Git, which you can find in the Resources at the end of the presenation."
+    "text": "Git basics\n\nLet’s talk a bit more about Git.\nIn this section we will:\n\nintroduce the most important basic ideas\ndefine some Git vocabulary\nlink each concept to research-related tasks or projects\n\n\nKeep in mind that actual usage is the most effective way to build up a good mental model for Git, so don’t worry if some concept don’t feel so clear just yet\nOnce again, there many excellent external Resources at the end of the presenation."
   },
   {
     "objectID": "slides.html#repositories-repos-and-roles",
     "href": "slides.html#repositories-repos-and-roles",
     "title": "Git & Github  for researchers",
     "section": "Repositories ( repos ) and roles",
-    "text": "Repositories ( repos ) and roles\nRecall: Git manages the evolution of a set of files\nSuch set of files (or directory) is called a repository (repo for friends).\nA repository can be public or private.\nThe owner of a repo can grant permission to others (collaborators): e.g. read (only relevant for private repos), write (push) and admin access.\nA repo can be owned by a person or by an organization."
+    "text": "Repositories ( repos ) and roles\nRecall: Git manages the evolution of a set of files\nSuch set of files (or directory) is called a repository (repo for friends).\nA repository can be public or private.\n\nRoles\nThe owner of a repo can grant permission to others (collaborators): e.g. read (only relevant for private repos), write (push) and admin access.\nA repo can be owned by a person or by an Organization."
   },
   {
     "objectID": "slides.html#commits",
     "href": "slides.html#commits",
     "title": "Git & Github  for researchers",
     "section": "Commits",
-    "text": "Commits\nA commit is a snapshot of one or more files inside a repository.\n\nInstead of saving a copy of a file, versioning it chaging it’s name (e.g. “[…] _v2” or “[…] _SD”), you create a commit.\n\n\n\n\n\n\nOn the surface nothing changes, but the history of that file is secretly saved, including metadata (e.g. author, date, message)\nYou can add more information about the changes you’ve made in a commit message"
+    "text": "Commits\nA commit is a snapshot of one or more files inside a repository.\nInstead of saving a copy of a file, versioning it chaging it’s name (e.g. “[…] _v2” or “[…] _SD”), you create a commit.\n\n\n\n\n\nOn the surface nothing changes, but the history of that file is secretly saved, including metadata (e.g. author, date, message)\nYou can add information about the changes you made in a commit message"
   },
   {
     "objectID": "slides.html#staging",
     "href": "slides.html#staging",
     "title": "Git & Github  for researchers",
     "section": "Staging",
-    "text": "Staging\nGit commits actually happen in two distinct steps (though they are often used together).\n\nStage (via git add): tell Git which changes from your repo you intend to include in the next commit.\nCommit (via git commit): take what is in the staging area and create a new commit object in the repo’s history, with its message and unique ID.\n\n\n\n\n\n\n\n\nWhy is this useful?\n\n\nRecall: a commit is a snapshot of one or more files\nStaging lets you split your work into logical commits, even if you edited many files or made mixed changes in the same file.\nFor example, you can stage only the lines related to a bugfix and commit them separately from formatting changes, improving history readability and making review and rollback easier."
+    "text": "Staging\nActually, Git commits happen in two distinct steps (though they are often used together).\n\nStage (via git add): tell Git which changes from your repo you intend to include in the next commit.\nCommit (via git commit): take what is in the staging area and create a new commit object in the repo’s history, with its message and unique ID.\n\n\n\n\n\n\n\n\nWhy is this useful?\n\n\nRecall: a commit is a snapshot of one or more files\nStaging lets you split your work into logical commits, even if you edited many files or made mixed changes in the same file.\nFor example, you can stage only the lines related to a bugfix and commit them separately from formatting changes, improving history readability and making review and rollback easier."
   },
   {
     "objectID": "slides.html#time-travel-hashs-and-tags",
     "href": "slides.html#time-travel-hashs-and-tags",
     "title": "Git & Github  for researchers",
     "section": "Time travel: hashs and tags",
-    "text": "Time travel: hashs and tags\nCommitting (well) helps you tell the story of your project to yourself and to other people.\nBut it does not end there… Git also lets you time travel through your project\nGetting the files from a commit in the past is known as doing a check out\n\n\n\n\n\nRecall: each commit has a unique ID called a hash.\nYou can tell Git what commit I want to check out using (part of) the commit hash.\nMy other commits still exist, but when I look in my repo, it’s as if they never happened.\nYou can also give certain important commits a special name (a tag) that you can then use instead of their hash, to refer to them during time travel. People often use tags for software versions."
+    "text": "Time travel: hashs and tags\nCommits help you tell the story of your project (to yourself and to other people).\nBut it does not end there… Git also lets you time travel through your project.\nGetting the files from a commit in the past is known as doing a check out\n\n\n\n\n\n\nRecall: each commit has a unique ID called a hash.\nYou can tell Git what commit I want to check out using (part of) the commit hash.\nMy other commits still exist, but when I look in my repo, it’s as if they never happened.\n\nYou can also give certain commits a special name (a tag) that you can then use to refer to them during time travel e.g. people often use tags for software versions."
   },
   {
     "objectID": "slides.html#parallel-universes-branches",
     "href": "slides.html#parallel-universes-branches",
     "title": "Git & Github  for researchers",
     "section": "Parallel universes: branches",
-    "text": "Parallel universes: branches\nSo far, everything has been very linear and ordered. The thing is… this isn’t really how projects work.\nSometimes you want to try something out, make experiments. The way you do this in Git is with branches\nA branch is a moveable label attached to a commit.\n\n\n\n\n\nThe default branch name in Git is main (not master!)\nIt’s common for the main branch to hold a stable version of the code or files, while other branches contain work in progress."
+    "text": "Parallel universes: branches\nSo far, everything has been very linear and ordered. The thing is… this isn’t really how projects work.\nSometimes you want to try something out, make experiments.\nThe way you do this in Git is with branches\n\nA branch is a moveable label attached to a commit.\n\n\n\n\n\nThe default branch name in Git is main (not master!)\nIt’s common for the main branch to hold a stable version of the code or files, while other branches contain work in progress."
   },
   {
     "objectID": "slides.html#quantum-collapse-merging",
     "href": "slides.html#quantum-collapse-merging",
     "title": "Git & Github  for researchers",
     "section": "Quantum collapse: merging",
-    "text": "Quantum collapse: merging\nBranches are easy to throw away if you decide you don’t like your changes.\nBut if you are happy with some work, you typically want to combine it back into the main branch.\nTo get changes from one branch into another, youmerge them.\n\n\n\n\n\nThis last commit is a combination of all of the commits from both branches.\n* Different collaborators can work on different branches independently!"
+    "text": "Quantum collapse: merging\nBranches are easy to throw away if you decide you don’t like your changes.\nBut if you are happy with some work, you typically want to combine it back into the main branch.\n\nTo get changes from one branch into another, you merge them.\n\n\n\n\n\nThis last commit is a combination of all of the commits from both branches.\n* Different collaborators can work on different branches independently!"
   },
   {
-    "objectID": "slides.html#remote-vs.-local",
-    "href": "slides.html#remote-vs.-local",
+    "objectID": "slides.html#remote-vs.-local-repositories",
+    "href": "slides.html#remote-vs.-local-repositories",
     "title": "Git & Github  for researchers",
-    "section": "Remote (vs. local)",
-    "text": "Remote (vs. local)\nEveryone knows that you should back up your work regularly, ideally to somewhere geographically distinct from your computer.\nIn Git this place is called a remote. A very popular place to put your remotes is Github.\nHaving a remote copy of your repos has several advantages:\n\nSafer\nAccess from different places\nShared access with other people"
+    "section": "Remote (vs. local) repositories",
+    "text": "Remote (vs. local) repositories\nEveryone knows that you should back up your work regularly, ideally somewhere geographically distinct from your computer.\nIn Git this place is called a remote. A very popular place to put your remotes is Github.\n\nHaving a remote copy of your repos has several advantages:\n\nIt’s safer: you won’t loose your work\nCan be accessed from different places: e.g. a server, your work laptop, your personal laptop…\nCan have shared access with other people (if you want it to)"
   },
   {
-    "objectID": "slides.html#working-on-your-remotes-cloning-pushing-and-pulling",
-    "href": "slides.html#working-on-your-remotes-cloning-pushing-and-pulling",
+    "objectID": "slides.html#working-with-your-remotes-cloning-pushing-and-pulling",
+    "href": "slides.html#working-with-your-remotes-cloning-pushing-and-pulling",
     "title": "Git & Github  for researchers",
-    "section": "Working on (your) remotes: cloning, pushing and pulling",
-    "text": "Working on (your) remotes: cloning, pushing and pulling\n\n\n\nTo get some work from a remote on your local computer (for the first time) you clone it.\n\n\n\n\n\n\n\n\nTo send new updates to the remote you push\n\n\n\n\n\nTo get new updates (commits) from the remote you pull"
+    "section": "Working with (your) remotes: cloning, pushing and pulling",
+    "text": "Working with (your) remotes: cloning, pushing and pulling\n\n\n\nTo get some work from a remote on your local computer (for the first time) you clone it.\n\n\n\n\n\n\n\n\nTo send new updates to the remote you push\n\n\n\n\n\nTo get new updates (commits) from the remote you pull"
   },
   {
-    "objectID": "slides.html#issues",
-    "href": "slides.html#issues",
+    "objectID": "slides.html#working-with-someone-elses-repo-forking-and-pull-requests",
+    "href": "slides.html#working-with-someone-elses-repo-forking-and-pull-requests",
     "title": "Git & Github  for researchers",
-    "section": "Issues",
-    "text": "Issues\nIt’s a list of things, bugs, feature requests, to dos, whatever\nIssues are tightly integrated with email and therefore allow you to copy/embed important conversations in the associated repo.\nIssues can be assigned to people (e.g., to dos) and tagged (“bug” or “progress-report”).\nIssues are tightly integrated with commits and therefore allow you to record that the changes in this commit solve that problem which was discussed in that issue.\nAs a new user of GitHub, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use."
+    "section": "Working with someone else’s repo: forking and pull requests",
+    "text": "Working with someone else’s repo: forking and pull requests\nCloning is a client-side Git operation: it creates a local copy of a remote repo.\n\nWhen you are not a collaborator on the original repo (e.g., open-source contributions), you usually want your own independent remote to work with.\n\n\n\nForking creates a new remote copy of someone else’s repo (the upstream repo), under your user.\nTo propose changes back to the original, you’ll use a pull request (PR) instead of pushing directly."
+  },
+  {
+    "objectID": "slides.html#githubs-got-issues",
+    "href": "slides.html#githubs-got-issues",
+    "title": "Git & Github  for researchers",
+    "section": "GitHub’s got Issues",
+    "text": "GitHub’s got Issues\nIssues are essentially a list of things: bugs, feature requests, to-dos, whatever\nIssues are handy for project management becasue they can be assigned to people (e.g., to-dos) and tagged (e.g. bug or progress-report).\nThey are tightly integrated with:\n\nemail, allowing you to copy/embed important conversations in the associated repo\ncommits allowing you to record that, e.g. “the changes in this commit solve the problem discussed in that issue.”\n\n\n\n\n\n\n\n\nTip\n\n\nAs a new GitHub user, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use."
   },
   {
     "objectID": "slides.html#questions",
     "href": "slides.html#questions",
     "title": "Git & Github  for researchers",
     "section": "Questions?",
-    "text": "Questions?\nNo? Let’s play a game\nBreak time"
+    "text": "Questions?\n\nNo? Let’s play a game\n\nand then… break time"
   },
   {
-    "objectID": "slides.html#break",
-    "href": "slides.html#break",
+    "objectID": "slides.html#bonus-fun-fact",
+    "href": "slides.html#bonus-fun-fact",
     "title": "Git & Github  for researchers",
-    "section": "Break",
-    "text": "Break\n\nLet’s walk through some basic operations to confirm you have installed the necessary software and that the necessary connections are being made, between tools on your computer and between your computer and GitHub."
+    "section": "Bonus: fun fact",
+    "text": "Bonus: fun fact\nThe GitHub mascot is named Octocat, a merge between an octopuss and cat.\nDo you know the story behind this logo creation?\n\nThe idea came from the “octopus merge” – the practice of combining three or more branches of development.\nThe logo was created by Simon Oxley (who doesn’t remember creating it, apparently). Initially, Simon thought of calling his creation “Octopuss” (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.\n\n\nIn the end, GitHub decided to go with Octocat (for obvious reasons)."
   },
   {
     "objectID": "slides.html#half-the-battle",
@@ -210,11 +210,11 @@
     "text": "Is Git installed?\nGo to the shell and type:\nwhich git\nThis should give you the path to your Git executable.\nLet’s also check which version you are using:\ngit --version\nIf you see something like git: command not found you (likely) don’t have Git intalled.\nLet’s fix that."
   },
   {
-    "objectID": "slides.html#install-git",
-    "href": "slides.html#install-git",
+    "objectID": "slides.html#install-git-if-you-havent",
+    "href": "slides.html#install-git-if-you-havent",
     "title": "Git & Github  for researchers",
-    "section": "Install Git",
-    "text": "Install Git\nYou need Git, so let’s install it. \n\nWindowsmacOSLinux\n\n\nInstall Git for Windows, also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, accept the defaults.\n\nYou should now have a Git executable C:/Program Files/Git/bin/git.exe.\n\n\nInstall the Xcode command line tools (not all of Xcode), which includes Git.\n In the terminal type:\nxcode-select --install\n\n\nInstall Git via your distro’s package manager.\n\nUbuntu or Debian:\nsudo apt-get install git\nFedora or RedHat:\nsudo yum install git"
+    "section": "Install Git (if you haven’t)",
+    "text": "Install Git (if you haven’t)\nYou need Git, so let’s install it.\n\nWindowsmacOSLinux\n\n\nInstall Git for Windows, also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, accept the defaults.\n\nYou should now have a Git executable at: C:/Program Files/Git/bin/git.exe.\n\n\nInstall the Xcode command line tools (not all of Xcode), which includes Git.\nIn the terminal type:\nxcode-select --install\n\n\nInstall Git via your distro’s package manager.\nUbuntu or Debian:\nsudo apt-get install git\nFedora or RedHat:\nsudo yum install git"
   },
   {
     "objectID": "slides.html#introduce-yourself-to-git",
@@ -252,356 +252,6 @@
     "text": "Step 1: generate SSH keys\n\nFrom RStudioFrom the shell\n\n\nGo to Tools &gt; Global Options… &gt; Git/SVN &gt; Create SSH Key…\n[RStudio will prompt you for a (optional) passphrase.]{m-up-space}\nIf you’re completely new at all this, skip the passphrase for now. You can implement it next time, when you are more comfortable with system configuration.\nClick on Create\nRStudio will generate and store the files ~/.ssh/id_ed25519 and ~/.ssh/id_ed25519.pub.\n\n\n\n\n\n\n\nSSH keys file names\n\n\nSSH key files follow the typical pattern id_&lt;something&gt;.pub (the public key) and id_&lt;something&gt; (the private key), where &lt;something&gt; reflects the key type.\nrsa historically has been the most common. However, these days GitHub encourages users to generate SSH keys with the ed25519 algorithm instead (default option).\n\n\n\n\n\n\nCreate the key pair:\n*a meaningful comment could be the name of your computer, for example\nssh-keygen -t ed25519 -C \"DESCRIPTIVE-COMMENT\"\nIf your system is too old to support the ed25519 algorithm, substitute “ed25519” with “rsa -b 4096”.\nAccept the proposal to save the key in the default location (just press Enter)\nYou have the option to protect the key with a passphrase.\nIf you’re completely new at all this, skip the passphrase and implement it next time, when you are more comfortable with system configuration."
   },
   {
-    "objectID": "slides.html#step-2-client",
-    "href": "slides.html#step-2-client",
-    "title": "Git & Github  for researchers",
-    "section": "Step 2: client",
-    "text": "Step 2: client\nTell your ssh-agent about the key (and set it up to manage the passphrase, if you chose to set one).\nThings get a little OS-specific around here. When in doubt, consult GitHub’s instructions for SSH, which is kept current and accounts for more unusual situations than I can.\n\nOn Linux or macOSOn Windows\n\n\nMake sure ssh-agent is enabled\neval \"$(ssh-agent -s)\"\nYou should see something like “Agent pid ”.\nIf this fails try again, as the superuser (sudo su &gt; eval \"$(ssh-agent -s)\" &gt; exit).\nAdd your key to the ssh agent. If you set a passphrase, you’ll be challenged for it here.\nssh-add ~/.ssh/id_ed25519\n\n\nIn the Git Bash shell, make sure ssh-agent is enabled:\neval $(ssh-agent -s)\nYou should see something like “Agent pid ”.\nAdd your key to the ssh agent.\nssh-add ~/.ssh/id_ed25519"
-  },
-  {
-    "objectID": "slides.html#step-3-server",
-    "href": "slides.html#step-3-server",
-    "title": "Git & Github  for researchers",
-    "section": "Step 3: server",
-    "text": "Step 3: server\nNow the last thing we need to do is store a copy of your public key on GitHub.\n\nCopy the public key onto your clipboard.\n\n\nIn RStudioIn the shell\n\n\nGo to Tools &gt; Global Options… &gt; Git/SVN.\nYou should see something like ~/.ssh/id_ed25519 in the SSH Key box.\nClick on “View public key” and copy that to your clipboard.\n\n\nList existing keys:\nls -al ~/.ssh/\nOpen the ~/.ssh/id_ed25519.pub file in whatever editor and copy the contents to your clipboard.\nSome examples: pbcopy &lt; ~/.ssh/id_ed25519.pup (on macOS), xclip -sel clip &lt; ~/.ssh/id_ed25519.pub (on Linux), clip &lt; ~/.ssh/id_ed25519.pub (on Windows)\n\n\n\n 2. Got to GitHub and register the public key\n\nClick on your profile pic (upper right corner) &gt; Settings &gt; SSH and GPG keys &gt; New SSH key. Paste your public key in the “Key” box. Give it an informative title (e.g. the descriptive comment you used during key creation). Click “Add SSH key”.\n\nDone! But let’s test this to be sure:\nssh -T git@github.com"
-  },
-  {
-    "objectID": "slides.html#questions-1",
-    "href": "slides.html#questions-1",
-    "title": "Git & Github  for researchers",
-    "section": "Questions?",
-    "text": "Questions?\nNo? thank god let’s have a break"
-  },
-  {
-    "objectID": "slides.html#lets-get-down-to-it",
-    "href": "slides.html#lets-get-down-to-it",
-    "title": "Git & Github  for researchers",
-    "section": "Let’s get down to it",
-    "text": "Let’s get down to it\nNow that we are done setting up, it’s about damn time to see what was all this pain even for:\nIn this section, we’ll go over three realistic workflows you may use in you daily life\n\nNew project - GitHub first: the easiest way to get a working project.\nExisting project - GitHub first: a deeply pragmatic way to get pre-existing work onto GitHub.\nExisting project - GitHub last: the more “proper” way to connect existing local work to GitHub, when there’s already some Git history.\nContributing to someone else’s work: your gateway drug to open-source heaven."
-  },
-  {
-    "objectID": "slides.html#create-a-repository",
-    "href": "slides.html#create-a-repository",
-    "title": "Git & Github  for researchers",
-    "section": "1. Create a repository",
-    "text": "1. Create a repository\nIt’s (finally) time to make your first repository!\n\nGo to GitHub and make sure you are logged in. Click on your profile pic (top-right corner) &gt; Repositories &gt; New.\n\nFill some info in:\n\nRepository name: Whatever you wish. Approach this as you would a variable name: descriptive but brief, no spaces. Letters, digits, -, ., or _ are allowed. Description (for humans): It’s nice to have something here, so you’ll see it appear in the README. e.g. “Analysis of the stuff”. Visibility: Public or private (can always change it later) Add README: generally a good idea, this is the landing page for your repo Templates, .gitignore and licences we will talk about in a moment, ignore for now.\n\nClick on Create repository."
-  },
-  {
-    "objectID": "slides.html#clone-your-repo-to-your-local-computer",
-    "href": "slides.html#clone-your-repo-to-your-local-computer",
-    "title": "Git & Github  for researchers",
-    "section": "Clone your repo to your local computer",
-    "text": "Clone your repo to your local computer\nNow, on the repo page, click the big green button that says &lt;&gt; Code.\n\nCopy a clone URL to your clipboard.\nRemember when we talked about HTTPS and SSH? Here they are again.\nThe type of URL you copy determines the protocol GitHub will use, so if you have PAT set up, copy the HTTPS URL, if you are using SSH keys, go for SSH.\nNow, you have a few ways to get this onto your computer."
-  },
-  {
-    "objectID": "slides.html#clone-your-repo-to-your-local-computer-1",
-    "href": "slides.html#clone-your-repo-to-your-local-computer-1",
-    "title": "Git & Github  for researchers",
-    "section": "Clone your repo to your local computer",
-    "text": "Clone your repo to your local computer\nLet’s use the URL we just copied from GitHub.\n\nIn the shellIn RIn RStudio\n\n\nIf your shell cooperates, you should be able to paste the whole https://... bit, but some shells are not (immediately) clipboard aware. In that sad case, you must type it (accurately), best of luck sailor!\nThis should look something like this:\ngit clone https://github.com/&lt;YOUR-USERNAME&gt;/&lt;YOUR-REPOSITORY&gt;.git\n\n\n\n\n\n\n\n\nWhere am I?\n\n\nTake charge of – or at least notice! – what directory you’re in. pwd displays the working directory. cd is the command to change it.\n\n\n\n\n\n\nRemember usethis?\nusethis::create_from_github(\n  \"https://github.com/&lt;YOUR-USERNAME&gt;/&lt;YOUR-REPOSITORY&gt;.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\"\n)\nThe first argument (repo_spec) accepts various forms of GitHub repo specifications (see the docs). We will use the URL we just copied from GitHub.\nThe destdir argument specifies the parent directory where you want the new folder (and local Git repo) to live. If you don’t specify it, usethis defaults to some very conspicuous place, like your Desktop.\n\n\nStart a new Project:\n\nFile &gt; New Project… &gt; Version Control &gt; Git &gt; In “Repository URL”, paste the URL of your new GitHub repo &gt; Accept the default project directory name (i.e. the GitHub repo name) &gt; And pay attention to where the Project will be saved locally &gt; Check “Open in new session” (that’s what you usually want in real life) and click on Create Project\n\n\n\n\n\n\n\n\nTroubles in paradise?\n\n\nDo you NOT see an option to get the Project from Version Control? Restart RStudio and try again.Still no luck? Check out these troubleshooting tips."
-  },
-  {
-    "objectID": "slides.html#exercise-make-a-repo-and-clone-it",
-    "href": "slides.html#exercise-make-a-repo-and-clone-it",
-    "title": "Git & Github  for researchers",
-    "section": "Exercise: make a repo and clone it",
-    "text": "Exercise: make a repo and clone it\n\nCreate a repository (get creative) and give it a README\nClone it on your laptop\nMake this new repo your working directory, list its files, display the README\nBonus: what does git remote show origin tell you?"
-  },
-  {
-    "objectID": "slides.html#make-a-local-change-and-commit-to-it",
-    "href": "slides.html#make-a-local-change-and-commit-to-it",
-    "title": "Git & Github  for researchers",
-    "section": "Make a local change and commit to it",
-    "text": "Make a local change and commit to it\nEvery time you finish a valuable chunk of work (probably a few times a day)\n\nIn the shellIn RStudio\n\n\nMake the repo your working directory\ncd &lt;YOUR-REPOSITORY&gt;\nLet’s make a small change:\necho \"A line I wrote on my local computer \" &gt;&gt; README.md\nI am happy with this change, now let’s stage (“add”) and commit to it\ngit add README.md\ngit commit -m \"Look ma, a commit from my local computer\"\n\n\nLet’s make a small change: e.g., adding the line “This is a line from RStudio” to the README.\nSave your changes.\nOpen the Git tab in upper right pane (or wherever you have put your “Environment” pane, you eretic).\nCheck the “Staged” box for the files you want to commit and click (surprise) Commit\nType a message in “Commit message”, e.g. “Commit from RStudio”.\nClick Commit."
-  },
-  {
-    "objectID": "slides.html#shall-we-tell-github-about-this",
-    "href": "slides.html#shall-we-tell-github-about-this",
-    "title": "Git & Github  for researchers",
-    "section": "Shall we tell GitHub about this?",
-    "text": "Shall we tell GitHub about this?\nTime to share (push) your changes with the world (or with GitHub anyway)\nNow, this will seem counterintuitive, but first let’s stop and… pull from GitHub.\nI doubt anything will happen (i.e. you’ll get \"Already up-to-date.\") but this is a good habit to catch… can you guess why?\n\nIn the shellIn RStudio\n\n\n(optional) get most recent version from GitHub:\ngit pull\nSend your local changes to GitHub\ngit push\n\n\nIn the Git tab in RStudio:\n(optional) Click Pull to get most recent version from GitHub\nClick Push to send your local changes to GitHub."
-  },
-  {
-    "objectID": "slides.html#exercise-make-a-change-commit-and-push-it",
-    "href": "slides.html#exercise-make-a-change-commit-and-push-it",
-    "title": "Git & Github  for researchers",
-    "section": "Exercise: make a change, commit and push it",
-    "text": "Exercise: make a change, commit and push it\n\nAdd a line to your README and verify that Git noticed the change\nStage and commit this change\nPush to your remote repo\nDid you get challenged for a password?\n\nyes. why?\nno. why not?\n\nConfirm that GitHub registered the change\n(optional) You think you could do this whole exercise directly on the GitHub webpage?"
-  },
-  {
-    "objectID": "slides.html#exisiting-project-github-first",
-    "href": "slides.html#exisiting-project-github-first",
-    "title": "Git & Github  for researchers",
-    "section": "2. Exisiting project, GitHub first",
-    "text": "2. Exisiting project, GitHub first\nWhat if you already have an existing project, somewhere in a directory on your computer?\nIf this is not (yet) a Git-tracked project, it should easy-easy\n\nFirst create a new repository on GitHub (whithout a README if happen to already have one)\nClone it on you local computer\nBring your existing project over, using your favorite method of moving or copying files.\nCheck that your new files appear as new untracked files.\nStage, commit and… wait\n\n\n\n\n\n\n\n\n Don’t push any data, for the love of God\n\n\nTake a moment to stop and think: this is about to leave your local computer and go to GitHub. Make sure you did not commit any data, passwords or anything else you don’t want to share with the world."
-  },
-  {
-    "objectID": "slides.html#say-hi-to-.gitignore-everyone",
-    "href": "slides.html#say-hi-to-.gitignore-everyone",
-    "title": "Git & Github  for researchers",
-    "section": "Say hi to .gitignore, everyone",
-    "text": "Say hi to .gitignore, everyone\nYou can absolutely keep a file locally in a repository, without ever committing it to the GitHub repo. Just let it sit there, without staging it. No harm done.\nIf this is a long-term situation, however, you may find it tidier to list the file in .gitignore. This is a special file that tells Git to just ignore things inside a local folder.\n\nMy .gitignore usuallly looks something like this:\n.DS_Store # macOS\n\n.Rhistory # for R projects # or __pycache__/ # for Python projects\n\ndata/ # All things data\n*.csv\n*.rds\n*.RData\n*.sav"
-  },
-  {
-    "objectID": "slides.html#exercise-take-an-existing-project-and-make-into-a-github-repo",
-    "href": "slides.html#exercise-take-an-existing-project-and-make-into-a-github-repo",
-    "title": "Git & Github  for researchers",
-    "section": "Exercise: take an existing project and make into a GitHub repo",
-    "text": "Exercise: take an existing project and make into a GitHub repo\n\nChoose an existing project on your local computer\nCreate a new repository for it on GitHub (you can use a Private one if you are feeling paranoid)\nClone it and bring your existing project over\nCheck that your new files appear as new untracked files.\nAdd a .gitignore to make sure your sensitive files are protected\nStage and commit\nPush to your remote repo\nConfirm that you project is now on GitHub, and rejoice!"
-  },
-  {
-    "objectID": "slides.html#why-github-first",
-    "href": "slides.html#why-github-first",
-    "title": "Git & Github  for researchers",
-    "section": "Why GitHub first?",
-    "text": "Why GitHub first?\nThis is a somewhat technical but important point about Git.\nThere is a big advantage of the GitHub first, then RStudio/R workflow:\n\nthe remote GitHub repo is already configured as the origin remote for your local repo\nyour local main branch is now tracking the main on GitHub.\n\nThe practical implication is that you are now set up to push and pull. No need to fanny around setting up Git remotes and tracking branches on the command line.\nWait, what are you talking about?\nLet’s a look at:\ngit remote show origin"
-  },
-  {
-    "objectID": "slides.html#existing-project-github-last",
-    "href": "slides.html#existing-project-github-last",
-    "title": "Git & Github  for researchers",
-    "section": "3. Existing project, GitHub last",
-    "text": "3. Existing project, GitHub last\nIf you have followed any other Git tutorial however, chances are that your first step would look something like:\n\nIn the shellCan be de done in R too, fyi\n\n\ngit init\n\n\nusethis::use_git()\n\n\n\nIn this situation, you will have an existing project, that is already a Git repo (with a history you care about), but it does not have a remote GitHub repo yet.\n\nThis may be less desirable for a novice because there are more opportunities to get confused and make a mistake."
-  },
-  {
-    "objectID": "slides.html#cleaning-up",
-    "href": "slides.html#cleaning-up",
-    "title": "Git & Github  for researchers",
-    "section": "Cleaning up",
-    "text": "Cleaning up\nYou can delete the “local” repo (It’s just a regular directory on your computer).\nNote, if you are doing it in the shell, use:\nrm -rf &lt;YOUR-REPOSITORY&gt;\n-rf will save you some time saying “yes” delete this hidden git file a gazillion times\nThen, in the browser, go to your repo’s landing page on GitHub &gt; Click on Settings &gt; Scroll down, click on delete repository and do as it asks."
-  },
-  {
-    "objectID": "slides.html#comparing-versions",
-    "href": "slides.html#comparing-versions",
-    "title": "Git & Github  for researchers",
-    "section": "Comparing versions",
-    "text": "Comparing versions\ngit diff"
-  },
-  {
-    "objectID": "slides.html#fun-facts",
-    "href": "slides.html#fun-facts",
-    "title": "Git & Github  for researchers",
-    "section": "Fun facts",
-    "text": "Fun facts\nThe GitHub mascot is named Octocat, a merge between an octopuss and cat.\nDo you know the story behind this logo creation?\nThe idea came from the “octopus merge” – the practice of combining three or more branches of development. The logo was created by Simon Oxley, who doesn’t remember creating it, apparently. Initially, Simon thought of calling his creation “Octopuss” (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.\nIn the end, GitHub decided to go with Octocat (for obvious reasons)."
-  },
-  {
-    "objectID": "slides.html#conclusions-and-goodbyes",
-    "href": "slides.html#conclusions-and-goodbyes",
-    "title": "Git & Github  for researchers",
-    "section": "Conclusions and goodbyes",
-    "text": "Conclusions and goodbyes\nThe workflows described here are widely regarded as current best practice, yet we generally neither practice nor preach it in academic settings.\nNow just “lather, rinse, repeat”. Do work somewhere: locally or on GitHub. Commit it. Push it or pull it, depending on where you did the work, get local and remote “synced up”. Repeat."
-  },
-  {
-    "objectID": "slides.html#resources",
-    "href": "slides.html#resources",
-    "title": "Git & Github  for researchers",
-    "section": "Resources",
-    "text": "Resources\nBryan, J. (2018). Excuse Me, Do You Have a Moment to Talk About Version Control? The American Statistician, 72(1), 20–27.\nGit Tutorials from Atlassian https://www.atlassian.com/git/tutorials/\nGit explainers, heavy on the diagrams\nhttps://twitter.com/JennyBryan/status/743548245645791232\nA Visual Git Reference http://marklodato.github.io/visual-git-guide/index-en.html\nA successful Git branching model http://nvie.com/posts/a-successful-git-branching-model/\nA successful Git branching model considered harmful https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/\nGit Tutorials from Atlassian https://www.atlassian.com/git/tutorials/\nSoftware Carpentry Git Novice Lesson http://swcarpentry.github.io/git-novice/\nMichael Freeman slides on Git collaboration http://slides.com/michaelfreeman/git-collaboration#/\nGitHub Training materials https://services.github.com/kit/\nGit for Ages 4 and Up https://www.youtube.com/watch?v=3m7BgIvC-uQ\nLearn Git Branching http://learngitbranching.js.org\nA Git Workflow Walkthrough Series http://vallandingham.me/git-workflow.html\nGit from the inside out https://codewords.recurse.com/issues/two/git-from-the-inside-out\nGit in Practice by Mike McQuaid is an more approachable book, probably better than Pro Git (below) for most people starting out. Ancillary materials on GitHub.\nThe book Pro Git is fantastic and comprehensive.\nOh My Git! is a free and open source interactive game for learning Git. It’s very beginner friendly, using a graph to visualise the worktree. Lessons can be completed using a playing card interface in addition to the built-in command line, which is there for when users become more comfortable.\nGitHub’s own training materials may be helpful. They also point to many other resources\nFind a powerful Git client (chapter 8) if you’d like to minimize your usage of Git from the command line.\nTen Simple Rules for Taking Advantage of Git and GitHub http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947\nRStudio’s guide Version Control with Git and SVN\nThe book Team Geek has insightful advice for the human and collaborative aspects of version control. It proposes Git strategies suited to different characteristics of teams."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#welcome",
-    "href": "1.Intro-concepts.html#welcome",
-    "title": "Git & Github  for researchers",
-    "section": "Welcome",
-    "text": "Welcome\nWelcome to our first Git & Github course!\n\nHi 👋  My name is Serena — Data Scientist Epidemiology / Neuroscience / Psychology\nDisaclaimer time: I am not an expertI use these tools daily and find them, honestly, really useful\n\n\nToday, I’ll walk with you as you:\n\nFind out some (very cool) ways to integrate Git and GitHub into your daily work\nInstall and congifure Git and get it working smoothly with GitHub  in the shell & in R/RStudio\nPractice a few key workflows to solve common problems"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#some-more-disclaimers",
-    "href": "1.Intro-concepts.html#some-more-disclaimers",
-    "title": "Git & Github  for researchers",
-    "section": "Some (more) disclaimers",
-    "text": "Some (more) disclaimers\n\n\nAbout you\nNo previous experience required, beside a general familiarity with data analysis.\nYou will get the most out of this workshop if you are an R user.\n\n\nAbout this worshop\nIt is not a complete guide. It is more of aGit-starter pack for research / teaching activities.\n\n\n\n\n\n\n\nHungry for more?\n\n\nThere are a lot of excellent Git/Github tutorial materials online.Check out the Resources at the end of this presentation for some suggestions."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#pre-trip-checklist",
-    "href": "1.Intro-concepts.html#pre-trip-checklist",
-    "title": "Git & Github  for researchers",
-    "section": "Pre-trip checklist",
-    "text": "Pre-trip checklist\nYou already have:\n\nA (free) GitHub account\n\nStudents and educational/research staff: GitHub Education\nResearch/lab groups or courses: GitHub Organizations\n\nA laptop with:\n\nGit installed\nR and RStudio (or Positron) up-to-date\n\nStickers\n\n   help    question    done"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#roadtrip-agenda",
-    "href": "1.Intro-concepts.html#roadtrip-agenda",
-    "title": "Git & Github  for researchers",
-    "section": "Roadtrip agenda",
-    "text": "Roadtrip agenda\n\nBig-picture motivation (and a pinch of ranting)\n\nWhy would a researcher use a version control system (e.g., Git)?\nWhat’s the point of hosting your work online (e.g., on GitHub)?\n\n\n\nUseful Git/GitHub concepts I keep in my purse\nGetting started (the right way): configuration climbing\nEarly Git wins: some basic workflows for everyday life\n\n\n\nThe rest of the game: some lesser-known fun things you can do with Github\n\ne.g. Github Pages, Search, and Actions"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#is-it-going-to-hurt",
-    "href": "1.Intro-concepts.html#is-it-going-to-hurt",
-    "title": "Git & Github  for researchers",
-    "section": "Is it going to hurt?",
-    "text": "Is it going to hurt?\nYes.\n\nBefore you can get started,you have to: install Git, get local Git talking to GitHub, and make sure RStudio can talk to local Git (and, therefore, GitHub). This is one-time or “once-per-computer” pain & we will do it together\n\n\nBeginner–intermediate use requires(small) changes to your normal, daily workflow: e.g. dedicate a directory to each project, make it a git repository, periodically make commits and push them to Github. It feels weird at first but quickly becomes second nature & we will do it together\n\n\nAdvanced GitHub use, e.g. to work with other people or coordinate your own work from multiple computers?Knock-knock — Who’s there? — merge conflicts. This is not one-time pain but the best remedy is prevention, which we do today"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#why-bother-with-all-this",
-    "href": "1.Intro-concepts.html#why-bother-with-all-this",
-    "title": "Git & Github  for researchers",
-    "section": "Why bother with all this?",
-    "text": "Why bother with all this?\nI can think of two main reasons:\n\nThe noble reasons\nScience is in bad shape people.\nReplicability and traceability of scientific claims is horrifyingly insufficient, across fields.\nYou analysis is the scientific product, the paper is just advertisement.\nAnd analyses should (in principle)be directly accessible to others,or at least carefullydocumented…\n\n\n\n\nThe selfish reasons\nResearch produces many files: data files, figures, tables, docs, slides, and (yes) code…\nMost of these files evolve over the course of a project and often need to be shared with others.\nWithout explicit and structured management, project organization can easily descend into chaos, and taking your mental wellbeing with it (ask me how I know…)"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#the-poor-mans-version-of-version-control",
-    "href": "1.Intro-concepts.html#the-poor-mans-version-of-version-control",
-    "title": "Git & Github  for researchers",
-    "section": "The “poor man’s version” of version control",
-    "text": "The “poor man’s version” of version control"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#what-is-git",
-    "href": "1.Intro-concepts.html#what-is-git",
-    "title": "Git & Github  for researchers",
-    "section": "What is Git?",
-    "text": "What is Git?\n\nGit is a version control system.\nIt manages the evolution of a set of files (a repository or repo) in a sane, highly structured way.\n\n Git’s original purpose was to help groups of developers work collaboratively on big software projects.  It is like a“TrackChanges” feature from Microsoft Word, but more rigorous, powerful, and scaled up to multiple files. \n\n\nIt enables the distribution of any file across different people, computers, and across time."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#now-the-bad-news",
-    "href": "1.Intro-concepts.html#now-the-bad-news",
-    "title": "Git & Github  for researchers",
-    "section": "Now the bad news",
-    "text": "Now the bad news\nGit was not built for you.\nYou will undoubtedly notice this, so it’s best to know in advance.\n\n\nGit’s model of file management can feel uncomfortably rigid, especially for beginners.\n\n\n\nHappily, there are many helpful tools that mediate your interactions with Git.\n   \n\n\n\n“I like offending people because I think people who get offended, should be offended.” \nLinus Torvalds"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#what-is-github",
-    "href": "1.Intro-concepts.html#what-is-github",
-    "title": "Git & Github  for researchers",
-    "section": "What is GitHub?",
-    "text": "What is GitHub?\nGitHub complements Git by providing a polished user interface and distribution mechanism for Git repositories.\n\n\nGit = software you use locally to record changes to a set of files.\nGitHub = hosting service that provides a Git-aware home for such projects on the internet.\n\n\n\nGitHub is likeDropBox or Google Drive, but much, much better.\nIt allows others to browse project files, explore their history, sync up with the current version, and even propose or make changes.\n\n\n\nMany operations can be done entirely in the browser, including editing or adding files.\nLet’s take a look!"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#good-examples-in-bio-research",
-    "href": "1.Intro-concepts.html#good-examples-in-bio-research",
-    "title": "Git & Github  for researchers",
-    "section": "Good examples in bio-research",
-    "text": "Good examples in bio-research\nA diverse range of efforts (from individual, to labs, to global collaborations) have chosen GitHub as productive place to share code and ideas"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#benefits-of-using-hosted-version-control",
-    "href": "1.Intro-concepts.html#benefits-of-using-hosted-version-control",
-    "title": "Git & Github  for researchers",
-    "section": "Benefits of using hosted version control",
-    "text": "Benefits of using hosted version control\nIn a nutshel: doing your work becomes tightly integrated with organizing, recording, and disseminating it. It’s not a separate, burdensome task you are tempted to neglect.\n\nTell the story of your project\nTravel back in time\nExperiment with changes\nBack up your work\nMake your work visible: The marginal effort required to create a web presence for a project is negligible. GitHub also makes a fantastic course management system for teachers.\nCollaborate on projects. Collaboration and knowledge sharing becomes much easier and more structured, with collegues and remote contributors.\nGit is WIDELY used outside these walls (required in most job positions). By using common mechanics across work modes (research, teaching, analysis), you achieve basic competence quickly and avoid the demoralizing forget-relearn cycle"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#benefits-of-using-hosted-version-control-1",
-    "href": "1.Intro-concepts.html#benefits-of-using-hosted-version-control-1",
-    "title": "Git & Github  for researchers",
-    "section": "Benefits of using hosted version control",
-    "text": "Benefits of using hosted version control\nEven for private solo projects, there are advantages to keeping a synced copy on GitHub:\n\n\nWhen you are new with coding (or, frankly, even when you are not), it is common to mess things up.  Sometimes the easiest fix is to clone a fresh copy from GitHub, patch things up, and move on with your life.\nThe highly functional web interface makes it a pleasure to browse through your own work.  You can navigate and search through multiple projects and files and across time."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#git-basics",
-    "href": "1.Intro-concepts.html#git-basics",
-    "title": "Git & Github  for researchers",
-    "section": "Git basics",
-    "text": "Git basics\n\nLet’s talk a bit more about Git.\nIn this sections we will:\n\nintroduce the most important basic ideas\ndefine some Git vocabulary\nlink each concept to research-related tasks or projects\n\n\nKeep in mind that actual usage is the most effective way to build up a good mental model for Git, so don’t worry if some concept don’t feel so clear just yet\nOnce again, there many excellent external resources for Git, which you can find in the Resources at the end of the presenation."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#repositories-repos-and-roles",
-    "href": "1.Intro-concepts.html#repositories-repos-and-roles",
-    "title": "Git & Github  for researchers",
-    "section": "Repositories ( repos ) and roles",
-    "text": "Repositories ( repos ) and roles\nRecall: Git manages the evolution of a set of files\nSuch set of files (or directory) is called a repository (repo for friends).\nA repository can bepublic or private.\nThe owner of a repo can grant permission to others (collaborators): e.g. read (only relevant for private repos), write (push) and admin access.\nA repo can be owned by a person or by an organization."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#commits",
-    "href": "1.Intro-concepts.html#commits",
-    "title": "Git & Github  for researchers",
-    "section": "Commits",
-    "text": "Commits\nA commit is a snapshot of one or more files inside a repository.\nInstead of saving a copy of a file, versioning it chaging it’s name (e.g. “[…] _v2” or “[…] _SD”), you create a commit.\n\n\n\n\n\nOn the surface nothing changes, but thehistory of that file is secretly saved. This includes metadata (author, date, message)\n\nYou can add more information about the changes you’ve made in a commit message"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#staging",
-    "href": "1.Intro-concepts.html#staging",
-    "title": "Git & Github  for researchers",
-    "section": "Staging",
-    "text": "Staging\nGit commits actually happen in two distinct steps (though they are often used together).\n\nStage (via git add): tell Git which changes from your repo you intend to include in the next commit.\nCommit (via git commit): take what is in the staging area and create a new commit object in the repo’s history, with its message and unique ID.\n\n\n\n\n\n\n\n\nWhy is this useful?\n\n\nRecall: a commit is a snapshot of one or more files\nStaging lets you split your work into logical commits, even if you edited many files or made mixed changes in the same file.\nFor example, you can stage only the lines related to a bugfix and commit them separately from formatting changes, improving history readability and making review and rollback easier."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#time-travel-hashs-and-tags",
-    "href": "1.Intro-concepts.html#time-travel-hashs-and-tags",
-    "title": "Git & Github  for researchers",
-    "section": "Time travel: hashs and tags",
-    "text": "Time travel: hashs and tags\nCommitting (well) helps you tell the story of your project to yourself and to other people.\nBut it does not end there… Git also lets you time travel through your project\nGetting the files from a commit in the past is known as doing a check out\n\n\n\n\n\nRecall: each commit has a unique ID called ahash.\nYou can tell Git what commit I want to check out using (part of) the commit hash.\nMy other commits still exist, but when I look in my repo, it’s as if they never happened.\nYou can also give certain important commits a special name (a tag) that you can then use instead of their hash, to refer to them during time travel. People often use tags for software versions."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#parallel-universes-branches",
-    "href": "1.Intro-concepts.html#parallel-universes-branches",
-    "title": "Git & Github  for researchers",
-    "section": "Parallel universes: branches",
-    "text": "Parallel universes: branches\nSo far, everything has been very linear and ordered. The thing is… this isn’t really how projects work.\nSometimes you want to try something out, make experiments. The way you do this in Git is with branches\nA branch is a moveable label attached to a commit.\n\n\n\n\n\nThe default branch name in Git is main (not master!)\nIt’s common for the main branch to hold a stable version of the code or files, while other branches contain work in progress."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#quantum-collapse-merging",
-    "href": "1.Intro-concepts.html#quantum-collapse-merging",
-    "title": "Git & Github  for researchers",
-    "section": "Quantum collapse: merging",
-    "text": "Quantum collapse: merging\nBranches are easy to throw away if you decide you don’t like your changes.\nBut if you are happy with some work, you typically want to combine it back into the main branch.\nTo get changes from one branch into another, youmerge them.\n\n\n\n\n\nThis last commit is a combination of all of the commits from both branches.\n* Different collaborators can work on different branches independently!"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#remote-vs.-local",
-    "href": "1.Intro-concepts.html#remote-vs.-local",
-    "title": "Git & Github  for researchers",
-    "section": "Remote (vs. local)",
-    "text": "Remote (vs. local)\nEveryone knows that you should back up your work regularly, ideally to somewhere geographically distinct from your computer.\nIn Git this place is called a remote. A very popular place to put your remotes is Github.\nHaving a remote copy of your repos has several advantages:\n\nSafer\nAccess from different places\nShared access with other people"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#working-on-your-remotes-cloning-pushing-and-pulling",
-    "href": "1.Intro-concepts.html#working-on-your-remotes-cloning-pushing-and-pulling",
-    "title": "Git & Github  for researchers",
-    "section": "Working on (your) remotes: cloning, pushing and pulling",
-    "text": "Working on (your) remotes: cloning, pushing and pulling\n\n\n\nTo get some work from a remote on your local computer (for the first time) you clone it.\n\n\n\n\n\n\n\n\nTo send new updates to the remote you push\n\n\n\n\n\nTo get new updates (commits) from the remote you pull"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#issues",
-    "href": "1.Intro-concepts.html#issues",
-    "title": "Git & Github  for researchers",
-    "section": "Issues",
-    "text": "Issues\nIt’s a list of things, bugs, feature requests, to dos, whatever\nIssues are tightly integrated with email and therefore allow you to copy/embed important conversations in the associated repo.\nIssues can be assigned to people (e.g., to dos) and tagged (“bug” or “progress-report”).\nIssues are tightly integrated with commits and therefore allow you to record that the changes in this commit solve that problem which was discussed in that issue.\nAs a new user of GitHub, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use."
-  },
-  {
-    "objectID": "1.Intro-concepts.html#questions",
-    "href": "1.Intro-concepts.html#questions",
-    "title": "Git & Github  for researchers",
-    "section": "Questions?",
-    "text": "Questions?\nNo? Let’s play a game"
-  },
-  {
-    "objectID": "1.Intro-concepts.html#break",
-    "href": "1.Intro-concepts.html#break",
-    "title": "Git & Github  for researchers",
-    "section": "Break",
-    "text": "Break"
-  },
-  {
-    "objectID": "slides.html#some-examples-in-bio-research",
-    "href": "slides.html#some-examples-in-bio-research",
-    "title": "Git & Github  for researchers",
-    "section": "Some examples in bio-research",
-    "text": "Some examples in bio-research\nA diverse range of efforts (from individual, to labs, to global collaborations) have chosen GitHub as productive place to share code and ideas"
-  },
-  {
-    "objectID": "slides.html#working-on-someone-elses-repo-forking-and-pull-requests",
-    "href": "slides.html#working-on-someone-elses-repo-forking-and-pull-requests",
-    "title": "Git & Github  for researchers",
-    "section": "Working on someone else’s repo: forking and pull requests",
-    "text": "Working on someone else’s repo: forking and pull requests\nCloning is a client-side Git operation: it creates a local copy of a remote repo. The remote repo can be original or a fork.\nForking gives you your own remote copy of someone else’s repo. It creates a new remote repository under your user (or organization), starting from another repo’s contents and history.\nWhen you are not a collaborator on the original repo (e.g., open-source contributions), you usually want your own independent remote for an existing project\nIn these workflows, you fork first (to create your own remote), then clone that fork to your machine and work there.\nA fork can be kept in sync with its upstream repo (by pulling).\nTo propose changes back to the original, you’’ll use a pull request instead of pushing directly."
-  },
-  {
-    "objectID": "slides.html#github-issues",
-    "href": "slides.html#github-issues",
-    "title": "Git & Github  for researchers",
-    "section": "GitHub Issues",
-    "text": "GitHub Issues\nIssues are essentially a list of things: bugs, feature requests, to-dos, whatever\nIssues can be assigned to people (e.g., to-dos) and tagged (“bug” or “progress-report”).\nThey are tightly integrated with:\n\nemail, allowing you to copy/embed important conversations in the associated repo;\ncommits allowing you to record that, e.g. “the changes in this commit solve the problem discussed in that issue.”\n\nAs a new GitHub user, one of the most productive things you can do is to use GitHub issues to provide a clear bug report or feature request for a package you use."
-  },
-  {
-    "objectID": "slides.html#install-git-if-you-havent",
-    "href": "slides.html#install-git-if-you-havent",
-    "title": "Git & Github  for researchers",
-    "section": "Install Git (if you haven’t)",
-    "text": "Install Git (if you haven’t)\nYou need Git, so let’s install it.\n\nWindowsmacOSLinux\n\n\nInstall Git for Windows, also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, accept the defaults.\n\nYou should now have a Git executable at: C:/Program Files/Git/bin/git.exe.\n\n\nInstall the Xcode command line tools (not all of Xcode), which includes Git.\nIn the terminal type:\nxcode-select --install\n\n\nInstall Git via your distro’s package manager.\nUbuntu or Debian:\nsudo apt-get install git\nFedora or RedHat:\nsudo yum install git"
-  },
-  {
     "objectID": "slides.html#step-2-the-client",
     "href": "slides.html#step-2-the-client",
     "title": "Git & Github  for researchers",
@@ -623,32 +273,172 @@
     "text": "Done!\nThank god, you are now set-up and ready to use Git.\nWe all deserve a break.\nBut first, one last test for peace of mind:\nssh -T git@github.com\n\nQuestions?"
   },
   {
-    "objectID": "slides.html#bonus-fun-fact",
-    "href": "slides.html#bonus-fun-fact",
+    "objectID": "slides.html#lets-get-down-to-it",
+    "href": "slides.html#lets-get-down-to-it",
     "title": "Git & Github  for researchers",
-    "section": "Bonus: fun fact",
-    "text": "Bonus: fun fact\nThe GitHub mascot is named Octocat, a merge between an octopuss and cat.\nDo you know the story behind this logo creation?\n\nThe idea came from the “octopus merge” – the practice of combining three or more branches of development. The logo was created by Simon Oxley, who doesn’t remember creating it, apparently. Initially, Simon thought of calling his creation “Octopuss” (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.\n\n\nIn the end, GitHub decided to go with Octocat (for obvious reasons)."
+    "section": "Let’s get down to it",
+    "text": "Let’s get down to it\nNow that we are done setting up, it’s about damn time to see what was all that pain even for:\n\nIn this section, we’ll go over four realistic workflows you may use in you daily Gitventures\n\nNew project - GitHub first: the easiest way to get a working project.\nExisting project - GitHub first: a deeply pragmatic way to get pre-existing work onto GitHub.\nExisting project - GitHub last: the “proper” way to connect existing local work to GitHub, when there’s already a Git history.\nContributing to someone else’s work: your gateway drug to open-source heaven."
+  },
+  {
+    "objectID": "slides.html#create-a-repository",
+    "href": "slides.html#create-a-repository",
+    "title": "Git & Github  for researchers",
+    "section": "(1) Create a repository",
+    "text": "(1) Create a repository\nIt’s (finally) time to make your first repository!\n\nGo to GitHub and make sure you are logged in. Click on your profile pic (top-right corner) &gt; Repositories &gt; New\n\nFill some info in:\n\nRepository name: approach this as you would a variable name: descriptive but brief, no spaces. Letters, digits, -, ., or _ are allowed. Description (for humans): It’s nice to have something here, so you’ll see it appear in the README. e.g. “Analysis of the stuff”. Visibility: Public or private (don’t sweat it, can always change it later) Add README: generally a good idea, this is the landing page for your repo Templates, .gitignore and licences we will talk about in a moment, ignore for now.\n\nClick on Create repository"
+  },
+  {
+    "objectID": "slides.html#clone-your-repo-to-your-computer",
+    "href": "slides.html#clone-your-repo-to-your-computer",
+    "title": "Git & Github  for researchers",
+    "section": "Clone your repo to your computer",
+    "text": "Clone your repo to your computer\nNow, on the repo page, click the big green button that says &lt;&gt; Code\n\nCopy a clone URL to your clipboard.\nRemember when we talked about HTTPS and SSH? Here they are again.\nThe type of URL you copy determines the protocol GitHub will use, so if you have PAT set up, copy the HTTPS URL, if you are using SSH keys, go for SSH.\nNow, you have a few ways to get this onto your computer…"
+  },
+  {
+    "objectID": "slides.html#clone-your-repo-to-your-computer-1",
+    "href": "slides.html#clone-your-repo-to-your-computer-1",
+    "title": "Git & Github  for researchers",
+    "section": "Clone your repo to your computer",
+    "text": "Clone your repo to your computer\nLet’s use the URL we just copied from GitHub.\n\nIn the shellIn RIn RStudio\n\n\n\nIf your shell cooperates, you should be able to paste the whole https://... bit, but some shells are not (immediately) clipboard aware. In that sad case, you must type it (accurately), best of luck sailor!\n\nThis should look something like this:\ngit clone https://github.com/&lt;YOUR-USERNAME&gt;/&lt;YOUR-REPOSITORY&gt;.git\n\n\n\n\n\n\n\nWhere am I?\n\n\nTake charge of – or at least notice! – what directory you’re in. pwd displays the working directory. cd is the command to change it.\n\n\n\n\n\n\nRemember usethis?\nusethis::create_from_github(\n  \"https://github.com/&lt;YOUR-USERNAME&gt;/&lt;YOUR-REPOSITORY&gt;.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\"\n)\nThe first argument (repo_spec) accepts various forms of GitHub repo specifications (see the docs). We will use the URL we just copied from GitHub.\nThe destdir argument specifies the parent directory where you want the new folder (and local Git repo) to live. If you don’t specify it, usethis defaults to some very conspicuous place, like your Desktop.\n\n\nStart a new Project:\n\nFile &gt; New Project… &gt; Version Control &gt; Git &gt; In “Repository URL”, paste the URL of your new GitHub repo &gt; Accept the default project directory name (i.e. the GitHub repo name) &gt; And pay attention to where the Project will be saved locally &gt; Check “Open in new session” (that’s what you usually want in real life) and click on Create Project\n\n\n\n\n\n\n\n\nTroubles in paradise?\n\n\nDo you NOT see an option to get the Project from Version Control? Restart RStudio and try again.Still no luck? Check out these troubleshooting tips."
+  },
+  {
+    "objectID": "slides.html#exercise-make-a-repo-and-clone-it",
+    "href": "slides.html#exercise-make-a-repo-and-clone-it",
+    "title": "Git & Github  for researchers",
+    "section": "Exercise: make a repo and clone it",
+    "text": "Exercise: make a repo and clone it\n\nCreate a repository (get creative) and give it a README\nClone it on your laptop\nMake this new repo your working directory, list its files, display the README\nBonus: what does git remote show origin tell you?"
+  },
+  {
+    "objectID": "slides.html#make-a-local-change-and-commit-to-it",
+    "href": "slides.html#make-a-local-change-and-commit-to-it",
+    "title": "Git & Github  for researchers",
+    "section": "Make a local change and commit to it",
+    "text": "Make a local change and commit to it\nEvery time you finish a valuable chunk of work (probably a few times a day)\n\nIn the shellIn RStudio\n\n\nMake the repo your working directory\ncd &lt;YOUR-REPOSITORY&gt;\nLet’s make a small change:\necho \"A line I wrote on my local computer \" &gt;&gt; README.md\nI am happy with this change, now let’s stage (“add”) and commit to it\ngit add README.md\ngit commit -m \"Look ma, a commit from my local computer\"\n\n\nLet’s make a small change: e.g., adding the line “This is a line from RStudio” to the README.\nSave your changes.\nOpen the Git tab in upper right pane (or wherever you have put your “Environment” pane, you eretic).\nCheck the “Staged” box for the files you want to commit and click (surprise) Commit\nType a message in “Commit message”, e.g. “Commit from RStudio”.\nClick Commit."
+  },
+  {
+    "objectID": "slides.html#shall-we-tell-github-about-this",
+    "href": "slides.html#shall-we-tell-github-about-this",
+    "title": "Git & Github  for researchers",
+    "section": "Shall we tell GitHub about this?",
+    "text": "Shall we tell GitHub about this?\nTime to share (push) your changes with the world (or with GitHub anyway)\n\nNow, this will seem counterintuitive, but first let’s stop and… pull from GitHub.\nI doubt anything will happen (i.e. you’ll get \"Already up-to-date.\") but this is a good habit to catch… can you guess why?\n\n\nIn the shellIn RStudio\n\n\n(optional) get most recent version from GitHub:\ngit pull\nSend your local changes to GitHub\ngit push\n\n\nIn the Git tab in RStudio:\n(optional) Click Pull to get most recent version from GitHub\nClick Push to send your local changes to GitHub."
+  },
+  {
+    "objectID": "slides.html#exercise-make-a-change-commit-and-push-it",
+    "href": "slides.html#exercise-make-a-change-commit-and-push-it",
+    "title": "Git & Github  for researchers",
+    "section": "Exercise: make a change, commit and push it",
+    "text": "Exercise: make a change, commit and push it\n\nAdd a line to your README and verify that Git noticed the change\nStage and commit this change\nPush to your remote repo\nDid you get challenged for a password?\n\nyes. why?\nno. why not?\n\nConfirm that GitHub registered the change\n(optional) You think you could do this whole exercise directly on the GitHub webpage?"
+  },
+  {
+    "objectID": "slides.html#exisiting-project-github-first",
+    "href": "slides.html#exisiting-project-github-first",
+    "title": "Git & Github  for researchers",
+    "section": "(2) Exisiting project, GitHub first",
+    "text": "(2) Exisiting project, GitHub first\nWhat if you already have an existing project, somewhere in a directory on your computer?\nIf this is not (yet) a Git-tracked project, it should easy-easy\n\nFirst create a new repository on GitHub (whithout a README if happen to already have one)\nClone it on you local computer\nBring your existing project over, using your favorite method of moving or copying files.\nCheck that your new files appear as new untracked files.\nStage, commit and… wait\n\n\n\n\n\n\n\n\nDon’t push any data, for the love of God\n\n\nTake a moment to stop and think: this is about to leave your local computer and go to GitHub. Make sure you did not commit any data, passwords or anything else you don’t want to share with the world."
+  },
+  {
+    "objectID": "slides.html#say-hi-to-.gitignore-everyone",
+    "href": "slides.html#say-hi-to-.gitignore-everyone",
+    "title": "Git & Github  for researchers",
+    "section": "Say hi to .gitignore, everyone",
+    "text": "Say hi to .gitignore, everyone\nYou can absolutely keep a file locally in a repository, without ever committing it to the GitHub repo. Just let it sit there, without staging it. No harm done.\nIf this is a long-term situation, however, you may find it tidier to list the file in .gitignore. This is a special file that tells Git to just ignore things inside a local folder.\n\nMy .gitignore usuallly looks something like this:\n.DS_Store # macOS\n\n.Rhistory # for R projects # or __pycache__/ # for Python projects\n\ndata/ # All things data\n*.csv\n*.rds\n*.RData\n*.sav"
+  },
+  {
+    "objectID": "slides.html#exercise-take-an-existing-project-and-make-into-a-github-repo",
+    "href": "slides.html#exercise-take-an-existing-project-and-make-into-a-github-repo",
+    "title": "Git & Github  for researchers",
+    "section": "Exercise: take an existing project and make into a GitHub repo",
+    "text": "Exercise: take an existing project and make into a GitHub repo\n\nChoose an existing project on your local computer\nCreate a new repository for it on GitHub (you can use a Private one if you are feeling paranoid)\nClone it and bring your existing project over\nCheck that your new files appear as new untracked files.\nAdd a .gitignore to make sure your sensitive files are protected\nStage and commit\nPush to your remote repo\nConfirm that you project is now on GitHub, and rejoice!"
+  },
+  {
+    "objectID": "slides.html#why-github-first",
+    "href": "slides.html#why-github-first",
+    "title": "Git & Github  for researchers",
+    "section": "Why GitHub first?",
+    "text": "Why GitHub first?\nThis is a somewhat technical but important point about Git.\nThere is a big advantage of the GitHub first, then RStudio/R workflow:\n\nthe remote GitHub repo is already configured as the origin remote for your local repo\nyour local main branch is now tracking the main on GitHub.\n\nThe practical implication is that you are already set up to push and pull. No need to fanny around setting up Git remotes and tracking branches in the shell.\nWait, what are you talking about?\nLet’s a look at:\ngit remote show origin"
+  },
+  {
+    "objectID": "slides.html#existing-project-github-last",
+    "href": "slides.html#existing-project-github-last",
+    "title": "Git & Github  for researchers",
+    "section": "(3) Existing project, GitHub last",
+    "text": "(3) Existing project, GitHub last\nIf you have followed any other Git tutorial though, chances are that you started from:\n\nIn the shellCan be de done in R too, FYI\n\n\ngit init\n\n\nusethis::use_git()\n\n\n\nIn this situation, you will have an existing project, that is already a Git repo (with a history you care about), but it does not have a remote GitHub repo yet.\n\nThis may be less ideal for a newbie, because there are more opportunities to get confused and make a mistake.\nBut it’s not the end of the world… let’s tackle this."
   },
   {
     "objectID": "slides.html#create-and-connect-a-github-repo",
     "href": "slides.html#create-and-connect-a-github-repo",
     "title": "Git & Github  for researchers",
     "section": "Create and connect a GitHub repo",
-    "text": "Create and connect a GitHub repo\n\nIn RIn the shell\n\n\nYet again, usethis to the rescue\n\nNote: you must have a personal access token (PAT) configured for this.\n\nusethis::use_github()\n[What will happen:]{m-up-space}\n\nCreates a new repo on GitHub.\nConfigures that new repo as the origin remote for the local repo.\nSets up your local default branch (e.g. main) to track same brain on origin\nDoes an initial push\nOpens the new repo in your browser\n\n\n\nFirst, create a new repo on GitHub (you already know how), but:\n\ngive it the sane name of your local project’s directory\nDo not initialize this repository with anything in it (no README)\n\nNow, in the shell:\ngit remote add origin https://github.com/&lt;YOUR-USERNAME&gt;/&lt;YOUR-REPOSITORY&gt;.git\nPush and cement the tracking relationship between your local main branch and main on GitHub (or whatever your default branch is)\ngit push --set-upstream origin main"
+    "text": "Create and connect a GitHub repo\n\nIn RIn the shell\n\n\nYet again, usethis to the rescue\n\nNote: you must have a personal access token (PAT) configured for this.\n\nusethis::use_github()\nWhat will happen:\n\nCreates a new repo on GitHub.\nConfigures that new repo as the origin remote for the local repo.\nSets up your local default branch (e.g. main) to track same brain on origin\nDoes an initial push\nOpens the new repo in your browser\n\n\n\nFirst, create a new repo on GitHub (you already know how), but:\n\ngive it the sane name of your local project’s directory\nDo not initialize this repository with anything in it (no README)\n\nNow, in the shell:\ngit remote add origin https://github.com/&lt;YOUR-USERNAME&gt;/&lt;YOUR-REPOSITORY&gt;.git\nPush and cement the tracking relationship between your local main branch and main on GitHub (or whatever your default branch is)\ngit push --set-upstream origin main"
   },
   {
     "objectID": "slides.html#contribute-to-someone-elses-work",
     "href": "slides.html#contribute-to-someone-elses-work",
     "title": "Git & Github  for researchers",
-    "section": "4. Contribute to someone else’s work",
-    "text": "4. Contribute to someone else’s work\n[TBD]"
+    "section": "(4) Contribute to someone else’s work",
+    "text": "(4) Contribute to someone else’s work\nThe open-source community is cozy, and you are always welcome 😄\nPOV: you want to get a copy of someone else’s repo (OWNER/REPO) and propose a change.\n\nHere is what needs to happen:\n\nfork the source repo (OWNER/REPO): i.e. create a remote copy of the source repo on GitHub.\nclone your fork (YOU/REPO) on your computer\n(Optional, but recommended) Configure the source repo as the upstream remote\n(Optional, but recommended) Configure your local main branch (or whatever the default is) to track upstream/main (instead of origin/main)\n(Optional, but very recommended)Create a new branch where to make your changes\nSend a pull request to OWNER, to propose your changes."
+  },
+  {
+    "objectID": "slides.html#fork-clone-configure-steps-1-4",
+    "href": "slides.html#fork-clone-configure-steps-1-4",
+    "title": "Git & Github  for researchers",
+    "section": "Fork, clone & configure (steps 1-4)",
+    "text": "Fork, clone & configure (steps 1-4)\n\nIn RIn the shell\n\n\nusethis::create_from_github(\n  \"https://github.com/OWNER/REPO\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\",\n  fork = TRUE\n)\nThis will complete steps 1-4, putting you in perfect position to:\n(a) sync up with ongoing developments in the source repo and\n(b) propose new changes from your fork.\nIf you are using RStudio, it will also create and open an RStudio Project for you.\nLet’s check what happened:\nusethis::git_remotes()\n\n\n\nAssuming you’re already on the source repo page: click on Fork (upper right corner) &gt; accept the defaults &gt; click on Create fork\n\nThis creates a copy of REPO under your GitHub account and takes you there in the browser.\nNow clone YOU/REPO (you already know how).\nNext, we need to make sure we stay current with developments in the source repo:\n\nConfigure the source repo as the upstream remote\n\nCopy the URL of the source repo (OWNER/REPO).\n\nIt’s easy to get to from your fork (YOU/REPO), via the forked from link in the upper left.\n\nThen:\ngit remote add upstream https://github.com/OWNER/REPO.git\nNow that upstream is configured, especially if you configured it for the first time, do:\ngit fetch upstream\nThis should get you nicely up to date with all the remote info you need.\n2. Configure your local main branch to track upstream/main.\nLast thing:\ngit branch --set-upstream-to upstream/main\n# git branch -u upstream/main # for lazy people\nOk, let’s check what happened:\ngit remote -v\nDone! (finally)\nIf you found this kind of long and tedious, consider using usethis::create_from_github() next time…"
+  },
+  {
+    "objectID": "slides.html#create-a-new-branch",
+    "href": "slides.html#create-a-new-branch",
+    "title": "Git & Github  for researchers",
+    "section": "Create a new branch",
+    "text": "Create a new branch\nWhen working on a fork, it is a good idea to never mess with the main branch.\n\nIn RIn the shell\n\n\nusethis::pr_init(branch = \"BRANCH-NAME\")\nThis will create a local branch called BRANCH-NAME and “switch to it” (or “check it out”).\n\n\nCreate a new branch:\ngit branch BRANCH-NAME\nSwitch to the new branch:\ngit checkout BRANCH-NAME\nOr you can use the shortcut git checkout -b BRANCH-NAME\n\n\n\nNow, just make your changes and commit them as usual."
+  },
+  {
+    "objectID": "slides.html#submit-a-pull-request",
+    "href": "slides.html#submit-a-pull-request",
+    "title": "Git & Github  for researchers",
+    "section": "Submit a pull request",
+    "text": "Submit a pull request\nThe last thing we need to do is let OWNER know about the chage we want to propose.\n\nIn RIn the shell / GitHub\n\n\nusethis::pr_push()\nThis pushes the local change to your copy of REPO on GitHub and opens a browser window.\nAll is left for you to do is click Create pull request to make the PR.\nGitHub will ping OWNER for you, they will review our pull request and the rest is out of your hands.\n\n\nMake sure you first push your changes to the remote, e.g.:\ngit push -u origin BRANCH-NAME.​\nThen, go to the your fork’s page on GitHub and select the BRANCH-NAME.\n\nYou should see a yellow banner, with a Compare & pull request button, click on that &gt; compare across forks &gt; choose the “base branch” (this is the branch of the upstream repository you’d like to merge changes into, probably main)\n\nAdd a title and description and hit Create pull request"
+  },
+  {
+    "objectID": "slides.html#you-are-asking-too-many-questions",
+    "href": "slides.html#you-are-asking-too-many-questions",
+    "title": "Git & Github  for researchers",
+    "section": "You are asking too many questions",
+    "text": "You are asking too many questions\n\n\n\n\n\n\n\n Why you should never commit to main (on a fork)\n\n\nWhen you do commit to main, it creates a divergence between that branch’s history in the source repo vs. your repo. Nothing but pain will come from this.\nInstead, treat main as read-only: it will make life much easier when you want to pull upstream work into your copy.\nThe OWNER of REPO will also be happier to receive your pull request from a non-main branch.\n\n\n\n\n\n\n\n\n\n\n\n Why track upstream/main instead of origin/main\n\n\nSo that a simple git pull pulls from the source repo, not from your fork.\nIt also means a simple git push will (attempt to) push to the source repo, which will almost always be rejected since you probably do not have permission. This failure will alert you to the fact that you’re doing something questionable, while it’s still easy to back out."
+  },
+  {
+    "objectID": "slides.html#you-didnt-ask-enough-questions",
+    "href": "slides.html#you-didnt-ask-enough-questions",
+    "title": "Git & Github  for researchers",
+    "section": "You didn’t ask enough questions",
+    "text": "You didn’t ask enough questions\n\nAny quesitons?"
+  },
+  {
+    "objectID": "slides.html#exercise-contribute-to-this-presentation",
+    "href": "slides.html#exercise-contribute-to-this-presentation",
+    "title": "Git & Github  for researchers",
+    "section": "Exercise: contribute to this presentation",
+    "text": "Exercise: contribute to this presentation\n\nChoose a GitHub project you would like to contribute to. If you don’t have one in your heart (yet) you can pick this workshop\nFork this repository, and clone it down\nCreate a new branch, and give it a fab name\nContribute by going to the next slide and adding a dad joke\nSend me a pull request and stay tuned for my stap of approval"
+  },
+  {
+    "objectID": "slides.html#exercise-add-a-dad-joke-here",
+    "href": "slides.html#exercise-add-a-dad-joke-here",
+    "title": "Git & Github  for researchers",
+    "section": "Exercise: add a dad joke here",
+    "text": "Exercise: add a dad joke here"
+  },
+  {
+    "objectID": "slides.html#ok-break-please",
+    "href": "slides.html#ok-break-please",
+    "title": "Git & Github  for researchers",
+    "section": "Ok, break please",
+    "text": "Ok, break please"
   },
   {
     "objectID": "slides.html#build-an-online-presence-github-pages",
     "href": "slides.html#build-an-online-presence-github-pages",
     "title": "Git & Github  for researchers",
     "section": "Build an online presence: GitHub Pages",
-    "text": "Build an online presence: GitHub Pages\nGitHub offers static website hosting directly from your repository via GitHub Pages.\nWith very minimal set-up you get a website that:\n\nis completely free (for public repositories). You can also use your own custom domain at no extra cost\nis automatically deployed: just push your code and your site updates instantly\nhas built-in version control (Git history and rollback capability)\n\n\nBut… what can I use it for?\n\nPersonal and/or lab website (e.g. see mine)\nA project website or documentation page (e.g. see this R package)\nPresetations or courses (like this one!)\nA blog\n(With a bit of extra work) an interactive dashboard"
+    "text": "Build an online presence: GitHub Pages\nGitHub offers static website hosting directly from your repository via GitHub Pages. With very minimal set-up you get a website that:\n\nis completely free (for public repositories).You can even use your own custom domain at no extra cost\nis automatically deployed: just push your code and your site updates instantly\nhas built-in version control (Git history and rollback capability)\n\n\nBut… what can I use it for?\n\nPersonal and/or lab website (e.g. see mine)\nA project website or documentation page (e.g. see this R package)\nPresetations or courses (like this one!)\nA blog\n(With a bit of extra work) an interactive dashboard"
   },
   {
     "objectID": "slides.html#build-an-online-presence-just-plain-github",
@@ -669,28 +459,28 @@
     "href": "slides.html#finding-stuff-let-me-github-search-that-for-you",
     "title": "Git & Github  for researchers",
     "section": "Finding stuff: let me GitHub Search that for you",
-    "text": "Finding stuff: let me GitHub Search that for you\nDid you ever find a function that seems useful has no examples? Or is poorly documented? Wouldn’t it be nice to find functioning instances of it “in the wild”?\nThe GitHub Search box is just what the doctor ordered\n\nFor example, see how packages on CRAN use the llply() function from plyr:\n\"llply\" owner:cran language:R\nGitHub Search has loads of useful setting and options.\nRead about them here, here and here"
+    "text": "Finding stuff: let me GitHub Search that for you\nDid you ever find a function that seems useful has no examples? Or is poorly documented? Wouldn’t it be nice to find functioning instances of it “in the wild”?\nThe GitHub Search box is just what the doctor ordered.\n\nFor example, wonder how packages on CRAN use the llply() function from plyr?\n\"llply\" owner:cran language:R\nGitHub Search has loads of useful setting and options.\nRead about them here, here and here"
   },
   {
-    "objectID": "slides.html#finding-stuff-file-finder",
-    "href": "slides.html#finding-stuff-file-finder",
+    "objectID": "slides.html#finding-stuff-the-file-finder",
+    "href": "slides.html#finding-stuff-the-file-finder",
     "title": "Git & Github  for researchers",
-    "section": "Finding stuff: file finder",
-    "text": "Finding stuff: file finder\n\nPress t to activate the file finder whenever you’re in a repo’s file and directory view. AWESOME, especially when there are files tucked into lots of subdirectories.\nYou found it, don’t loose it\nPress y to get a permanent link when you’re viewing a specific file. Watch what changes in the URL. This is important if you are want to link to a file or to specific lines. This way your links will not break, even when the file is deleted, renamed or if lines get inserted or deleted."
+    "section": "Finding stuff: the file finder",
+    "text": "Finding stuff: the file finder\n\n\nWhenever you are on a repo’s page, you can press t toactivate the file finder.\nThis is very helpful, especially when there are files tucked into lots of subdirectories.\n\nYou found it, don’t loose it\nWhen you’re viewing a specific file, you can press y to get a permanent link to that specific file or specific line(s) inside that file.\nWhat’s a permanent link?\nGood question. This is a link that will not break, even when the file is deleted, renamed or if lines get inserted / deleted."
   },
   {
     "objectID": "slides.html#let-people-correct-you-on-the-internet",
     "href": "slides.html#let-people-correct-you-on-the-internet",
     "title": "Git & Github  for researchers",
     "section": "Let people correct you on the internet",
-    "text": "Let people correct you on the internet\nThey love that!\nYou can also create a link that takes people directly to an editing interface in the browser.\n\nBehind the scenes (assuming the click-er is signed into GitHub, and they are not you) this will create a fork in their account and send you a pull request for the changes.\n\nAn edit link would look something like this:\n[Click here to edit!](&lt;URL to your repo&gt;/edit/main/&lt;path to target source file&gt;)"
+    "text": "Let people correct you on the internet\nThey love that!\nSpeaking of links, did you know that you can create a link that takes people directly to an editing interface in the browser.\n\nBehind the scenes (assuming the click-er is signed into GitHub, and they are not you) this will create a fork in their account and send you a pull request for the changes.\n\nAn edit link would look something like this:\n[Click here to edit!](&lt;YOU REPO URL&gt;/edit/main/&lt;path to target source file&gt;)"
   },
   {
     "objectID": "slides.html#automate-tasks-github-actions",
     "href": "slides.html#automate-tasks-github-actions",
     "title": "Git & Github  for researchers",
     "section": "Automate tasks: GitHub Actions",
-    "text": "Automate tasks: GitHub Actions\nAutomated (and reproducible!) workflows can be built directly into GitHub with Actions.\n\n\nAutomatically re-run analyses (in a clean environment), for example, whenever code or data changes; freezing computations for reproducibility.\nAutomatically render manuscripts, presentations, and/or reports\nSchedule workflows (e.g. check for new papers on a topic, either regularly or with manual triggers)\nContinuous integration: e.g. when the code (or the data) is updated, run some validation checks / test.\n\n\n\nThere is a whole marketplace of Actions out there.\nCheck this tutorial for researchers."
+    "text": "Automate tasks: GitHub Actions\nAutomated (and reproducible!) workflows can be built directly into GitHub with Actions.\n\nBut… what can I use it for?\n\nAutomatically re-run analyses (in a clean environment), for example, whenever code or data changes –&gt; freezing computations for reproducibility.\nAutomatically render manuscripts, presentations, and/or reports\nSchedule workflows (regularly or with “manual: triggers), e.g. \n\nSearch PubMed for new papers on a topic, every month\nWhenever the code (or the data) is updated, run some validation checks / tests (a little something called continuous integration)\n\n\n\n\nThere is a whole marketplace of Actions out there.\nAlso check this tutorial for researchers."
   },
   {
     "objectID": "slides.html#project-management-with-github-projects",
@@ -700,31 +490,31 @@
     "text": "Project management with GitHub Projects\nGitHub provides built-in tools for planning, tracking, and coordinating work so you can manage entire projects alongside your code and writing.​\nGitHub Projects sits on top of issues and pull requests as a flexible table, board, and roadmap that you can filter, sort, and group to match your workflow.​"
   },
   {
-    "objectID": "slides.html#comic-relief",
-    "href": "slides.html#comic-relief",
+    "objectID": "slides.html#some-extra-tips-for-the-way-cleaning-up",
+    "href": "slides.html#some-extra-tips-for-the-way-cleaning-up",
     "title": "Git & Github  for researchers",
-    "section": "Comic relief",
-    "text": "Comic relief\ngit-man-page-generator And, of course, the underlying source is also available on GitHub: https://github.com/Lokaltog/git-man-page-generator If you can tolerate adult and often offensive language, you might enjoy:\nhttp://www.commitlogsfromlastnight.com http://ohshitgit.com/"
+    "section": "Some extra tips for the way: cleaning up",
+    "text": "Some extra tips for the way: cleaning up\nYou can delete the “local” repo whenever you like (it’s just a regular directory on your computer).\nBut, if you are doing it in the shell, use:\nrm -rf &lt;YOUR-REPOSITORY&gt;\n-rf will save you some time saying “yes” delete this hidden git file a gazillion times\nYou also want to remove the remote repo?\nIn the browser, go to your repo’s landing page &gt; Click on Settings &gt; Scroll all the way down, click on delete repository and do as it asks."
   },
   {
-    "objectID": "slides.html#finding-stuff-the-file-finder",
-    "href": "slides.html#finding-stuff-the-file-finder",
+    "objectID": "slides.html#some-extra-tips-for-the-way-comparing-versions",
+    "href": "slides.html#some-extra-tips-for-the-way-comparing-versions",
     "title": "Git & Github  for researchers",
-    "section": "Finding stuff: the file finder",
-    "text": "Finding stuff: the file finder\n\nPress t to activate the file finder whenever you’re in a repo’s file and directory view.\nAWESOME, especially when there are files tucked into lots of subdirectories.\n\nYou found it, don’t loose it\nPress y to get a permanent link when you’re viewing a specific file.\nWatch what changes in the URL.\nThis is handy if you are want to link to a specific file or to specific lines, so that your links will not break, even when the file is deleted, renamed or if lines get inserted or deleted."
+    "section": "Some extra tips for the way: comparing versions",
+    "text": "Some extra tips for the way: comparing versions\nRStudio will provide you with pretty ways to see the differences between versions.\nIn the shell, use:\ngit diff"
   },
   {
-    "objectID": "slides.html#some-extra-tips-cleaning-up",
-    "href": "slides.html#some-extra-tips-cleaning-up",
+    "objectID": "slides.html#conclusions-and-goodbyes",
+    "href": "slides.html#conclusions-and-goodbyes",
     "title": "Git & Github  for researchers",
-    "section": "Some extra tips: cleaning up",
-    "text": "Some extra tips: cleaning up\nYou can delete the “local” repo (It’s just a regular directory on your computer).\nNote, if you are doing it in the shell, use:\nrm -rf &lt;YOUR-REPOSITORY&gt;\n-rf will save you some time saying “yes” delete this hidden git file a gazillion times\nThen, in the browser, go to your repo’s landing page on GitHub &gt; Click on Settings &gt; Scroll down, click on delete repository and do as it asks."
+    "section": "Conclusions and goodbyes",
+    "text": "Conclusions and goodbyes\nThere you have it, you are now an honest GitHub citizen.\nNow just “lather, rinse, repeat”.\nThe tools and workflows we saw today are widely regarded as current best practice, yet, sadly, we generally neither practice nor preach it in academic settings.\n…but that was until you came around!\nThanks for listening to me &lt;3\nSee you on GitHub\nxoxo,\nSereDef"
   },
   {
-    "objectID": "slides.html#some-extra-tips-comparing-versions",
-    "href": "slides.html#some-extra-tips-comparing-versions",
+    "objectID": "slides.html#resources",
+    "href": "slides.html#resources",
     "title": "Git & Github  for researchers",
-    "section": "Some extra tips: comparing versions",
-    "text": "Some extra tips: comparing versions\ngit diff"
+    "section": "Resources",
+    "text": "Resources\nSoftware Carpentry - Version Control with Git\nHappy Git and GitHub for the useR by Jenny Bryan\nBryan, J. (2018) Excuse Me, Do You Have a Moment to Talk About Version Control? The American Statistician, 72(1), 20–27.\nPerez-Riverol, Y. et al. (2016) Ten Simple Rules for Taking Advantage of Git and GitHub. PLOS Computational Biology, 12(7): e1004947.\nGit in Practice by Mike McQuaid\nGit Tutorials from Atlassian\nA Visual Git Reference\nGit for Ages 4 and Up\nOh Shit, Git!?!\nGitHub’s own training materials\nOh My Git!: a free and open source interactive game for learning Git."
   }
 ]

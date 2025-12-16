@@ -7,34 +7,32 @@
 
 # [Part 5]{style="color: lightblue"}
 
-::: {style="font-size: 100px; text-align: left !important; max-width: 50%"}
-[**A few more tips + fun things you can do with `GitHub`**]{.darkblue}
+::: {style="font-size: 100px; text-align: left !important; max-width: 55%"}
+[**A few more tips `+` fun things you can do with `GitHub`**]{.darkblue}
 :::
 
-![](imgs/octocat-homer.jpg){.absolute bottom="0" top="200" right="50" height="50%"}
+![](imgs/octocat-homer.jpg){.absolute bottom="0" top="350" right="100" height="50%"}
 
-## Build an online presence: `GitHub Pages` {.scrollable}
-`GitHub` offers static **website hosting** directly from your repository via **`GitHub Pages`**. 
+## Build an [online presence]{.orange}: `GitHub Pages` {.scrollable}
+`GitHub` offers static **website hosting** directly from your repository via **`GitHub Pages`**. With *very minimal set-up* you get a website that:
 
-With *very minimal set-up* you get a website that:
-
-* is completely **free** (for public repositories). You can also use your own custom domain at no extra cost
+* is completely [**free**]{.orange} (for public repositories).<br>You can even use your own *custom domain* at no extra cost
 * is *automatically deployed*: just push your code and your site updates instantly
 * has built-in version control (`Git` history and rollback capability)
 
 :::{.fragment}
 *But... what can I use it for?*
 
-* Personal and/or lab website (e.g. see [mine](https://seredef.github.io/))
-* A project website or documentation page (e.g. see [this R package](https://seredef.github.io/verywise/index.html))
-* Presetations or courses (like this one!)
-* A blog
-* (With a bit of extra work) an interactive dashboard
+* **Personal and/or lab website** (e.g. see [mine](https://seredef.github.io/))
+* A project website or **documentation** page (e.g. see [this R package](https://seredef.github.io/verywise/index.html))
+* Presetations or **courses** (like this one!)
+* A **blog**
+* (With a bit of extra work) an interactive **dashboard**
 :::
 
-![](imgs/github-pages-logo.png){.absolute bottom="0" right="0" height="30%"}
+![](imgs/github-pages-logo.png){.absolute bottom="0" right="20" height="30%"}
 
-## Build an online presence: just plain `GitHub`
+## Build an [online presence]{.orange}: just plain `GitHub`
 Even without `Pages`, the browsability of `GitHub` makes your work accessible to people who care about your content but who don’t (yet) use `Git` themselves. 
 
 Here are some tips to make your repos look *extra nice*:
@@ -58,159 +56,138 @@ You already know that `GitHub` renders `README.md` at the top-level of your repo
 
 Check out this [tutorial](https://happygitwithr.com/classroom-overview)
 
-## Finding stuff: let me `GitHub Search` that for you
+## [Finding stuff]{.orange}: let me `GitHub Search` that for you
 Did you ever find a function that *seems useful* has no examples? Or is poorly documented? Wouldn’t it be nice to find functioning instances of it “*in the wild*”?
 
-The **`GitHub Search`** box is just what the doctor ordered 
+[The **`GitHub Search`** box is just what the doctor ordered.]{.l-up-space}
 
-![](imgs/github-search.png){.absolute bottom="200" right="50" height="10%"}
+![](imgs/github-search.png){.absolute bottom="550" right="30" height="10%"}
 
-[For example, see how packages on CRAN use the `llply()` function from `plyr`:]{.l-up-space}
+[For example, wonder how packages on CRAN use the `llply()` function from `plyr`?]{.l-up-space}
 ``` sh
 "llply" owner:cran language:R
 ```
-**`GitHub Search`** has *loads* of useful setting and options. 
+[**`GitHub Search`** has *loads* of useful setting and options.]{.l-up-space} 
 
 Read about them [here](https://github.com/search/advanced), [here](https://help.github.com/articles/searching-code/) and [here](https://help.github.com/articles/search-syntax/)
 
 
-## Finding stuff: the file finder
+## [Finding stuff]{.orange}: the `file finder`
 
-![](imgs/github-file-finder.png){.absolute top="90" right="50" height="60%"}
+![](imgs/github-file-finder.png){.absolute bottom="640" right="70" height="10%"}
 
-[Press [`t`]{.bg-highlight} to activate the [file finder](https://github.blog/news-insights/the-library/introducing-the-file-finder/) whenever you’re in a repo’s file and directory view.]{.l-up-space}
+:::{.column width='70%'}
+[Whenever you are on a repo's page, you can press [`t`]{.bg-highlight} to<br>activate the [file finder](https://github.blog/news-insights/the-library/introducing-the-file-finder/).]{.l-up-space}
+:::
 
-*AWESOME*, especially when there are files tucked into lots of subdirectories.
+This is *very helpful*, especially when there are files tucked into lots of subdirectories.
 
 :::{.fragment .l-up-space}
-#### You found it, don't loose it
-Press [`y`]{.bg-highlight} to get a [permanent link](https://docs.github.com/en/repositories/working-with-files/using-files/getting-permanent-links-to-files) when you’re viewing a specific file. 
+#### [You found it, don't loose it]{.darkblue}
+When you’re viewing a specific file, you can press [`y`]{.bg-highlight} to get a [permanent link](https://docs.github.com/en/repositories/working-with-files/using-files/getting-permanent-links-to-files) to that specific file or specific line(s) inside that file.
 
-Watch what changes in the URL. 
+[*What's a permanent link?*]{.m-up-space}
 
-This is handy if you are want to link to a specific file or to specific lines, so that your links will not break, even when the file is deleted, renamed or if lines get inserted or deleted.
+Good question. This is a link that will not break, even when the file is deleted, renamed or if lines get inserted / deleted.
 :::
 
 ## Let people correct you on the internet
 [They love that!]{.m-space}
 
-You can also create a link that takes people directly to an **editing interface** in the browser. 
+*Speaking of links*, did you know that you can create a link that takes people directly to an **editing interface** in the browser. 
 
 > Behind the scenes (assuming the click-er is signed into `GitHub`, and they are not you) this will create a fork in their account and send you a pull request for the changes. 
 
-[An edit link would look something like this:]{.l-up-space}
-``` r
-[Click here to edit!](<URL to your repo>/edit/main/<path to target source file>)
+[An [**edit link**]{.orange} would look something like this:]{.l-up-space}
+``` txt
+[Click here to edit!](<YOU REPO URL>/edit/main/<path to target source file>)
 ```
 
 ## Automate tasks: `GitHub Actions`
 Automated (and reproducible!) workflows can be built directly into `GitHub` with `Actions`.
 
 :::{.fragment .l-up-space}
+*But... what can I use it for?*
 
-* Automatically re-run analyses (in a clean environment), for example, whenever code or data changes; freezing computations for reproducibility.
-* Automatically render manuscripts, presentations, and/or reports
-* Schedule workflows (e.g. check for new papers on a topic, either regularly or with manual triggers)
-* Continuous integration: e.g. when the code (or the data) is updated, run some validation checks / test.
+* **Automatically re-run analyses** (in a clean environment), for example, whenever code or data changes --> freezing computations for **reproducibility**.
+* Automatically render **manuscripts**, **presentations**, and/or **reports**
+* **Schedule** workflows (regularly or with "manual: triggers), e.g. 
+    - Search PubMed for new papers on a topic, every month
+    - Whenever the code (or the data) is *updated*, run some validation checks / tests (a little something called **continuous integration**)
 :::
 
-:::{.fragment .l-up-space}
+:::{.fragment .m-up-space}
 There is a whole [marketplace](https://github.com/marketplace?type=actions) of `Actions` out there.
 
-Check this [tutorial](https://cct-datascience.quarto.pub/github-actions-for-automating-scientific-workflows/#/title-slide) for researchers.
+Also check this [tutorial](https://cct-datascience.quarto.pub/github-actions-for-automating-scientific-workflows/#/title-slide) for researchers.
 :::
 
 ## Project management with `GitHub Projects`
 `GitHub` provides built-in tools for planning, tracking, and coordinating work so you can manage entire projects alongside your code and writing.​
 
-`GitHub Projects` sits on top of issues and pull requests as a flexible table, board, and roadmap that you can filter, sort, and group to match your workflow.​
+`GitHub Projects` sits on top of issues and pull requests as a flexible **table**, **board**, and **roadmap** that you can *filter*, *sort*, and *group* to match your workflow.​
 
-![](imgs/github-project-management.png){.absolute top="130" right="50" height="65%"}
+![](imgs/github-project-management.png){.absolute top="320" right="210" height="65%"}
 
-## Some extra tips: cleaning up
-You can delete the "local" repo (It’s just a regular directory on your computer).
+## Some extra tips for the way: cleaning up
+You can delete the "local" repo whenever you like (it’s just a regular directory on your computer).
 
-Note, if you are doing it in the shell, use:
+[But, if you are doing it in the shell, use:]{.l-up-space}
 ``` sh
 rm -rf <YOUR-REPOSITORY>
 ```
 `-rf` will save you some time saying "yes" delete this hidden git file a gazillion times
 
-Then, in the browser, go to your repo’s landing page on `GitHub` > Click on *Settings* > Scroll down, click on *delete repository* and do as it asks.
+[You also want to remove the remote repo?]{.l-up-space}
 
-## Some extra tips: comparing versions
+In the browser, go to your repo’s landing page > Click on *Settings* > Scroll all the way down, click on *delete repository* and do as it asks.
 
+## Some extra tips for the way: comparing versions
+`RStudio` will provide you with pretty ways to see the differences between versions.
+
+In the shell, use:
 ``` sh
 git diff
 ```
 
 ## Conclusions and goodbyes
-The workflows described here are widely regarded as current best practice, yet we generally neither practice nor preach it in academic settings.
+There you have it, you are now an honest `GitHub` citizen. 
 
-Now just “lather, rinse, repeat”. Do work somewhere: locally or on GitHub. Commit it. Push it or pull it, depending on where you did the work, get local and remote “synced up”. Repeat.
+[Now just [*“lather, rinse, repeat”*]{.orange}.]{.l-space}
 
-## Comic relief
-git-man-page-generator
-And, of course, the underlying source is also available on GitHub:
-https://github.com/Lokaltog/git-man-page-generator
-If you can tolerate adult and often offensive language, you might enjoy:
+The tools and workflows we saw today are widely regarded as **current best practice**, yet, sadly, we generally neither practice nor preach it in academic settings.
 
-http://www.commitlogsfromlastnight.com
-http://ohshitgit.com/
+...but that was until you came around!
 
-## Resources
+[**Thanks for listening to me <3**]{.darkblue .center .l-up-space .l-space}
 
-[Bryan, J. (2018)](https://doi.org/10.1080/00031305.2017.1399928). Excuse Me, Do You Have a Moment to Talk About Version Control? *The American Statistician*, 72(1), 20–27.
+See you on `GitHub`
 
-Git Tutorials from Atlassian https://www.atlassian.com/git/tutorials/
+xoxo,
 
-Git explainers, heavy on the diagrams
+`SereDef`
 
-https://twitter.com/JennyBryan/status/743548245645791232
 
-A Visual Git Reference
-http://marklodato.github.io/visual-git-guide/index-en.html
+## Resources {.scrollable}
 
-A successful Git branching model
-http://nvie.com/posts/a-successful-git-branching-model/
+[Software Carpentry - Version Control with Git](http://swcarpentry.github.io/git-novice/)
 
-A successful Git branching model considered harmful
-https://barro.github.io/2016/02/a-succesful-git-branching-model-considered-harmful/
+[Happy Git and GitHub for the useR](https://happygitwithr.com/) by Jenny Bryan
 
-Git Tutorials from Atlassian https://www.atlassian.com/git/tutorials/
+[Bryan, J. (2018)](https://doi.org/10.1080/00031305.2017.1399928) Excuse Me, Do You Have a Moment to Talk About Version Control? *The American Statistician*, 72(1), 20–27.
 
-Software Carpentry Git Novice Lesson
-http://swcarpentry.github.io/git-novice/
+[Perez-Riverol, Y. et al. (2016)](https://doi.org/10.1371/journal.pcbi.1004947) Ten Simple Rules for Taking Advantage of Git and GitHub. *PLOS Computational Biology*, 12(7): e1004947. 
 
-Michael Freeman slides on Git collaboration
-http://slides.com/michaelfreeman/git-collaboration#/
+[Git in Practice](https://www.manning.com/books/git-in-practice) by Mike McQuaid
 
-GitHub Training materials
-https://services.github.com/kit/
+[Git Tutorials from Atlassian](https://www.atlassian.com/git/tutorials/)
 
-Git for Ages 4 and Up
-https://www.youtube.com/watch?v=3m7BgIvC-uQ
+[A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 
-Learn Git Branching
-http://learngitbranching.js.org
+[Git for Ages 4 and Up](https://www.youtube.com/watch?v=3m7BgIvC-uQ)
 
-A Git Workflow Walkthrough Series http://vallandingham.me/git-workflow.html
+[Oh Shit, Git!?!](http://ohshitgit.com/)
 
-Git from the inside out
-https://codewords.recurse.com/issues/two/git-from-the-inside-out
+[GitHub’s own training materials](https://training.github.com/) 
 
-Git in Practice by Mike McQuaid is an more approachable book, probably better than Pro Git (below) for most people starting out. Ancillary materials on GitHub.
-
-The book Pro Git is fantastic and comprehensive.
-
-Oh My Git! is a free and open source interactive game for learning Git. It’s very beginner friendly, using a graph to visualise the worktree. Lessons can be completed using a playing card interface in addition to the built-in command line, which is there for when users become more comfortable.
-
-GitHub’s own training materials may be helpful. They also point to many other resources
-
-Find a powerful Git client (chapter 8) if you’d like to minimize your usage of Git from the command line.
-
-Ten Simple Rules for Taking Advantage of Git and GitHub http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004947
-
-RStudio’s guide Version Control with Git and SVN
-
-The book Team Geek has insightful advice for the human and collaborative aspects of version control. It proposes Git strategies suited to different characteristics of teams.
+[Oh My Git!](https://ohmygit.org/): a free and open source interactive game for learning Git. 

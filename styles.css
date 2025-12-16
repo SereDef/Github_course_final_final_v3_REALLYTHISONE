@@ -16,12 +16,12 @@
 
 }
 
-/* for development */
-.reveal .slides {
+/* for development: so I can see the slide size */
+/* .reveal .slides {
   border: 2px solid rgb(25, 0, 255);
   width: 1600px;
   height: 900px;
-}
+} */
 
 /* --- TEXT ---------------------------------------------------------------- */
 

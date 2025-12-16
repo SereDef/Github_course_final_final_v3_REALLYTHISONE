@@ -8,203 +8,220 @@
 # [Part 4]{style="color: lightblue"}
 
 ::: {style="font-size: 100px; text-align: left !important; max-width: 55%"}
-[**Daily<br>`Git` / `GitHub` workflows<br><br>**]{.darkblue}
+[**Daily<br>`Git` / `GitHub` workflows**<br><br>]{.darkblue}
 :::
 
 ![](imgs/octocat-training.png){.absolute bottom="0" top="100" right="50" height="80%"}
 
-## Let's get down to it 
-[Now that we are done setting up, it's about damn time to see what was all this pain even for:]{.l-space}
+## Let's get down to it
 
-In this section, we'll go over three *realistic* **workflows** you may use in you daily life
+[Now that we are done setting up, it's about damn time to see what was all that pain even for:]{.l-space}
 
-1. [**New project - `GitHub` first**]{.darkblue}: the easiest way to get a working project.
-2. [**Existing project - `GitHub` first**]{.darkblue}: a deeply pragmatic way to get pre-existing work onto `GitHub`.
-3. [**Existing project - `GitHub` last**]{.darkblue}: the more "*proper*" way to connect existing local work to `GitHub`, when there’s already some `Git` history.
-4. [**Contributing to someone else's work**]{.darkblue}: your gateway drug to open-source heaven. 
+:::{.fragment}
+In this section, we'll go over four ***realistic* workflows** you may use in you daily `Git`ventures
 
-## 1. Create a repository
+1.  [**New project - `GitHub` first**]{.darkblue}: the easiest way to get a working project.
+2.  [**Existing project - `GitHub` first**]{.darkblue}: a deeply pragmatic way to get pre-existing work onto `GitHub`.
+3.  [**Existing project - `GitHub` last**]{.darkblue}: the "*proper*" way to connect existing local work to `GitHub`, when there’s already a `Git` history.
+4.  [**Contributing to someone else's work**]{.darkblue}: your gateway drug to open-source heaven.
+:::
+
+## `(1)` Create a repository
+
 It's (finally) time to make your first repository!
 
-> Go to [`GitHub`](https://github.com) and make sure you are logged in. <br>*Click on your profile pic (top-right corner) > Repositories >* [New]{.green-button}.
+> Go to [`GitHub`](https://github.com) and make sure you are logged in. <br>*Click on your profile pic (top-right corner) \> Repositories \>* [New]{.green-button}
 
 Fill some info in:
 
-> **Repository name**: Whatever you wish. Approach this as you would a *variable name*: descriptive but brief, <ins>no spaces</ins>. Letters, digits, `-`, `.`, or `_` are allowed.<br>
-> **Description** (for humans): It’s nice to have something here, so you’ll see it appear in the `README`. e.g. *“Analysis of the stuff”*.<br>
-> **Visibility**: Public or private (can always change it later)<br>
-> **Add README**: generally a good idea, this is the landing page for your repo<br>
-> **Templates**, **`.gitignore`** and **licences** we will talk about in a moment, ignore for now.
+> **Repository name**: approach this as you would a *variable name*: descriptive but brief, <ins>no spaces</ins>. Letters, digits, `-`, `.`, or `_` are allowed.<br> **Description** (for humans): It’s nice to have something here, so you’ll see it appear in the `README`. e.g. *“Analysis of the stuff”*.<br> **Visibility**: Public or private (don't sweat it, can always change it later)<br> **Add README**: generally a good idea, this is the landing page for your repo<br> **Templates**, **`.gitignore`** and **licences** we will talk about in a moment, ignore for now.
 
-Click on [Create repository]{.green-button}.
+Click on [Create repository]{.green-button}
 
-## Clone your repo to your local computer
-Now, on the repo page, click the big green button that says [<>&ensp;Code]{.green-button}.
+## Clone your repo to your computer
+Now, on the repo page, click the big green button that says [\<\> Code]{.green-button}
 
-:::{.column width="55%"}
+::: {.column width="55%"}
 [Copy a *clone URL* to your clipboard.]{.l-space}
 
 [Remember when we talked about HTTPS and SSH? Here they are again.]{.m-space}
 
 [The type of URL you copy determines the **protocol** `GitHub` will use, so if you have PAT set up, copy the HTTPS URL, if you are using SSH keys, go for SSH.]{.l-space}
 
-Now, you have a few ways to get this onto your computer.
+Now, you have a few ways to get this onto your computer...
 :::
-:::{.column width="5%"}
+
+::: {.column width="5%"}
 :::
-:::{.column width="40%"}
+
+::: {.column width="40%"}
 ![](imgs/clone-repo-url.png)
 :::
 
-## Clone your repo to your local computer
+## Clone your repo to your computer
+
 Let's use the URL we just copied from `GitHub`.
 
-::: panel-tabset
+::::: panel-tabset
 ### In the shell
-[If your shell cooperates, you should be able to paste the whole `https://...` bit, but some shells are not (immediately) clipboard aware. In that sad case, you must type it (*accurately*), best of luck sailor!]{.m-space}
+
+> [If your shell cooperates, you should be able to paste the whole `https://...` bit, but some shells are not (immediately) clipboard aware. In that sad case, you must type it (*accurately*), best of luck sailor!]{.m-space}
 
 This should look something like this:
-```sh
+
+``` sh
 git clone https://github.com/<YOUR-USERNAME>/<YOUR-REPOSITORY>.git
 ```
 
-<br>
-
-:::{.callout-tip title="Where am I?"}
+::: {.callout-tip title="Where am I?" .m-up-space}
 Take charge of – or at least notice! – what directory you’re in.<br> `pwd` displays the working directory. `cd` is the command to change it.
 :::
 
-### In&ensp;`R`
+### In `R`
+
 Remember `usethis`?
+
 ``` r
 usethis::create_from_github(
   "https://github.com/<YOUR-USERNAME>/<YOUR-REPOSITORY>.git",
   destdir = "~/path/to/where/you/want/the/local/repo/"
 )
 ```
+
 [The first argument (`repo_spec`) accepts various forms of GitHub repo specifications (see the [docs](https://usethis.r-lib.org/reference/create_from_github.html)). We will use the URL we just copied from GitHub.]{.m-space}
 
-The `destdir` argument specifies the parent directory where you want the new folder (and local `Git` repo) to live. If you don’t specify it, `usethis` defaults to some very conspicuous place, like your Desktop. 
+The `destdir` argument specifies the parent directory where you want the new folder (and local `Git` repo) to live. If you don’t specify it, `usethis` defaults to some very conspicuous place, like your Desktop.
 
-### In&ensp;`RStudio`
+### In `RStudio`
+
 Start a new **Project**:
 
-> File > New Project... > Version Control > Git > In "Repository URL", paste the URL of your new `GitHub` repo > Accept the default project directory name (i.e. the `GitHub` repo name) > And pay attention to where the Project will be saved locally > Check “Open in new session” (that’s what you usually want in real life) and click on [Create Project]{.grey-button}
+> File \> New Project... \> Version Control \> Git \> In "Repository URL", paste the URL of your new `GitHub` repo \> Accept the default project directory name (i.e. the `GitHub` repo name) \> And pay attention to where the Project will be saved locally \> Check “Open in new session” (that’s what you usually want in real life) and click on [Create Project]{.grey-button}
 
-:::{.callout-caution title="Troubles in paradise?"}
+::: {.callout-caution title="Troubles in paradise?"}
 Do you NOT see an option to get the Project from *Version Control*? Restart RStudio and try again.<br>Still no luck? Check out these [troubleshooting tips](https://happygitwithr.com/rstudio-see-git).
 :::
-
-:::
+:::::
 
 ## [Exercise]{.bg-jasmine}: make a repo and clone it
 
-1. Create a repository (get creative) and give it a README
-2. Clone it on your laptop
-3. Make this new repo your working directory, list its files, display the README
-4. Bonus: what does `git remote show origin` tell you?
+1.  Create a repository (get creative) and give it a README
+2.  Clone it on your laptop
+3.  Make this new repo your working directory, list its files, display the README
+4.  Bonus: what does `git remote show origin` tell you?
 
 ## Make a local change and `commit` to it
-Every time you finish a valuable chunk of work (probably a few times a day)
+
+Every time you finish a *valuable chunk of work* (probably a few times a day)
 
 ::: panel-tabset
-
 ### In the shell
-Make the repo your working directory 
-```sh
+
+Make the repo your working directory
+
+``` sh
 cd <YOUR-REPOSITORY>
 ```
+
 [Let's make a small change:]{.m-up-space}
+
 ``` sh
 echo "A line I wrote on my local computer " >> README.md
 ```
+
 [I am happy with this change, now let's stage ("`add`") and `commit` to it]{.m-up-space}
+
 ``` sh
 git add README.md
 git commit -m "Look ma, a commit from my local computer"
 ```
 
-### In&ensp;`RStudio`
-Let's make a small change: e.g., adding the line *“This is a line from RStudio”* to the `README`. 
+### In `RStudio`
+
+Let's make a small change: e.g., adding the line *“This is a line from RStudio”* to the `README`.
 
 [Save your changes.]{.l-space}
 
-[Open the [Git]{.grey-button} tab in upper right pane (or wherever you have put your "Environment" pane, you eretic).]{.m-space}
+[Open the [Git]{.grey-button} tab in upper right pane [(or wherever you have put your "Environment" pane, you eretic)]{.grey}.]{.m-space}
 
 [Check the “Staged” box for the files you want to commit and click (surprise) [Commit]{.grey-button}]{.m-space}
 
 [Type a message in “Commit message”, e.g. *“Commit from RStudio”*.]{.m-space}
 
 [Click [Commit]{.grey-button}.]{.m-space}
-
 :::
 
 ## Shall we tell `GitHub` about this?
+
 Time to share (`push`) your changes with the world (or with `GitHub` anyway)
 
+:::{.fragment}
 Now, this will seem counterintuitive, but first let’s stop and... **`pull` from `GitHub`**.
 
-I doubt anything will happen (i.e. you’ll get *`"Already up-to-date."`*) but this is a good habit to catch... can you guess *why?*
+I doubt anything will happen (i.e. you’ll get `"Already up-to-date."`) but this is a good habit to catch... can you guess *why?*
+:::
 
 ::: panel-tabset
-
 ### In the shell
 
 (optional) get most recent version from `GitHub`:
+
 ``` sh
 git pull
 ```
+
 [Send your local changes to `GitHub`]{.l-up-space}
 
 ``` sh
 git push
 ```
 
-### In&ensp;`RStudio`
+### In `RStudio`
 
 [In the [Git]{.grey-button} tab in RStudio:]{.l-space}
 
 [(optional) Click [Pull]{.blue-button} to get most recent version from `GitHub`]{.l-space}
 
 Click [Push]{.green-button} to send your local changes to `GitHub`.
-
 :::
 
 ## [Exercise]{.bg-jasmine}: make a change, commit and push it
 
-1. Add a line to your README and verify that `Git` noticed the change
-2. Stage and commit this change 
-3. Push to your remote repo 
-4. Did you get challenged for a password? 
-    a. yes. why?
-    b. no. why not? 
-5. Confirm that `GitHub` registered the change
-6. (optional) You think you could do this whole exercise directly on the `GitHub` webpage?
+1.  Add a line to your README and verify that `Git` noticed the change
+2.  Stage and commit this change
+3.  Push to your remote repo
+4.  Did you get challenged for a password?
+    a.  yes. why?
+    b.  no. why not?
+5.  Confirm that `GitHub` registered the change
+6.  (optional) You think you could do this whole exercise directly on the `GitHub` webpage?
 
-## 2. Exisiting project, `GitHub` first 
+## `(2)` Exisiting project, `GitHub` first
 What if you already have an existing project, somewhere in a directory on your computer?
 
 If this is not (yet) a `Git`-tracked project, it should *easy-easy*
 
-:::{.incremental}
-* First create a new repository on `GitHub` (whithout a `README` if happen to already have one)
-* Clone it on you local computer
-* **Bring your existing project over**, using your favorite method of moving or copying files.
-* Check that your new files appear as *new untracked files*.
-* Stage, commit and... wait
+::: {.incremental}
+-   First create a new repository on `GitHub` (whithout a `README` if happen to already have one)
+-   Clone it on you local computer
+-   **Bring your existing project over**, using your favorite method of moving or copying files.
+-   Check that your new files appear as *new untracked files*.
+-   Stage, commit and... wait
 :::
 
-:::{.callout-important title="&ensp;Don't push any data, for the love of God" .fragment}
+::: {.callout-important title="Don't push any data, for the love of God" .fragment}
 Take a moment to stop and think: this is about to leave your local computer and go to `GitHub`. Make sure you did not commit any **data**, **passwords** or **anything else you don't want to share** with the world.
 :::
 
 ## Say hi to `.gitignore`, everyone
+
 [You can absolutely keep a file *locally* in a repository, without ever committing it to the `GitHub` repo. Just let it sit there, without staging it. No harm done.]{.m-space .fragment}
 
 [If this is a long-term situation, however, you may find it tidier to list the file in `.gitignore`. This is a special file that tells `Git` to just ***ignore*** things inside a local folder.]{.m-space .fragment}
 
-:::{.fragment}
+::: fragment
 My `.gitignore` usuallly looks something like this:
+
 ``` sh
 .DS_Store # macOS
 
@@ -220,94 +237,279 @@ data/ # All things data
 
 ## [Exercise]{.bg-jasmine}: take an existing project and make into a `GitHub` repo
 
-1. Choose an existing project on your local computer
-2. Create a new repository for it on `GitHub` (you can use a Private one if you are feeling paranoid)
-3. Clone it and bring your existing project over
-4. Check that your new files appear as *new untracked files*.
-5. Add a `.gitignore` to make sure your sensitive files are protected
-6. Stage and commit 
-7. Push to your remote repo 
-8. Confirm that you project is now on `GitHub`, and rejoice!
+1.  Choose an existing project on your local computer
+2.  Create a new repository for it on `GitHub` (you can use a Private one if you are feeling paranoid)
+3.  Clone it and bring your existing project over
+4.  Check that your new files appear as *new untracked files*.
+5.  Add a `.gitignore` to make sure your sensitive files are protected
+6.  Stage and commit
+7.  Push to your remote repo
+8.  Confirm that you project is now on `GitHub`, and rejoice!
 
 ## Why `GitHub` first?
+
 [This is a somewhat technical but important point about `Git`.]{.l-space}
 
-There is a big advantage of the *GitHub first, then RStudio/R* workflow: 
+There is a big advantage of the *GitHub first, then RStudio/R* workflow:
 
-* the remote `GitHub` repo is already configured as the `origin remote` for your local repo
-* your local `main` branch is now tracking the `main` on `GitHub`. 
+-   the remote `GitHub` repo is already configured as the `origin remote` for your local repo
+-   your local `main` branch is now tracking the `main` on `GitHub`.
 
-[The practical implication is that you are now set up to `push` and `pull`. No need to fanny around setting up `Git` remotes and tracking branches on the command line.]{.l-space}
+[The practical implication is that you are **already set up to `push` and `pull`**. No need to fanny around setting up `Git` remotes and tracking branches in the shell.]{.l-space}
 
-*Wait, what are you talking about?* 
+[*Wait, what are you talking about?*]{.orange}
 
 Let's a look at:
+
 ``` sh
 git remote show origin
 ```
 
-## 3. Existing project, `GitHub` last
-If you have followed any other `Git` tutorial however, chances are that your first step 
-would look something like: 
+## `(3)` Existing project, `GitHub` last
+
+If you have followed any *other* `Git` tutorial though, chances are that you started from:
 
 ::: panel-tabset
-
 ### In the shell
+
 ``` sh
 git init
 ```
 
-### Can be de done in&ensp;`R`&ensp;too, fyi
+### Can be de done in `R` too, *FYI*
+
 ``` r
 usethis::use_git()
 ```
-
 :::
 
-[In this situation, you will have an existing project, that is **already a `Git` repo** (with a history you care about), but it does not have a remote `GitHub` repo yet.]{.l-up-space .m-space .fragment}
+[In this situation, you will have an existing project, that is **already a `Git` repo** (with a history you care about), but it **does not have a remote `GitHub` repo** yet.]{.l-up-space .m-space .fragment}
 
-:::{.fragment}
-This may be less desirable for a novice because there are more opportunities to get confused and make a mistake.
+::: {.fragment}
+This may be less ideal for a newbie, because there are more opportunities to get confused and make a mistake.
 
+But it's not the end of the world... let's tackle this. 
 :::
 
 ## Create and connect a `GitHub` repo
 
 ::: panel-tabset
+### In `R`
 
-### In&ensp;`R`
 Yet again, `usethis` to the rescue
 
 > Note: you <ins>must</ins> have a **personal access token (PAT)** configured for this.
+
 ``` r
 usethis::use_github()
 ```
 
-[What will happen:]{m-up-space}
+[What will happen:]{.m-up-space}
 
-* Creates a new repo on GitHub.
-* Configures that new repo as the **origin remote** for the local repo.
-* Sets up your local default branch (e.g. main) to track same brain on origin 
-* Does an initial push
-* Opens the new repo in your browser
+-   Creates a new repo on GitHub.
+-   Configures that new repo as the **origin remote** for the local repo.
+-   Sets up your local default branch (e.g. main) to track same brain on origin
+-   Does an initial push
+-   Opens the new repo in your browser
 
 ### In the shell
+
 First, create a new repo on `GitHub` (you already know how), but:
 
-* give it the sane name of your local project’s directory
-* Do <ins>not</ins> initialize this repository with anything in it (no `README`)
+-   give it the sane name of your local project’s directory
+-   Do <ins>not</ins> initialize this repository with anything in it (no `README`)
 
 Now, in the shell:
+
 ``` sh
 git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPOSITORY>.git
 ```
+
 [Push and cement the tracking relationship between your local main branch and main on `GitHub` (or whatever your default branch is)]{.m-up-space}
+
 ``` sh
 git push --set-upstream origin main
 ```
+:::
+
+## `(4)` Contribute to someone else's work
+[The open-source community is cozy, and you are always welcome 😄]{.m-space}
+
+[POV: you want to get a copy of someone else’s repo (`OWNER/REPO`) and propose a change.]{.m-space} 
+
+:::{.fragment}
+Here is what needs to happen: 
+
+1. [**fork**]{.orange} the ***source* repo** (`OWNER/REPO`): i.e. create a remote copy of the source repo on `GitHub`.
+2. **clone** your fork (`YOU/REPO`) on your computer
+3. [(Optional, but recommended)]{.grey} Configure the source repo as the `upstream` remote
+4. [(Optional, but recommended)]{.grey} Configure your local `main` branch (or whatever the default is) to track `upstream/main` (instead of `origin/main`)
+5. [(Optional, but *very* recommended)]{.grey}Create a **new branch** where to make your changes
+6. Send a [**pull request**]{.darkblue} to `OWNER`, to propose your changes.
+:::
+
+## Fork, clone & configure (steps 1-4) {.scrollable}
+
+::: panel-tabset
+
+### In&ensp;`R`
+
+``` r
+usethis::create_from_github(
+  "https://github.com/OWNER/REPO",
+  destdir = "~/path/to/where/you/want/the/local/repo/",
+  fork = TRUE
+)
+```
+This will complete steps **1-4**, putting you in perfect position to: 
+
+`(a)` sync up with ongoing developments in the source repo and 
+
+`(b)` propose new changes from your fork.
+
+[If you are using `RStudio`, it will also create and open an RStudio Project for you.]{.m-up-space .m-space}
+
+Let's check what happened: 
+``` r
+usethis::git_remotes()
+```
+
+### In the shell
+
+> Assuming you’re already on the source repo page: click on [Fork]{.grey-button}  (upper right corner) > accept the defaults > click on [Create fork]{.green-button}
+
+This creates a copy of `REPO` under your `GitHub` account and takes you there in the browser.
+
+Now **clone** `YOU/REPO` (you already know how).
+
+Next, we need to make sure we stay *current* with developments in the source repo:
+
+1. Configure the source repo as the `upstream` remote
+
+Copy the URL of the **source** repo (`OWNER/REPO`).
+
+> It's easy to get to from your fork (`YOU/REPO`), via the [forked from]{.darkblue} link in the upper left.
+
+Then:
+``` sh
+git remote add upstream https://github.com/OWNER/REPO.git
+```
+
+[Now that `upstream` is configured, *especially* if you configured it for the first time, do:]{.m-up-space}
+``` sh
+git fetch upstream
+```
+This should get you nicely up to date with all the remote info you need.
+
+[`2.` Configure your local `main` branch to track `upstream/main`.]{.m-up-space}
+
+Last thing: 
+``` sh
+git branch --set-upstream-to upstream/main
+# git branch -u upstream/main # for lazy people
+```
+[Ok, let's check what happened:]{.m-up-space}
+``` sh
+git remote -v
+```
+
+[**Done!** (finally)]{.m-up-space}
+
+[If you found this kind of long and tedious, consider using `usethis::create_from_github()` next time...]{.grey}
 
 :::
 
-## 4. Contribute to someone else's work
+## Create a new branch
+When working on a fork, it is a good idea to **never mess with the `main` branch**.
 
-[TBD]
+::: panel-tabset
+
+### In&ensp;`R`
+``` r
+usethis::pr_init(branch = "BRANCH-NAME")
+```
+This will create a local branch called `BRANCH-NAME` and "switch to it" (or *“check it out”*). 
+
+### In the shell
+Create a new branch:
+``` sh 
+git branch BRANCH-NAME
+```
+Switch to the new branch:
+``` sh
+git checkout BRANCH-NAME
+```
+Or you can use the **shortcut** `git checkout -b BRANCH-NAME`
+
+:::
+
+[Now, just make your changes and *commit them as usual*.]{.m-up-space .m-space}
+
+## Submit a pull request 
+The last thing we need to do is let `OWNER` know about the chage we want to propose.
+
+::: panel-tabset
+
+### In&ensp;`R`
+``` r
+usethis::pr_push()
+```
+This pushes the local change to *your copy* of `REPO` on `GitHub` and opens a browser window.
+
+All is left for you to do is click [Create pull request]{.green-button} to make the PR. 
+
+`GitHub` will ping `OWNER` for you, they will review our pull request and the rest is out of your hands. 
+
+### In the shell / `GitHub`
+Make sure you first push your changes to the `remote`, e.g.:
+``` sh
+git push -u origin BRANCH-NAME.​
+```
+
+Then, go to the your fork's page on `GitHub` and select the `BRANCH-NAME`.
+
+> You should see a [yellow banner]{.bg-yellow}, with a [Compare & pull request]{.green-button} button, click on that > [compare across forks]{.darkblue} > choose the "base branch" (this is the branch of the upstream repository you'd like to merge changes into, probably `main`)
+
+Add a title and description and hit [Create pull request]{.green-button}
+
+:::
+
+## You are asking too many questions
+
+::: {.callout-important title="&ensp;Why you should never commit to `main` (on a fork)" .m-up-space}
+When you do commit to `main`, it creates a *divergence between that branch’s history* in the source repo vs. your repo. ***Nothing but pain will come from this.***
+
+Instead, treat `main` as read-only: it will make life much easier when you want to pull upstream work into your copy. 
+
+The `OWNER` of `REPO` will also be happier to receive your pull request from a non-main branch.
+:::
+
+:::{.callout-note title="&ensp;Why track `upstream/main` instead of `origin/main`" .m-up-space}
+So that a simple `git pull` pulls from the **source repo**, not from your fork. 
+
+It also means a simple `git push` will (attempt to) push to the source repo, which will almost always be rejected since you probably do not have permission. This failure will alert you to the fact that you’re doing something questionable, while it’s still easy to back out.
+:::
+
+
+## You didn't ask enough questions
+<br><br>
+
+### Any quesitons? {.center}
+
+## [Exercise]{.bg-jasmine}: contribute to this presentation
+
+1.  Choose a `GitHub` project you would like to contribute to. If you don't have one in your heart (yet) you can pick [this workshop](https://github.com/SereDef/Github_course_final_final_v3_REALLYTHISONE)
+2.  Fork this repository, and clone it down
+3.  Create a new branch, and give it a *fab* name
+4.  Contribute by going to the next slide and adding a **dad joke**
+5.  Send me a pull request and stay tuned for my stap of approval
+
+## [Exercise]{.bg-jasmine}: add a dad joke here
+
+## Ok, break please 
+
+
+
+
+
+
