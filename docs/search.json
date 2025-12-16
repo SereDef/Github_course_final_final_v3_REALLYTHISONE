@@ -35,6 +35,13 @@
     "text": "Is it going to hurt?\nYes.\n\nBefore you can get started, you have to: install Git, get local Git talking to GitHub, and make sure RStudio can talk to local Git (and, therefore, GitHub).\nThis is one-time or “once-per-computer” pain & we will do it together\n\n\nBeginner–intermediate use requires(small) changes to your normal, daily workflow: e.g. dedicate a directory to each project, make it a git repository, periodically make commits and push them to Github.\nIt feels weird at first but quickly becomes second nature & we will do it together\n\n\nAdvanced GitHub use, e.g. to work with other people or coordinate your own work from multiple computers? Knock-knock — Who’s there? — merge conflicts.\nThis is not one-time pain but the best remedy is prevention, which we do today"
   },
   {
+    "objectID": "slides.html#scientific-progress",
+    "href": "slides.html#scientific-progress",
+    "title": "Git & Github  for researchers",
+    "section": "Scientific progress",
+    "text": "Scientific progress\n\n\nPrinciple\n\n\nReality"
+  },
+  {
     "objectID": "slides.html#why-bother-with-all-this",
     "href": "slides.html#why-bother-with-all-this",
     "title": "Git & Github  for researchers",

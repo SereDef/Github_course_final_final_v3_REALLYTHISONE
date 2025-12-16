@@ -117,6 +117,22 @@ You already have:
 
 ![](imgs/git-witness.png){.absolute top="150" right="50" width="40%"}
 
+## Scientific progress
+
+<br>
+
+:::{.column width='50%'}
+### [Principle]{.center .darkblue}
+![](imgs/science-principle.png){.absolute top="280" left="5" width="55%"}
+:::
+
+:::{.column width='50%'.fragment}
+### [Reality]{.center .darkblue}
+![](imgs/science-reality.png){.absolute top="250" right="50" width="40%"}
+:::
+
+
+
 ## Why bother with all this?
 
 [I can think of two main reasons:]{.m-space}
