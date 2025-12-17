@@ -32,7 +32,7 @@
     "href": "slides.html#is-it-going-to-hurt",
     "title": "Git & Github  for researchers",
     "section": "Is it going to hurt?",
-    "text": "Is it going to hurt?\nYes.\n\nBefore you can get started, you have to: install Git, get local Git talking to GitHub, and make sure RStudio can talk to local Git (and, therefore, GitHub).\nThis is one-time or “once-per-computer” pain & we will do it together\n\n\nBeginner–intermediate use requires(small) changes to your normal, daily workflow: e.g. dedicate a directory to each project, make it a git repository, periodically make commits and push them to Github.\nIt feels weird at first but quickly becomes second nature & we will do it together\n\n\nAdvanced GitHub use, e.g. to work with other people or coordinate your own work from multiple computers? Knock-knock — Who’s there? — merge conflicts.\nThis is not one-time pain but the best remedy is prevention, which we do today"
+    "text": "Is it going to hurt?\nYes.\n\nBefore you can get started, you have to: install Git and set it up properly to talk to GitHub.\nThis is one-time or “once-per-computer” pain & we will do it together\n\n\nBeginner–intermediate use requires(small) changes to your normal, daily workflow: e.g. dedicate a directory to each project, make it a git repository, periodically make commits and push them to Github.\nIt feels weird at first but quickly becomes second nature & we will do it together\n\n\nAdvanced GitHub use, e.g. to work with other people or coordinate your own work from multiple computers? Knock-knock — Who’s there? — merge conflicts.\nThis is not one-time pain but the best remedy is prevention, which we do today"
   },
   {
     "objectID": "slides.html#scientific-progress",
@@ -172,14 +172,14 @@
     "href": "slides.html#questions",
     "title": "Git & Github  for researchers",
     "section": "Questions?",
-    "text": "Questions?\n\nNo? Let’s play a game\n\nand then… break time"
+    "text": "Questions?\n\nNo? Let’s play a game: who am I?\nOnline? Try: https://ohmygit.org/\n\nand then… break time"
   },
   {
     "objectID": "slides.html#bonus-fun-fact",
     "href": "slides.html#bonus-fun-fact",
     "title": "Git & Github  for researchers",
     "section": "Bonus: fun fact",
-    "text": "Bonus: fun fact\nThe GitHub mascot is named Octocat, a merge between an octopuss and cat.\nDo you know the story behind this logo creation?\n\nThe idea came from the “octopus merge” – the practice of combining three or more branches of development.\nThe logo was created by Simon Oxley (who doesn’t remember creating it, apparently). Initially, Simon thought of calling his creation “Octopuss” (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.\n\n\nIn the end, GitHub decided to go with Octocat (for obvious reasons)."
+    "text": "Bonus: fun fact\nThe GitHub mascot is named Octocat, a merge between an octopuss and cat.\nDo you know the story behind this logo creation?\n\nThe idea came from the “octopus merge” – the practice of combining three or more branches of development.\nThe logo was created by Simon Oxley (who doesn’t remember creating it, apparently).\nInitially, Simon thought of calling his creation “Octopuss” (combination of octopus and pussycat) to represent how complex code combines can create peculiar things.\n\n\nIn the end, GitHub decided to go with Octocat (for obvious reasons)."
   },
   {
     "objectID": "slides.html#half-the-battle",
@@ -319,7 +319,7 @@
     "href": "slides.html#make-a-local-change-and-commit-to-it",
     "title": "Git & Github  for researchers",
     "section": "Make a local change and commit to it",
-    "text": "Make a local change and commit to it\nEvery time you finish a valuable chunk of work (probably a few times a day)\n\nIn the shellIn RStudio\n\n\nMake the repo your working directory\ncd &lt;YOUR-REPOSITORY&gt;\nLet’s make a small change:\necho \"A line I wrote on my local computer \" &gt;&gt; README.md\nI am happy with this change, now let’s stage (“add”) and commit to it\ngit add README.md\ngit commit -m \"Look ma, a commit from my local computer\"\n\n\nLet’s make a small change: e.g., adding the line “This is a line from RStudio” to the README.\nSave your changes.\nOpen the Git tab in upper right pane (or wherever you have put your “Environment” pane, you eretic).\nCheck the “Staged” box for the files you want to commit and click (surprise) Commit\nType a message in “Commit message”, e.g. “Commit from RStudio”.\nClick Commit."
+    "text": "Make a local change and commit to it\nEvery time you finish a valuable chunk of work (probably a few times a day)\n\nIn the shellIn RStudio\n\n\nMake the repo your working directory\ncd &lt;YOUR-REPOSITORY&gt;\nLet’s make a small change:\necho \"A line I wrote on my local computer \" &gt;&gt; README.md\nWhat happened?\ngit status\nI am happy with this change, now let’s stage (“add”) and commit to it\ngit add README.md\ngit commit -m \"Look ma, a commit from my local computer\"\n\n\nLet’s make a small change: e.g., adding the line “This is a line from RStudio” to the README.\nSave your changes.\nOpen the Git tab in upper right pane (or wherever you have put your “Environment” pane, you eretic).\nCheck the “Staged” box for the files you want to commit and click (surprise) Commit\nType a message in “Commit message”, e.g. “Commit from RStudio”.\nClick Commit."
   },
   {
     "objectID": "slides.html#shall-we-tell-github-about-this",

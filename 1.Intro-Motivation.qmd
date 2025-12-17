@@ -53,10 +53,10 @@ There are a lot of excellent Git/Github tutorial materials online.<br>Check out 
 
 You already have:
 
--   [x] A (free) `GitHub` **account**
+-   [ ] A (free) `GitHub` **account**
     -   Students and educational/research staff: [GitHub Education](https://github.com/education)
     -   Research/lab groups or courses: [GitHub Organizations](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations)
--   [x] A laptop with:
+-   [ ] A laptop with:
     -   `Git` installed
     -   `R` and `RStudio` (or `Positron`) up-to-date
 -   [x] Stickers
@@ -86,24 +86,24 @@ You already have:
 
 ![](imgs/trip-map.png){.absolute bottom="0" right="0" width="40%"}
 
-## Is it going to hurt?
+## Is it going to hurt? {.scrollable}
 
 [Yes.]{.m-space}
 
 ::: fragment
-[<ins>Before you can get started</ins>, [you have to: install `Git`, get local `Git` talking to `GitHub`, and make sure `RStudio` can talk to local `Git` (and, therefore, `GitHub`).]{.grey}]{.s-space} 
+[<ins>Before you can get started</ins>, [you have to: install `Git` and set it up properly to talk to `GitHub`.]{.grey}]{.s-space} 
 
 [This is **one-time** or *"once-per-computer"* pain]{.bg-highlight} & [we will do it **together**]{.bg-highlight}
 :::
 
 ::: fragment
-[<ins>Beginner--intermediate use</ins> requires[(*small*) changes]{.orange} to your normal, daily workflow: [e.g. dedicate a directory to each project, make it a `git` repository, periodically make commits and push them to `Github`.]{.grey}]{.s-space .m-up-space}
+[<ins>Beginner--intermediate use</ins> requires[(*small*) changes]{.orange} to your normal, daily workflow: [e.g. dedicate a directory to each project, make it a `git` repository, periodically make commits and push them to `Github`.]{.grey}]{.s-space .l-up-space}
 
 [*It feels weird at first* but quickly becomes second nature]{.bg-yellow} & [we will do it **together**]{.bg-highlight}
 :::
 
 ::: fragment
-[<ins>Advanced `GitHub` use</ins>, e.g. to **work with other people** or **coordinate your own work from multiple computers**? [*Knock-knock* --- Who's there? ---]{.grey} [*merge conflicts*.]{.orange}]{.s-space .m-up-space}
+[<ins>Advanced `GitHub` use</ins>, e.g. to **work with other people** or **coordinate your own work from multiple computers**? [*Knock-knock* --- Who's there? ---]{.grey} [*merge conflicts*.]{.orange}]{.s-space .l-up-space}
 
 [This is not one-time pain]{.bg-orange} but [the best remedy is **prevention**, which we do today]{.bg-highlight}
 :::
@@ -128,7 +128,7 @@ You already have:
 
 :::{.column width='50%'.fragment}
 ### [Reality]{.center .darkblue}
-![](imgs/science-reality.png){.absolute top="250" right="50" width="40%"}
+![](imgs/science-reality.png){.absolute top="280" right="50" width="40%"}
 :::
 
 

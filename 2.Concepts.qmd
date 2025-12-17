@@ -253,9 +253,12 @@ As a new `GitHub` user, one of the most productive things you can do is to use `
 
 <br>
 
-[No? Let's play a **game**]{.l-space}
+[No? Let's play a [**game**]{.bg-yellow}: ***who am I?*** ]{.l-space}
+
+Online? Try: [https://ohmygit.org/](https://ohmygit.org/)
 
 <br>
+
 
 ### and then... [break time]{.orange} {.center}
 
@@ -267,7 +270,9 @@ Do you know the story behind this logo creation?
 :::{.column width="65%"}
 The idea came from the *“octopus merge”* – the practice of combining three or more branches of development. 
 
-The logo was created by Simon Oxley (who doesn't remember creating it, apparently). Initially, Simon thought of calling his creation *"Octopuss"* (combination of octopus and pussycat) to represent how complex code combines can create peculiar things. 
+The logo was created by Simon Oxley (who doesn't remember creating it, apparently). 
+
+Initially, Simon thought of calling his creation *"Octopuss"* (combination of octopus and pussycat) to represent how complex code combines can create peculiar things. 
 :::
 :::{.column width="30%"}
 ![](imgs/octocat.png){.absolute top="200" right="120" width="25%"}

@@ -110,7 +110,7 @@ Do you NOT see an option to get the Project from *Version Control*? Restart RStu
 3.  Make this new repo your working directory, list its files, display the README
 4.  Bonus: what does `git remote show origin` tell you?
 
-## Make a local change and `commit` to it
+## Make a local change and `commit` to it {.scrollable}
 
 Every time you finish a *valuable chunk of work* (probably a few times a day)
 
@@ -127,6 +127,11 @@ cd <YOUR-REPOSITORY>
 
 ``` sh
 echo "A line I wrote on my local computer " >> README.md
+```
+
+[What happened?]{.m-up-space}
+``` sh
+git status
 ```
 
 [I am happy with this change, now let's stage ("`add`") and `commit` to it]{.m-up-space}
